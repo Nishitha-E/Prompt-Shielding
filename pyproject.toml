@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promptshield"
+version = "0.1.0"
+description = "A privacy-preserving security layer and browser extension that protects Indian PII."
+readme = "README.md"
+authors = [{ name = "Nishitha-E" }]
+dependencies = []
+
+[project.scripts]
+promptshield = "promptshield.cli:main"
