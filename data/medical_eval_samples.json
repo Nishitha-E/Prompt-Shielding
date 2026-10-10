@@ -1,0 +1,2202 @@
+[
+  {
+    "id": 1,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Discharge Summary - Cardiology",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / DISCHARGE SUMMARY - CARDIOLOGY\nPatient Name: Mr. Priya Bose\nUHID: 730226 | MRN: MRN-91459\nDOB: 18/07/2005 | Age: 21 Y | Gender: Male\nABHA ID: 67-4931-1041-2322 | Aadhaar: 3571 6095 8024\nContact: 9906407983 | Email: priya.bose85@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nCoronary Artery Disease, Acute Inferior Wall Myocardial Infarction\n\nINVESTIGATIONS & LAB FINDINGS:\nTroponin-I 4.8 ng/mL, Serum Creatinine 1.0 mg/dL, Total Cholesterol 230 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Aspirin 75mg OD, Tab Clopidogrel 75mg OD, Tab Atorvastatin 40mg HS, Tab Metoprolol 25mg BD\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Priya Bose"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "730226"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "91459"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "18/07/2005"
+      },
+      {
+        "type": "ABHA",
+        "value": "67-4931-1041-2322"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9906407983"
+      },
+      {
+        "type": "EMAIL",
+        "value": "priya.bose85@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3571 6095 8024"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Consultation Note - Endocrinology",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / CONSULTATION NOTE - ENDOCRINOLOGY\nPatient Name: Ms. Rajesh Iyer\nUHID: 516512 | MRN: MRN-42966\nDOB: 12/06/1979 | Age: 47 Y | Gender: Female\nABHA ID: 22-9815-5786-5712 | Aadhaar: 9232 7139 3570\nContact: 6876435574 | Email: rajesh.iyer53@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nType 2 Diabetes Mellitus with Diabetic Peripheral Neuropathy\n\nINVESTIGATIONS & LAB FINDINGS:\nHbA1c 8.9%, Fasting Blood Sugar 168 mg/dL, Postprandial Blood Sugar 245 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Metformin 1000mg BD, Tab Glimepiride 2mg OD, Cap Pregabalin 75mg HS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Ms. Rajesh Iyer"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "516512"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "42966"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "12/06/1979"
+      },
+      {
+        "type": "ABHA",
+        "value": "22-9815-5786-5712"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6876435574"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rajesh.iyer53@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9232 7139 3570"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "hospital": "Fortis Healthcare, Bengaluru",
+    "report_type": "Radiology Report - Chest HRCT",
+    "text": "--- FORTIS HEALTHCARE, BENGALURU ---\nCLINICAL REPORT / RADIOLOGY REPORT - CHEST HRCT\nPatient Name: Ms. Ramesh Chatterjee\nUHID: 542727 | MRN: MRN-21886\nDOB: 13/10/1990 | Age: 36 Y | Gender: Female\nABHA ID: 75-9045-7523-9595 | Aadhaar: 6892 1971 4411\nContact: 9225035027 | Email: ramesh.chatterjee64@gmail.com\nConsultant: Dr. Sunita Kulkarni\n\nCLINICAL SUMMARY & DIAGNOSIS:\nBilateral Ground Glass Opacities consistent with Viral Pneumonitis\n\nINVESTIGATIONS & LAB FINDINGS:\nSpO2 94% on room air, CRP 42 mg/L, D-Dimer 0.6 mcg/mL\n\nMEDICATIONS & TREATMENT PLAN:\nInhaler Budesonide 200mcg BD, Tab Azithromycin 500mg OD x 5 days, Tab Paracetamol 650mg SOS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Ms. Ramesh Chatterjee"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "542727"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "21886"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Sunita Kulkarni"
+      },
+      {
+        "type": "DOB",
+        "value": "13/10/1990"
+      },
+      {
+        "type": "ABHA",
+        "value": "75-9045-7523-9595"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9225035027"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ramesh.chatterjee64@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6892 1971 4411"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "hospital": "Manipal Hospital, Chennai",
+    "report_type": "Pathology / CBC Blood Report",
+    "text": "--- MANIPAL HOSPITAL, CHENNAI ---\nCLINICAL REPORT / PATHOLOGY / CBC BLOOD REPORT\nPatient Name: Mr. Naveen Iyer\nUHID: 335431 | MRN: MRN-26908\nDOB: 27/01/2000 | Age: 26 Y | Gender: Male\nABHA ID: 65-8701-3333-8898 | Aadhaar: 5830 4482 3324\nContact: 6870203091 | Email: naveen.iyer89@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMicrocytic Hypochromic Anemia\n\nINVESTIGATIONS & LAB FINDINGS:\nHemoglobin 8.4 g/dL, RBC 3.2 million/mcL, MCV 68 fL, Serum Ferritin 12 ng/mL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Ferrous Ascorbate 100mg + Folic Acid 1.5mg OD x 3 months\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Naveen Iyer"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "335431"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "26908"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "27/01/2000"
+      },
+      {
+        "type": "ABHA",
+        "value": "65-8701-3333-8898"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6870203091"
+      },
+      {
+        "type": "EMAIL",
+        "value": "naveen.iyer89@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5830 4482 3324"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "hospital": "Care Hospital, Banjara Hills",
+    "report_type": "Orthopedic Consultation Slip",
+    "text": "--- CARE HOSPITAL, BANJARA HILLS ---\nCLINICAL REPORT / ORTHOPEDIC CONSULTATION SLIP\nPatient Name: Ms. Lakshmi Iyer\nUHID: 521611 | MRN: MRN-97785\nDOB: 10/09/1996 | Age: 30 Y | Gender: Female\nABHA ID: 66-4318-5823-5407 | Aadhaar: 2114 2203 2211\nContact: 9964248673 | Email: lakshmi.iyer61@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nGrade II Osteoarthritis of Bilateral Knee Joints\n\nINVESTIGATIONS & LAB FINDINGS:\nUric Acid 5.2 mg/dL, RA Factor Negative, ESR 18 mm/hr\n\nMEDICATIONS & TREATMENT PLAN:\nTab Etoricoxib 90mg OD x 7 days, Tab Glucosamine 1500mg OD, Quadriceps strengthening physiotherapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Ms. Lakshmi Iyer"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "521611"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "97785"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "10/09/1996"
+      },
+      {
+        "type": "ABHA",
+        "value": "66-4318-5823-5407"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9964248673"
+      },
+      {
+        "type": "EMAIL",
+        "value": "lakshmi.iyer61@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2114 2203 2211"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "hospital": "KIMS Hospitals, Secunderabad",
+    "report_type": "Gastroenterology Discharge Note",
+    "text": "--- KIMS HOSPITALS, SECUNDERABAD ---\nCLINICAL REPORT / GASTROENTEROLOGY DISCHARGE NOTE\nPatient Name: Smt. Ganesh Singhania\nUHID: 309544 | MRN: MRN-44093\nDOB: 23/08/1984 | Age: 42 Y | Gender: Female\nABHA ID: 82-1550-5752-6188 | Aadhaar: 9571 7480 3619\nContact: 9967539665 | Email: ganesh.singhania65@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Pancreatitis, resolving; Cholelithiasis\n\nINVESTIGATIONS & LAB FINDINGS:\nSerum Amylase 420 U/L, Serum Lipase 680 U/L, Total Bilirubin 1.2 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Pantoprazole 40mg OD, Tab Ursodeoxycholic Acid 300mg BD, Low fat diet advised\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Ganesh Singhania"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "309544"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "44093"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "23/08/1984"
+      },
+      {
+        "type": "ABHA",
+        "value": "82-1550-5752-6188"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9967539665"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ganesh.singhania65@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9571 7480 3619"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Nephrology Progress Note",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / NEPHROLOGY PROGRESS NOTE\nPatient Name: Smt. Ramesh Joshi\nUHID: 546459 | MRN: MRN-72802\nDOB: 03/11/1972 | Age: 54 Y | Gender: Female\nABHA ID: 35-7738-3397-8362 | Aadhaar: 2139 5861 2544\nContact: 9497422744 | Email: ramesh.joshi22@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Kidney Disease Stage 3b, Hypertension\n\nINVESTIGATIONS & LAB FINDINGS:\neGFR 38 mL/min/1.73m2, Serum Creatinine 2.2 mg/dL, Blood Urea 65 mg/dL, Serum K+ 4.6 mEq/L\n\nMEDICATIONS & TREATMENT PLAN:\nTab Amlodipine 5mg OD, Tab Torsemide 10mg OD, Tab Sodium Bicarbonate 500mg TDS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Ramesh Joshi"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "546459"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "72802"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "03/11/1972"
+      },
+      {
+        "type": "ABHA",
+        "value": "35-7738-3397-8362"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9497422744"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ramesh.joshi22@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2139 5861 2544"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Dermatology Prescription Slip",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / DERMATOLOGY PRESCRIPTION SLIP\nPatient Name: Mrs. Harish Reddy\nUHID: 226687 | MRN: MRN-91405\nDOB: 02/09/1972 | Age: 54 Y | Gender: Female\nABHA ID: 51-9060-3209-9942 | Aadhaar: 5224 8461 7479\nContact: 8266173260 | Email: harish.reddy10@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Plaque Psoriasis\n\nINVESTIGATIONS & LAB FINDINGS:\nLFT normal, CBC normal, PASI Score 12.4\n\nMEDICATIONS & TREATMENT PLAN:\nClobetasol Propionate 0.05% ointment local application, Tab Methotrexate 10mg weekly, Tab Folic Acid 5mg\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Harish Reddy"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "226687"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "91405"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "02/09/1972"
+      },
+      {
+        "type": "ABHA",
+        "value": "51-9060-3209-9942"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8266173260"
+      },
+      {
+        "type": "EMAIL",
+        "value": "harish.reddy10@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5224 8461 7479"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "hospital": "Fortis Healthcare, Bengaluru",
+    "report_type": "Neurology Consultation Summary",
+    "text": "--- FORTIS HEALTHCARE, BENGALURU ---\nCLINICAL REPORT / NEUROLOGY CONSULTATION SUMMARY\nPatient Name: Mrs. Pooja Rao\nUHID: 920417 | MRN: MRN-86812\nDOB: 10/09/1981 | Age: 45 Y | Gender: Female\nABHA ID: 77-4222-7160-1231 | Aadhaar: 3131 5393 7633\nContact: 9967578017 | Email: pooja.rao29@gmail.com\nConsultant: Dr. Vikram Sethi\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMigraine with Aura, Tension Type Headache\n\nINVESTIGATIONS & LAB FINDINGS:\nMRI Brain normal, Fundus examination normal\n\nMEDICATIONS & TREATMENT PLAN:\nTab Propranolol 40mg OD, Tab Naproxen 500mg SOS during acute attack\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Pooja Rao"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "920417"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "86812"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Vikram Sethi"
+      },
+      {
+        "type": "DOB",
+        "value": "10/09/1981"
+      },
+      {
+        "type": "ABHA",
+        "value": "77-4222-7160-1231"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9967578017"
+      },
+      {
+        "type": "EMAIL",
+        "value": "pooja.rao29@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3131 5393 7633"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "hospital": "Manipal Hospital, Chennai",
+    "report_type": "Pediatric / General Clinical Note",
+    "text": "--- MANIPAL HOSPITAL, CHENNAI ---\nCLINICAL REPORT / PEDIATRIC / GENERAL CLINICAL NOTE\nPatient Name: Mr. Deepa Chatterjee\nUHID: 635180 | MRN: MRN-72393\nDOB: 11/11/1974 | Age: 52 Y | Gender: Male\nABHA ID: 74-8644-3797-3521 | Aadhaar: 5673 9875 3263\nContact: 9450085734 | Email: deepa.chatterjee25@gmail.com\nConsultant: Dr. Arvind Swaminathan\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Bronchiolitis, Mild Dehydration\n\nINVESTIGATIONS & LAB FINDINGS:\nWBC 11,200/mcL, Platelets 280,000/mcL, CRP 14 mg/L\n\nMEDICATIONS & TREATMENT PLAN:\nSaline nasal drops TDS, Paracetamol syrup 15mg/kg SOS, Oral rehydration therapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Deepa Chatterjee"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "635180"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "72393"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Arvind Swaminathan"
+      },
+      {
+        "type": "DOB",
+        "value": "11/11/1974"
+      },
+      {
+        "type": "ABHA",
+        "value": "74-8644-3797-3521"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9450085734"
+      },
+      {
+        "type": "EMAIL",
+        "value": "deepa.chatterjee25@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5673 9875 3263"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "hospital": "Care Hospital, Banjara Hills",
+    "report_type": "Discharge Summary - Cardiology",
+    "text": "--- CARE HOSPITAL, BANJARA HILLS ---\nCLINICAL REPORT / DISCHARGE SUMMARY - CARDIOLOGY\nPatient Name: Mr. Divya Kulkarni\nUHID: 518546 | MRN: MRN-14476\nDOB: 07/11/1966 | Age: 60 Y | Gender: Male\nABHA ID: 17-8402-4088-8927 | Aadhaar: 2327 6060 1793\nContact: 6796032518 | Email: divya.kulkarni79@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nCoronary Artery Disease, Acute Inferior Wall Myocardial Infarction\n\nINVESTIGATIONS & LAB FINDINGS:\nTroponin-I 4.8 ng/mL, Serum Creatinine 1.0 mg/dL, Total Cholesterol 230 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Aspirin 75mg OD, Tab Clopidogrel 75mg OD, Tab Atorvastatin 40mg HS, Tab Metoprolol 25mg BD\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Divya Kulkarni"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "518546"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "14476"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "07/11/1966"
+      },
+      {
+        "type": "ABHA",
+        "value": "17-8402-4088-8927"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6796032518"
+      },
+      {
+        "type": "EMAIL",
+        "value": "divya.kulkarni79@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2327 6060 1793"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "hospital": "KIMS Hospitals, Secunderabad",
+    "report_type": "Consultation Note - Endocrinology",
+    "text": "--- KIMS HOSPITALS, SECUNDERABAD ---\nCLINICAL REPORT / CONSULTATION NOTE - ENDOCRINOLOGY\nPatient Name: Mrs. Karthik Verma\nUHID: 985391 | MRN: MRN-34380\nDOB: 13/05/1982 | Age: 44 Y | Gender: Female\nABHA ID: 50-4067-6637-3862 | Aadhaar: 6728 7468 1282\nContact: 9184459259 | Email: karthik.verma59@gmail.com\nConsultant: Dr. Ananya Roy\n\nCLINICAL SUMMARY & DIAGNOSIS:\nType 2 Diabetes Mellitus with Diabetic Peripheral Neuropathy\n\nINVESTIGATIONS & LAB FINDINGS:\nHbA1c 8.9%, Fasting Blood Sugar 168 mg/dL, Postprandial Blood Sugar 245 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Metformin 1000mg BD, Tab Glimepiride 2mg OD, Cap Pregabalin 75mg HS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Karthik Verma"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "985391"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "34380"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Ananya Roy"
+      },
+      {
+        "type": "DOB",
+        "value": "13/05/1982"
+      },
+      {
+        "type": "ABHA",
+        "value": "50-4067-6637-3862"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9184459259"
+      },
+      {
+        "type": "EMAIL",
+        "value": "karthik.verma59@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6728 7468 1282"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Radiology Report - Chest HRCT",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / RADIOLOGY REPORT - CHEST HRCT\nPatient Name: Smt. Pooja Mehta\nUHID: 441614 | MRN: MRN-78070\nDOB: 16/08/1962 | Age: 64 Y | Gender: Female\nABHA ID: 38-4790-1080-2525 | Aadhaar: 9806 8138 3710\nContact: 8976336909 | Email: pooja.mehta22@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nBilateral Ground Glass Opacities consistent with Viral Pneumonitis\n\nINVESTIGATIONS & LAB FINDINGS:\nSpO2 94% on room air, CRP 42 mg/L, D-Dimer 0.6 mcg/mL\n\nMEDICATIONS & TREATMENT PLAN:\nInhaler Budesonide 200mcg BD, Tab Azithromycin 500mg OD x 5 days, Tab Paracetamol 650mg SOS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Pooja Mehta"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "441614"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "78070"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "16/08/1962"
+      },
+      {
+        "type": "ABHA",
+        "value": "38-4790-1080-2525"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8976336909"
+      },
+      {
+        "type": "EMAIL",
+        "value": "pooja.mehta22@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9806 8138 3710"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Pathology / CBC Blood Report",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / PATHOLOGY / CBC BLOOD REPORT\nPatient Name: Mr. Pooja Rao\nUHID: 987661 | MRN: MRN-30546\nDOB: 12/09/1998 | Age: 28 Y | Gender: Male\nABHA ID: 46-4513-5828-5392 | Aadhaar: 4213 2637 5113\nContact: 7217782500 | Email: pooja.rao89@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMicrocytic Hypochromic Anemia\n\nINVESTIGATIONS & LAB FINDINGS:\nHemoglobin 8.4 g/dL, RBC 3.2 million/mcL, MCV 68 fL, Serum Ferritin 12 ng/mL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Ferrous Ascorbate 100mg + Folic Acid 1.5mg OD x 3 months\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Pooja Rao"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "987661"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "30546"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "12/09/1998"
+      },
+      {
+        "type": "ABHA",
+        "value": "46-4513-5828-5392"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7217782500"
+      },
+      {
+        "type": "EMAIL",
+        "value": "pooja.rao89@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4213 2637 5113"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "hospital": "Fortis Healthcare, Bengaluru",
+    "report_type": "Orthopedic Consultation Slip",
+    "text": "--- FORTIS HEALTHCARE, BENGALURU ---\nCLINICAL REPORT / ORTHOPEDIC CONSULTATION SLIP\nPatient Name: Mr. Pooja Rao\nUHID: 163361 | MRN: MRN-56694\nDOB: 24/03/1996 | Age: 30 Y | Gender: Male\nABHA ID: 46-2047-5768-6154 | Aadhaar: 4641 5345 1805\nContact: 6643986279 | Email: pooja.rao50@gmail.com\nConsultant: Dr. Ananya Roy\n\nCLINICAL SUMMARY & DIAGNOSIS:\nGrade II Osteoarthritis of Bilateral Knee Joints\n\nINVESTIGATIONS & LAB FINDINGS:\nUric Acid 5.2 mg/dL, RA Factor Negative, ESR 18 mm/hr\n\nMEDICATIONS & TREATMENT PLAN:\nTab Etoricoxib 90mg OD x 7 days, Tab Glucosamine 1500mg OD, Quadriceps strengthening physiotherapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Pooja Rao"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "163361"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "56694"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Ananya Roy"
+      },
+      {
+        "type": "DOB",
+        "value": "24/03/1996"
+      },
+      {
+        "type": "ABHA",
+        "value": "46-2047-5768-6154"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6643986279"
+      },
+      {
+        "type": "EMAIL",
+        "value": "pooja.rao50@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4641 5345 1805"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "hospital": "Manipal Hospital, Chennai",
+    "report_type": "Gastroenterology Discharge Note",
+    "text": "--- MANIPAL HOSPITAL, CHENNAI ---\nCLINICAL REPORT / GASTROENTEROLOGY DISCHARGE NOTE\nPatient Name: Smt. Amit Sharma\nUHID: 914512 | MRN: MRN-43691\nDOB: 14/01/1958 | Age: 68 Y | Gender: Female\nABHA ID: 50-3015-2537-6739 | Aadhaar: 7864 3997 1462\nContact: 6352571328 | Email: amit.sharma12@gmail.com\nConsultant: Dr. Vikram Sethi\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Pancreatitis, resolving; Cholelithiasis\n\nINVESTIGATIONS & LAB FINDINGS:\nSerum Amylase 420 U/L, Serum Lipase 680 U/L, Total Bilirubin 1.2 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Pantoprazole 40mg OD, Tab Ursodeoxycholic Acid 300mg BD, Low fat diet advised\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Amit Sharma"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "914512"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "43691"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Vikram Sethi"
+      },
+      {
+        "type": "DOB",
+        "value": "14/01/1958"
+      },
+      {
+        "type": "ABHA",
+        "value": "50-3015-2537-6739"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6352571328"
+      },
+      {
+        "type": "EMAIL",
+        "value": "amit.sharma12@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7864 3997 1462"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "hospital": "Care Hospital, Banjara Hills",
+    "report_type": "Nephrology Progress Note",
+    "text": "--- CARE HOSPITAL, BANJARA HILLS ---\nCLINICAL REPORT / NEPHROLOGY PROGRESS NOTE\nPatient Name: Smt. Divya Patel\nUHID: 737309 | MRN: MRN-38263\nDOB: 20/08/1982 | Age: 44 Y | Gender: Female\nABHA ID: 75-5121-7374-5782 | Aadhaar: 7983 7456 6104\nContact: 6837084529 | Email: divya.patel57@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Kidney Disease Stage 3b, Hypertension\n\nINVESTIGATIONS & LAB FINDINGS:\neGFR 38 mL/min/1.73m2, Serum Creatinine 2.2 mg/dL, Blood Urea 65 mg/dL, Serum K+ 4.6 mEq/L\n\nMEDICATIONS & TREATMENT PLAN:\nTab Amlodipine 5mg OD, Tab Torsemide 10mg OD, Tab Sodium Bicarbonate 500mg TDS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Divya Patel"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "737309"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "38263"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "20/08/1982"
+      },
+      {
+        "type": "ABHA",
+        "value": "75-5121-7374-5782"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6837084529"
+      },
+      {
+        "type": "EMAIL",
+        "value": "divya.patel57@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7983 7456 6104"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "hospital": "KIMS Hospitals, Secunderabad",
+    "report_type": "Dermatology Prescription Slip",
+    "text": "--- KIMS HOSPITALS, SECUNDERABAD ---\nCLINICAL REPORT / DERMATOLOGY PRESCRIPTION SLIP\nPatient Name: Mr. Ramesh Deshmukh\nUHID: 829075 | MRN: MRN-53325\nDOB: 10/12/2004 | Age: 22 Y | Gender: Male\nABHA ID: 51-1332-9882-6611 | Aadhaar: 5340 8887 5630\nContact: 6418839064 | Email: ramesh.deshmukh63@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Plaque Psoriasis\n\nINVESTIGATIONS & LAB FINDINGS:\nLFT normal, CBC normal, PASI Score 12.4\n\nMEDICATIONS & TREATMENT PLAN:\nClobetasol Propionate 0.05% ointment local application, Tab Methotrexate 10mg weekly, Tab Folic Acid 5mg\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Ramesh Deshmukh"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "829075"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "53325"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "10/12/2004"
+      },
+      {
+        "type": "ABHA",
+        "value": "51-1332-9882-6611"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6418839064"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ramesh.deshmukh63@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5340 8887 5630"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Neurology Consultation Summary",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / NEUROLOGY CONSULTATION SUMMARY\nPatient Name: Mrs. Shalini Nair\nUHID: 228644 | MRN: MRN-25503\nDOB: 02/03/1988 | Age: 38 Y | Gender: Female\nABHA ID: 94-5951-1471-7959 | Aadhaar: 4682 3853 0309\nContact: 8740972993 | Email: shalini.nair92@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMigraine with Aura, Tension Type Headache\n\nINVESTIGATIONS & LAB FINDINGS:\nMRI Brain normal, Fundus examination normal\n\nMEDICATIONS & TREATMENT PLAN:\nTab Propranolol 40mg OD, Tab Naproxen 500mg SOS during acute attack\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Shalini Nair"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "228644"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "25503"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "02/03/1988"
+      },
+      {
+        "type": "ABHA",
+        "value": "94-5951-1471-7959"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8740972993"
+      },
+      {
+        "type": "EMAIL",
+        "value": "shalini.nair92@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4682 3853 0309"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Pediatric / General Clinical Note",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / PEDIATRIC / GENERAL CLINICAL NOTE\nPatient Name: Mrs. Arun Mishra\nUHID: 541435 | MRN: MRN-96847\nDOB: 08/03/1966 | Age: 60 Y | Gender: Female\nABHA ID: 98-7502-5177-3419 | Aadhaar: 5110 0339 0295\nContact: 6810347522 | Email: arun.mishra79@gmail.com\nConsultant: Dr. Vikram Sethi\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Bronchiolitis, Mild Dehydration\n\nINVESTIGATIONS & LAB FINDINGS:\nWBC 11,200/mcL, Platelets 280,000/mcL, CRP 14 mg/L\n\nMEDICATIONS & TREATMENT PLAN:\nSaline nasal drops TDS, Paracetamol syrup 15mg/kg SOS, Oral rehydration therapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Arun Mishra"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "541435"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "96847"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Vikram Sethi"
+      },
+      {
+        "type": "DOB",
+        "value": "08/03/1966"
+      },
+      {
+        "type": "ABHA",
+        "value": "98-7502-5177-3419"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6810347522"
+      },
+      {
+        "type": "EMAIL",
+        "value": "arun.mishra79@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5110 0339 0295"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "hospital": "Fortis Healthcare, Bengaluru",
+    "report_type": "Discharge Summary - Cardiology",
+    "text": "--- FORTIS HEALTHCARE, BENGALURU ---\nCLINICAL REPORT / DISCHARGE SUMMARY - CARDIOLOGY\nPatient Name: Smt. Suresh Iyer\nUHID: 430033 | MRN: MRN-28174\nDOB: 21/10/1960 | Age: 66 Y | Gender: Female\nABHA ID: 94-9422-5345-6582 | Aadhaar: 7983 1551 1666\nContact: 7693760025 | Email: suresh.iyer14@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nCoronary Artery Disease, Acute Inferior Wall Myocardial Infarction\n\nINVESTIGATIONS & LAB FINDINGS:\nTroponin-I 4.8 ng/mL, Serum Creatinine 1.0 mg/dL, Total Cholesterol 230 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Aspirin 75mg OD, Tab Clopidogrel 75mg OD, Tab Atorvastatin 40mg HS, Tab Metoprolol 25mg BD\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Suresh Iyer"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "430033"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "28174"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "21/10/1960"
+      },
+      {
+        "type": "ABHA",
+        "value": "94-9422-5345-6582"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7693760025"
+      },
+      {
+        "type": "EMAIL",
+        "value": "suresh.iyer14@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7983 1551 1666"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "hospital": "Manipal Hospital, Chennai",
+    "report_type": "Consultation Note - Endocrinology",
+    "text": "--- MANIPAL HOSPITAL, CHENNAI ---\nCLINICAL REPORT / CONSULTATION NOTE - ENDOCRINOLOGY\nPatient Name: Smt. Rajesh Kulkarni\nUHID: 332614 | MRN: MRN-99016\nDOB: 17/03/2002 | Age: 24 Y | Gender: Female\nABHA ID: 40-5518-6630-4292 | Aadhaar: 7683 7328 2474\nContact: 9859424923 | Email: rajesh.kulkarni56@gmail.com\nConsultant: Dr. Arvind Swaminathan\n\nCLINICAL SUMMARY & DIAGNOSIS:\nType 2 Diabetes Mellitus with Diabetic Peripheral Neuropathy\n\nINVESTIGATIONS & LAB FINDINGS:\nHbA1c 8.9%, Fasting Blood Sugar 168 mg/dL, Postprandial Blood Sugar 245 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Metformin 1000mg BD, Tab Glimepiride 2mg OD, Cap Pregabalin 75mg HS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Rajesh Kulkarni"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "332614"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "99016"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Arvind Swaminathan"
+      },
+      {
+        "type": "DOB",
+        "value": "17/03/2002"
+      },
+      {
+        "type": "ABHA",
+        "value": "40-5518-6630-4292"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9859424923"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rajesh.kulkarni56@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7683 7328 2474"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "hospital": "Care Hospital, Banjara Hills",
+    "report_type": "Radiology Report - Chest HRCT",
+    "text": "--- CARE HOSPITAL, BANJARA HILLS ---\nCLINICAL REPORT / RADIOLOGY REPORT - CHEST HRCT\nPatient Name: Smt. Ganesh Singhania\nUHID: 806114 | MRN: MRN-86097\nDOB: 10/04/1965 | Age: 61 Y | Gender: Female\nABHA ID: 11-6807-9572-7690 | Aadhaar: 2374 4983 6863\nContact: 9265119630 | Email: ganesh.singhania72@gmail.com\nConsultant: Dr. Vikram Sethi\n\nCLINICAL SUMMARY & DIAGNOSIS:\nBilateral Ground Glass Opacities consistent with Viral Pneumonitis\n\nINVESTIGATIONS & LAB FINDINGS:\nSpO2 94% on room air, CRP 42 mg/L, D-Dimer 0.6 mcg/mL\n\nMEDICATIONS & TREATMENT PLAN:\nInhaler Budesonide 200mcg BD, Tab Azithromycin 500mg OD x 5 days, Tab Paracetamol 650mg SOS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Ganesh Singhania"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "806114"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "86097"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Vikram Sethi"
+      },
+      {
+        "type": "DOB",
+        "value": "10/04/1965"
+      },
+      {
+        "type": "ABHA",
+        "value": "11-6807-9572-7690"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9265119630"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ganesh.singhania72@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2374 4983 6863"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "hospital": "KIMS Hospitals, Secunderabad",
+    "report_type": "Pathology / CBC Blood Report",
+    "text": "--- KIMS HOSPITALS, SECUNDERABAD ---\nCLINICAL REPORT / PATHOLOGY / CBC BLOOD REPORT\nPatient Name: Ms. Amit Mehta\nUHID: 866517 | MRN: MRN-44736\nDOB: 05/12/2002 | Age: 24 Y | Gender: Female\nABHA ID: 38-6025-1731-7443 | Aadhaar: 8384 2279 3133\nContact: 6119705785 | Email: amit.mehta78@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMicrocytic Hypochromic Anemia\n\nINVESTIGATIONS & LAB FINDINGS:\nHemoglobin 8.4 g/dL, RBC 3.2 million/mcL, MCV 68 fL, Serum Ferritin 12 ng/mL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Ferrous Ascorbate 100mg + Folic Acid 1.5mg OD x 3 months\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Ms. Amit Mehta"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "866517"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "44736"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "05/12/2002"
+      },
+      {
+        "type": "ABHA",
+        "value": "38-6025-1731-7443"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6119705785"
+      },
+      {
+        "type": "EMAIL",
+        "value": "amit.mehta78@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8384 2279 3133"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Orthopedic Consultation Slip",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / ORTHOPEDIC CONSULTATION SLIP\nPatient Name: Mr. Karthik Nair\nUHID: 868161 | MRN: MRN-61014\nDOB: 11/09/1971 | Age: 55 Y | Gender: Male\nABHA ID: 95-4109-3657-5799 | Aadhaar: 6761 9254 6491\nContact: 8144655412 | Email: karthik.nair85@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nGrade II Osteoarthritis of Bilateral Knee Joints\n\nINVESTIGATIONS & LAB FINDINGS:\nUric Acid 5.2 mg/dL, RA Factor Negative, ESR 18 mm/hr\n\nMEDICATIONS & TREATMENT PLAN:\nTab Etoricoxib 90mg OD x 7 days, Tab Glucosamine 1500mg OD, Quadriceps strengthening physiotherapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Karthik Nair"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "868161"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "61014"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "11/09/1971"
+      },
+      {
+        "type": "ABHA",
+        "value": "95-4109-3657-5799"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8144655412"
+      },
+      {
+        "type": "EMAIL",
+        "value": "karthik.nair85@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6761 9254 6491"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Gastroenterology Discharge Note",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / GASTROENTEROLOGY DISCHARGE NOTE\nPatient Name: Smt. Deepa Verma\nUHID: 883289 | MRN: MRN-92551\nDOB: 01/10/1996 | Age: 30 Y | Gender: Female\nABHA ID: 79-3799-9457-1483 | Aadhaar: 4162 1677 5917\nContact: 9553820099 | Email: deepa.verma55@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Pancreatitis, resolving; Cholelithiasis\n\nINVESTIGATIONS & LAB FINDINGS:\nSerum Amylase 420 U/L, Serum Lipase 680 U/L, Total Bilirubin 1.2 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Pantoprazole 40mg OD, Tab Ursodeoxycholic Acid 300mg BD, Low fat diet advised\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Deepa Verma"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "883289"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "92551"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "01/10/1996"
+      },
+      {
+        "type": "ABHA",
+        "value": "79-3799-9457-1483"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9553820099"
+      },
+      {
+        "type": "EMAIL",
+        "value": "deepa.verma55@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4162 1677 5917"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "hospital": "Fortis Healthcare, Bengaluru",
+    "report_type": "Nephrology Progress Note",
+    "text": "--- FORTIS HEALTHCARE, BENGALURU ---\nCLINICAL REPORT / NEPHROLOGY PROGRESS NOTE\nPatient Name: Mr. Rajesh Nair\nUHID: 492751 | MRN: MRN-18336\nDOB: 12/05/1968 | Age: 58 Y | Gender: Male\nABHA ID: 42-3072-2741-6345 | Aadhaar: 9560 9062 9252\nContact: 7743704380 | Email: rajesh.nair88@gmail.com\nConsultant: Dr. Vikram Sethi\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Kidney Disease Stage 3b, Hypertension\n\nINVESTIGATIONS & LAB FINDINGS:\neGFR 38 mL/min/1.73m2, Serum Creatinine 2.2 mg/dL, Blood Urea 65 mg/dL, Serum K+ 4.6 mEq/L\n\nMEDICATIONS & TREATMENT PLAN:\nTab Amlodipine 5mg OD, Tab Torsemide 10mg OD, Tab Sodium Bicarbonate 500mg TDS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Rajesh Nair"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "492751"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "18336"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Vikram Sethi"
+      },
+      {
+        "type": "DOB",
+        "value": "12/05/1968"
+      },
+      {
+        "type": "ABHA",
+        "value": "42-3072-2741-6345"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7743704380"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rajesh.nair88@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9560 9062 9252"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "hospital": "Manipal Hospital, Chennai",
+    "report_type": "Dermatology Prescription Slip",
+    "text": "--- MANIPAL HOSPITAL, CHENNAI ---\nCLINICAL REPORT / DERMATOLOGY PRESCRIPTION SLIP\nPatient Name: Mr. Suresh Mehta\nUHID: 597424 | MRN: MRN-75372\nDOB: 04/09/1988 | Age: 38 Y | Gender: Male\nABHA ID: 98-8470-6654-2352 | Aadhaar: 3663 5109 7424\nContact: 7989748816 | Email: suresh.mehta55@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Plaque Psoriasis\n\nINVESTIGATIONS & LAB FINDINGS:\nLFT normal, CBC normal, PASI Score 12.4\n\nMEDICATIONS & TREATMENT PLAN:\nClobetasol Propionate 0.05% ointment local application, Tab Methotrexate 10mg weekly, Tab Folic Acid 5mg\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Suresh Mehta"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "597424"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "75372"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "04/09/1988"
+      },
+      {
+        "type": "ABHA",
+        "value": "98-8470-6654-2352"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7989748816"
+      },
+      {
+        "type": "EMAIL",
+        "value": "suresh.mehta55@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3663 5109 7424"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "hospital": "Care Hospital, Banjara Hills",
+    "report_type": "Neurology Consultation Summary",
+    "text": "--- CARE HOSPITAL, BANJARA HILLS ---\nCLINICAL REPORT / NEUROLOGY CONSULTATION SUMMARY\nPatient Name: Mrs. Lakshmi Kulkarni\nUHID: 553610 | MRN: MRN-76358\nDOB: 18/06/1975 | Age: 51 Y | Gender: Female\nABHA ID: 33-4219-8585-4607 | Aadhaar: 7679 8654 3778\nContact: 9532792426 | Email: lakshmi.kulkarni50@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMigraine with Aura, Tension Type Headache\n\nINVESTIGATIONS & LAB FINDINGS:\nMRI Brain normal, Fundus examination normal\n\nMEDICATIONS & TREATMENT PLAN:\nTab Propranolol 40mg OD, Tab Naproxen 500mg SOS during acute attack\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Lakshmi Kulkarni"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "553610"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "76358"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "18/06/1975"
+      },
+      {
+        "type": "ABHA",
+        "value": "33-4219-8585-4607"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9532792426"
+      },
+      {
+        "type": "EMAIL",
+        "value": "lakshmi.kulkarni50@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7679 8654 3778"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "hospital": "KIMS Hospitals, Secunderabad",
+    "report_type": "Pediatric / General Clinical Note",
+    "text": "--- KIMS HOSPITALS, SECUNDERABAD ---\nCLINICAL REPORT / PEDIATRIC / GENERAL CLINICAL NOTE\nPatient Name: Mrs. Naveen Mishra\nUHID: 563126 | MRN: MRN-84261\nDOB: 22/12/1963 | Age: 63 Y | Gender: Female\nABHA ID: 26-6243-5365-8281 | Aadhaar: 6798 7382 7015\nContact: 9387364453 | Email: naveen.mishra52@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Bronchiolitis, Mild Dehydration\n\nINVESTIGATIONS & LAB FINDINGS:\nWBC 11,200/mcL, Platelets 280,000/mcL, CRP 14 mg/L\n\nMEDICATIONS & TREATMENT PLAN:\nSaline nasal drops TDS, Paracetamol syrup 15mg/kg SOS, Oral rehydration therapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Naveen Mishra"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "563126"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "84261"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "22/12/1963"
+      },
+      {
+        "type": "ABHA",
+        "value": "26-6243-5365-8281"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9387364453"
+      },
+      {
+        "type": "EMAIL",
+        "value": "naveen.mishra52@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6798 7382 7015"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Discharge Summary - Cardiology",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / DISCHARGE SUMMARY - CARDIOLOGY\nPatient Name: Mrs. Ananya Bose\nUHID: 909943 | MRN: MRN-26152\nDOB: 09/05/1991 | Age: 35 Y | Gender: Female\nABHA ID: 62-1355-6393-7711 | Aadhaar: 7999 7982 6530\nContact: 9779884647 | Email: ananya.bose61@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nCoronary Artery Disease, Acute Inferior Wall Myocardial Infarction\n\nINVESTIGATIONS & LAB FINDINGS:\nTroponin-I 4.8 ng/mL, Serum Creatinine 1.0 mg/dL, Total Cholesterol 230 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Aspirin 75mg OD, Tab Clopidogrel 75mg OD, Tab Atorvastatin 40mg HS, Tab Metoprolol 25mg BD\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Ananya Bose"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "909943"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "26152"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "09/05/1991"
+      },
+      {
+        "type": "ABHA",
+        "value": "62-1355-6393-7711"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9779884647"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ananya.bose61@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7999 7982 6530"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Consultation Note - Endocrinology",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / CONSULTATION NOTE - ENDOCRINOLOGY\nPatient Name: Smt. Meera Gupta\nUHID: 779713 | MRN: MRN-53312\nDOB: 02/07/2001 | Age: 25 Y | Gender: Female\nABHA ID: 82-5131-3139-6472 | Aadhaar: 8873 9917 2783\nContact: 7111290845 | Email: meera.gupta44@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nType 2 Diabetes Mellitus with Diabetic Peripheral Neuropathy\n\nINVESTIGATIONS & LAB FINDINGS:\nHbA1c 8.9%, Fasting Blood Sugar 168 mg/dL, Postprandial Blood Sugar 245 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Metformin 1000mg BD, Tab Glimepiride 2mg OD, Cap Pregabalin 75mg HS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Meera Gupta"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "779713"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "53312"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "02/07/2001"
+      },
+      {
+        "type": "ABHA",
+        "value": "82-5131-3139-6472"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7111290845"
+      },
+      {
+        "type": "EMAIL",
+        "value": "meera.gupta44@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8873 9917 2783"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "hospital": "Fortis Healthcare, Bengaluru",
+    "report_type": "Radiology Report - Chest HRCT",
+    "text": "--- FORTIS HEALTHCARE, BENGALURU ---\nCLINICAL REPORT / RADIOLOGY REPORT - CHEST HRCT\nPatient Name: Mr. Meera Bose\nUHID: 894055 | MRN: MRN-38818\nDOB: 21/02/1997 | Age: 29 Y | Gender: Male\nABHA ID: 37-8489-9436-5536 | Aadhaar: 7992 9185 2822\nContact: 8450698762 | Email: meera.bose12@gmail.com\nConsultant: Dr. Arvind Swaminathan\n\nCLINICAL SUMMARY & DIAGNOSIS:\nBilateral Ground Glass Opacities consistent with Viral Pneumonitis\n\nINVESTIGATIONS & LAB FINDINGS:\nSpO2 94% on room air, CRP 42 mg/L, D-Dimer 0.6 mcg/mL\n\nMEDICATIONS & TREATMENT PLAN:\nInhaler Budesonide 200mcg BD, Tab Azithromycin 500mg OD x 5 days, Tab Paracetamol 650mg SOS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Meera Bose"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "894055"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "38818"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Arvind Swaminathan"
+      },
+      {
+        "type": "DOB",
+        "value": "21/02/1997"
+      },
+      {
+        "type": "ABHA",
+        "value": "37-8489-9436-5536"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8450698762"
+      },
+      {
+        "type": "EMAIL",
+        "value": "meera.bose12@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7992 9185 2822"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "hospital": "Manipal Hospital, Chennai",
+    "report_type": "Pathology / CBC Blood Report",
+    "text": "--- MANIPAL HOSPITAL, CHENNAI ---\nCLINICAL REPORT / PATHOLOGY / CBC BLOOD REPORT\nPatient Name: Mr. Ramesh Gupta\nUHID: 263396 | MRN: MRN-53251\nDOB: 08/08/1968 | Age: 58 Y | Gender: Male\nABHA ID: 21-7832-9549-3183 | Aadhaar: 3541 6533 6189\nContact: 7857541912 | Email: ramesh.gupta49@gmail.com\nConsultant: Dr. Arvind Swaminathan\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMicrocytic Hypochromic Anemia\n\nINVESTIGATIONS & LAB FINDINGS:\nHemoglobin 8.4 g/dL, RBC 3.2 million/mcL, MCV 68 fL, Serum Ferritin 12 ng/mL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Ferrous Ascorbate 100mg + Folic Acid 1.5mg OD x 3 months\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Ramesh Gupta"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "263396"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "53251"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Arvind Swaminathan"
+      },
+      {
+        "type": "DOB",
+        "value": "08/08/1968"
+      },
+      {
+        "type": "ABHA",
+        "value": "21-7832-9549-3183"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7857541912"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ramesh.gupta49@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3541 6533 6189"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "hospital": "Care Hospital, Banjara Hills",
+    "report_type": "Orthopedic Consultation Slip",
+    "text": "--- CARE HOSPITAL, BANJARA HILLS ---\nCLINICAL REPORT / ORTHOPEDIC CONSULTATION SLIP\nPatient Name: Mrs. Pooja Patel\nUHID: 869917 | MRN: MRN-77295\nDOB: 08/08/1997 | Age: 29 Y | Gender: Female\nABHA ID: 51-8859-5183-9000 | Aadhaar: 7889 8276 2044\nContact: 8468892713 | Email: pooja.patel54@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nGrade II Osteoarthritis of Bilateral Knee Joints\n\nINVESTIGATIONS & LAB FINDINGS:\nUric Acid 5.2 mg/dL, RA Factor Negative, ESR 18 mm/hr\n\nMEDICATIONS & TREATMENT PLAN:\nTab Etoricoxib 90mg OD x 7 days, Tab Glucosamine 1500mg OD, Quadriceps strengthening physiotherapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Pooja Patel"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "869917"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "77295"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "08/08/1997"
+      },
+      {
+        "type": "ABHA",
+        "value": "51-8859-5183-9000"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8468892713"
+      },
+      {
+        "type": "EMAIL",
+        "value": "pooja.patel54@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7889 8276 2044"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "hospital": "KIMS Hospitals, Secunderabad",
+    "report_type": "Gastroenterology Discharge Note",
+    "text": "--- KIMS HOSPITALS, SECUNDERABAD ---\nCLINICAL REPORT / GASTROENTEROLOGY DISCHARGE NOTE\nPatient Name: Mrs. Sunita Iyer\nUHID: 604028 | MRN: MRN-57996\nDOB: 09/08/1967 | Age: 59 Y | Gender: Female\nABHA ID: 62-5981-4576-1887 | Aadhaar: 8470 6271 7168\nContact: 8393813121 | Email: sunita.iyer75@gmail.com\nConsultant: Dr. Arvind Swaminathan\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Pancreatitis, resolving; Cholelithiasis\n\nINVESTIGATIONS & LAB FINDINGS:\nSerum Amylase 420 U/L, Serum Lipase 680 U/L, Total Bilirubin 1.2 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Pantoprazole 40mg OD, Tab Ursodeoxycholic Acid 300mg BD, Low fat diet advised\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Sunita Iyer"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "604028"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "57996"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Arvind Swaminathan"
+      },
+      {
+        "type": "DOB",
+        "value": "09/08/1967"
+      },
+      {
+        "type": "ABHA",
+        "value": "62-5981-4576-1887"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8393813121"
+      },
+      {
+        "type": "EMAIL",
+        "value": "sunita.iyer75@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8470 6271 7168"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Nephrology Progress Note",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / NEPHROLOGY PROGRESS NOTE\nPatient Name: Smt. Shalini Mehta\nUHID: 195125 | MRN: MRN-76798\nDOB: 17/10/1975 | Age: 51 Y | Gender: Female\nABHA ID: 54-6899-3968-2279 | Aadhaar: 4855 6236 8797\nContact: 9441380668 | Email: shalini.mehta94@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Kidney Disease Stage 3b, Hypertension\n\nINVESTIGATIONS & LAB FINDINGS:\neGFR 38 mL/min/1.73m2, Serum Creatinine 2.2 mg/dL, Blood Urea 65 mg/dL, Serum K+ 4.6 mEq/L\n\nMEDICATIONS & TREATMENT PLAN:\nTab Amlodipine 5mg OD, Tab Torsemide 10mg OD, Tab Sodium Bicarbonate 500mg TDS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Shalini Mehta"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "195125"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "76798"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "17/10/1975"
+      },
+      {
+        "type": "ABHA",
+        "value": "54-6899-3968-2279"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9441380668"
+      },
+      {
+        "type": "EMAIL",
+        "value": "shalini.mehta94@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4855 6236 8797"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Dermatology Prescription Slip",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / DERMATOLOGY PRESCRIPTION SLIP\nPatient Name: Mr. Karthik Mishra\nUHID: 325279 | MRN: MRN-13784\nDOB: 15/04/1968 | Age: 58 Y | Gender: Male\nABHA ID: 27-9416-4461-5434 | Aadhaar: 9897 4931 0760\nContact: 9645497673 | Email: karthik.mishra77@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Plaque Psoriasis\n\nINVESTIGATIONS & LAB FINDINGS:\nLFT normal, CBC normal, PASI Score 12.4\n\nMEDICATIONS & TREATMENT PLAN:\nClobetasol Propionate 0.05% ointment local application, Tab Methotrexate 10mg weekly, Tab Folic Acid 5mg\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Karthik Mishra"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "325279"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "13784"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "15/04/1968"
+      },
+      {
+        "type": "ABHA",
+        "value": "27-9416-4461-5434"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9645497673"
+      },
+      {
+        "type": "EMAIL",
+        "value": "karthik.mishra77@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9897 4931 0760"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "hospital": "Fortis Healthcare, Bengaluru",
+    "report_type": "Neurology Consultation Summary",
+    "text": "--- FORTIS HEALTHCARE, BENGALURU ---\nCLINICAL REPORT / NEUROLOGY CONSULTATION SUMMARY\nPatient Name: Mrs. Deepa Mishra\nUHID: 736246 | MRN: MRN-82261\nDOB: 23/03/2001 | Age: 25 Y | Gender: Female\nABHA ID: 84-2000-1565-5593 | Aadhaar: 6176 8740 4103\nContact: 7240935789 | Email: deepa.mishra94@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMigraine with Aura, Tension Type Headache\n\nINVESTIGATIONS & LAB FINDINGS:\nMRI Brain normal, Fundus examination normal\n\nMEDICATIONS & TREATMENT PLAN:\nTab Propranolol 40mg OD, Tab Naproxen 500mg SOS during acute attack\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Deepa Mishra"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "736246"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "82261"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "23/03/2001"
+      },
+      {
+        "type": "ABHA",
+        "value": "84-2000-1565-5593"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7240935789"
+      },
+      {
+        "type": "EMAIL",
+        "value": "deepa.mishra94@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6176 8740 4103"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "hospital": "Manipal Hospital, Chennai",
+    "report_type": "Pediatric / General Clinical Note",
+    "text": "--- MANIPAL HOSPITAL, CHENNAI ---\nCLINICAL REPORT / PEDIATRIC / GENERAL CLINICAL NOTE\nPatient Name: Mrs. Suresh Chatterjee\nUHID: 276469 | MRN: MRN-34454\nDOB: 23/01/2003 | Age: 23 Y | Gender: Female\nABHA ID: 63-9023-9946-1475 | Aadhaar: 6333 1075 9156\nContact: 7830065350 | Email: suresh.chatterjee29@gmail.com\nConsultant: Dr. Sunita Kulkarni\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Bronchiolitis, Mild Dehydration\n\nINVESTIGATIONS & LAB FINDINGS:\nWBC 11,200/mcL, Platelets 280,000/mcL, CRP 14 mg/L\n\nMEDICATIONS & TREATMENT PLAN:\nSaline nasal drops TDS, Paracetamol syrup 15mg/kg SOS, Oral rehydration therapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Suresh Chatterjee"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "276469"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "34454"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Sunita Kulkarni"
+      },
+      {
+        "type": "DOB",
+        "value": "23/01/2003"
+      },
+      {
+        "type": "ABHA",
+        "value": "63-9023-9946-1475"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7830065350"
+      },
+      {
+        "type": "EMAIL",
+        "value": "suresh.chatterjee29@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6333 1075 9156"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "hospital": "Care Hospital, Banjara Hills",
+    "report_type": "Discharge Summary - Cardiology",
+    "text": "--- CARE HOSPITAL, BANJARA HILLS ---\nCLINICAL REPORT / DISCHARGE SUMMARY - CARDIOLOGY\nPatient Name: Mrs. Harish Deshmukh\nUHID: 252720 | MRN: MRN-76615\nDOB: 02/08/1955 | Age: 71 Y | Gender: Female\nABHA ID: 86-5214-6386-1460 | Aadhaar: 4316 1499 7270\nContact: 6201636153 | Email: harish.deshmukh55@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nCoronary Artery Disease, Acute Inferior Wall Myocardial Infarction\n\nINVESTIGATIONS & LAB FINDINGS:\nTroponin-I 4.8 ng/mL, Serum Creatinine 1.0 mg/dL, Total Cholesterol 230 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Aspirin 75mg OD, Tab Clopidogrel 75mg OD, Tab Atorvastatin 40mg HS, Tab Metoprolol 25mg BD\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Harish Deshmukh"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "252720"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "76615"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "02/08/1955"
+      },
+      {
+        "type": "ABHA",
+        "value": "86-5214-6386-1460"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6201636153"
+      },
+      {
+        "type": "EMAIL",
+        "value": "harish.deshmukh55@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4316 1499 7270"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "hospital": "KIMS Hospitals, Secunderabad",
+    "report_type": "Consultation Note - Endocrinology",
+    "text": "--- KIMS HOSPITALS, SECUNDERABAD ---\nCLINICAL REPORT / CONSULTATION NOTE - ENDOCRINOLOGY\nPatient Name: Smt. Amit Deshmukh\nUHID: 973574 | MRN: MRN-32369\nDOB: 08/04/1997 | Age: 29 Y | Gender: Female\nABHA ID: 31-9779-7913-7933 | Aadhaar: 9897 2179 8859\nContact: 9328399566 | Email: amit.deshmukh57@gmail.com\nConsultant: Dr. Shalini Mukhopadhyay\n\nCLINICAL SUMMARY & DIAGNOSIS:\nType 2 Diabetes Mellitus with Diabetic Peripheral Neuropathy\n\nINVESTIGATIONS & LAB FINDINGS:\nHbA1c 8.9%, Fasting Blood Sugar 168 mg/dL, Postprandial Blood Sugar 245 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Metformin 1000mg BD, Tab Glimepiride 2mg OD, Cap Pregabalin 75mg HS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Amit Deshmukh"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "973574"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "32369"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Shalini Mukhopadhyay"
+      },
+      {
+        "type": "DOB",
+        "value": "08/04/1997"
+      },
+      {
+        "type": "ABHA",
+        "value": "31-9779-7913-7933"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9328399566"
+      },
+      {
+        "type": "EMAIL",
+        "value": "amit.deshmukh57@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9897 2179 8859"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Radiology Report - Chest HRCT",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / RADIOLOGY REPORT - CHEST HRCT\nPatient Name: Ms. Ramesh Gupta\nUHID: 874277 | MRN: MRN-67734\nDOB: 18/10/1985 | Age: 41 Y | Gender: Female\nABHA ID: 25-2291-6798-3589 | Aadhaar: 3173 9257 7221\nContact: 6326616970 | Email: ramesh.gupta35@gmail.com\nConsultant: Dr. Ananya Roy\n\nCLINICAL SUMMARY & DIAGNOSIS:\nBilateral Ground Glass Opacities consistent with Viral Pneumonitis\n\nINVESTIGATIONS & LAB FINDINGS:\nSpO2 94% on room air, CRP 42 mg/L, D-Dimer 0.6 mcg/mL\n\nMEDICATIONS & TREATMENT PLAN:\nInhaler Budesonide 200mcg BD, Tab Azithromycin 500mg OD x 5 days, Tab Paracetamol 650mg SOS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Ms. Ramesh Gupta"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "874277"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "67734"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Ananya Roy"
+      },
+      {
+        "type": "DOB",
+        "value": "18/10/1985"
+      },
+      {
+        "type": "ABHA",
+        "value": "25-2291-6798-3589"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6326616970"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ramesh.gupta35@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3173 9257 7221"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Pathology / CBC Blood Report",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / PATHOLOGY / CBC BLOOD REPORT\nPatient Name: Mrs. Ganesh Deshmukh\nUHID: 131983 | MRN: MRN-81683\nDOB: 05/11/1995 | Age: 31 Y | Gender: Female\nABHA ID: 61-1156-8808-9536 | Aadhaar: 9910 3472 6772\nContact: 8408289135 | Email: ganesh.deshmukh56@gmail.com\nConsultant: Dr. Sunita Kulkarni\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMicrocytic Hypochromic Anemia\n\nINVESTIGATIONS & LAB FINDINGS:\nHemoglobin 8.4 g/dL, RBC 3.2 million/mcL, MCV 68 fL, Serum Ferritin 12 ng/mL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Ferrous Ascorbate 100mg + Folic Acid 1.5mg OD x 3 months\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Ganesh Deshmukh"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "131983"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "81683"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Sunita Kulkarni"
+      },
+      {
+        "type": "DOB",
+        "value": "05/11/1995"
+      },
+      {
+        "type": "ABHA",
+        "value": "61-1156-8808-9536"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8408289135"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ganesh.deshmukh56@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9910 3472 6772"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "hospital": "Fortis Healthcare, Bengaluru",
+    "report_type": "Orthopedic Consultation Slip",
+    "text": "--- FORTIS HEALTHCARE, BENGALURU ---\nCLINICAL REPORT / ORTHOPEDIC CONSULTATION SLIP\nPatient Name: Mrs. Deepa Iyer\nUHID: 931868 | MRN: MRN-28873\nDOB: 18/04/1977 | Age: 49 Y | Gender: Female\nABHA ID: 92-1790-6345-5175 | Aadhaar: 3727 4896 4399\nContact: 9505232578 | Email: deepa.iyer87@gmail.com\nConsultant: Dr. Arvind Swaminathan\n\nCLINICAL SUMMARY & DIAGNOSIS:\nGrade II Osteoarthritis of Bilateral Knee Joints\n\nINVESTIGATIONS & LAB FINDINGS:\nUric Acid 5.2 mg/dL, RA Factor Negative, ESR 18 mm/hr\n\nMEDICATIONS & TREATMENT PLAN:\nTab Etoricoxib 90mg OD x 7 days, Tab Glucosamine 1500mg OD, Quadriceps strengthening physiotherapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Deepa Iyer"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "931868"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "28873"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Arvind Swaminathan"
+      },
+      {
+        "type": "DOB",
+        "value": "18/04/1977"
+      },
+      {
+        "type": "ABHA",
+        "value": "92-1790-6345-5175"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9505232578"
+      },
+      {
+        "type": "EMAIL",
+        "value": "deepa.iyer87@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3727 4896 4399"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "hospital": "Manipal Hospital, Chennai",
+    "report_type": "Gastroenterology Discharge Note",
+    "text": "--- MANIPAL HOSPITAL, CHENNAI ---\nCLINICAL REPORT / GASTROENTEROLOGY DISCHARGE NOTE\nPatient Name: Ms. Deepa Nair\nUHID: 139038 | MRN: MRN-20556\nDOB: 19/01/1959 | Age: 67 Y | Gender: Female\nABHA ID: 60-8486-8841-9860 | Aadhaar: 2236 7573 5250\nContact: 9705996205 | Email: deepa.nair23@gmail.com\nConsultant: Dr. Rajesh Kothari\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Pancreatitis, resolving; Cholelithiasis\n\nINVESTIGATIONS & LAB FINDINGS:\nSerum Amylase 420 U/L, Serum Lipase 680 U/L, Total Bilirubin 1.2 mg/dL\n\nMEDICATIONS & TREATMENT PLAN:\nTab Pantoprazole 40mg OD, Tab Ursodeoxycholic Acid 300mg BD, Low fat diet advised\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Ms. Deepa Nair"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "139038"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "20556"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Rajesh Kothari"
+      },
+      {
+        "type": "DOB",
+        "value": "19/01/1959"
+      },
+      {
+        "type": "ABHA",
+        "value": "60-8486-8841-9860"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9705996205"
+      },
+      {
+        "type": "EMAIL",
+        "value": "deepa.nair23@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2236 7573 5250"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "hospital": "Care Hospital, Banjara Hills",
+    "report_type": "Nephrology Progress Note",
+    "text": "--- CARE HOSPITAL, BANJARA HILLS ---\nCLINICAL REPORT / NEPHROLOGY PROGRESS NOTE\nPatient Name: Smt. Rajesh Nair\nUHID: 276344 | MRN: MRN-80093\nDOB: 28/05/1956 | Age: 70 Y | Gender: Female\nABHA ID: 88-9533-2960-6487 | Aadhaar: 4302 1988 4962\nContact: 6904158245 | Email: rajesh.nair19@gmail.com\nConsultant: Dr. Arvind Swaminathan\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Kidney Disease Stage 3b, Hypertension\n\nINVESTIGATIONS & LAB FINDINGS:\neGFR 38 mL/min/1.73m2, Serum Creatinine 2.2 mg/dL, Blood Urea 65 mg/dL, Serum K+ 4.6 mEq/L\n\nMEDICATIONS & TREATMENT PLAN:\nTab Amlodipine 5mg OD, Tab Torsemide 10mg OD, Tab Sodium Bicarbonate 500mg TDS\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Rajesh Nair"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "276344"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "80093"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Arvind Swaminathan"
+      },
+      {
+        "type": "DOB",
+        "value": "28/05/1956"
+      },
+      {
+        "type": "ABHA",
+        "value": "88-9533-2960-6487"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6904158245"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rajesh.nair19@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4302 1988 4962"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "hospital": "KIMS Hospitals, Secunderabad",
+    "report_type": "Dermatology Prescription Slip",
+    "text": "--- KIMS HOSPITALS, SECUNDERABAD ---\nCLINICAL REPORT / DERMATOLOGY PRESCRIPTION SLIP\nPatient Name: Mrs. Manoj Singhania\nUHID: 350013 | MRN: MRN-77382\nDOB: 28/06/1981 | Age: 45 Y | Gender: Female\nABHA ID: 87-4019-8184-4090 | Aadhaar: 3782 2011 4476\nContact: 6625010491 | Email: manoj.singhania41@gmail.com\nConsultant: Dr. Sunita Kulkarni\n\nCLINICAL SUMMARY & DIAGNOSIS:\nChronic Plaque Psoriasis\n\nINVESTIGATIONS & LAB FINDINGS:\nLFT normal, CBC normal, PASI Score 12.4\n\nMEDICATIONS & TREATMENT PLAN:\nClobetasol Propionate 0.05% ointment local application, Tab Methotrexate 10mg weekly, Tab Folic Acid 5mg\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mrs. Manoj Singhania"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "350013"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "77382"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Sunita Kulkarni"
+      },
+      {
+        "type": "DOB",
+        "value": "28/06/1981"
+      },
+      {
+        "type": "ABHA",
+        "value": "87-4019-8184-4090"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6625010491"
+      },
+      {
+        "type": "EMAIL",
+        "value": "manoj.singhania41@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3782 2011 4476"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "hospital": "Apollo Hospitals, Hyderabad",
+    "report_type": "Neurology Consultation Summary",
+    "text": "--- APOLLO HOSPITALS, HYDERABAD ---\nCLINICAL REPORT / NEUROLOGY CONSULTATION SUMMARY\nPatient Name: Smt. Naveen Mishra\nUHID: 117143 | MRN: MRN-75399\nDOB: 07/07/2001 | Age: 25 Y | Gender: Female\nABHA ID: 28-5827-4949-9541 | Aadhaar: 7540 7915 2556\nContact: 6668586359 | Email: naveen.mishra69@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nMigraine with Aura, Tension Type Headache\n\nINVESTIGATIONS & LAB FINDINGS:\nMRI Brain normal, Fundus examination normal\n\nMEDICATIONS & TREATMENT PLAN:\nTab Propranolol 40mg OD, Tab Naproxen 500mg SOS during acute attack\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Smt. Naveen Mishra"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "117143"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "75399"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "07/07/2001"
+      },
+      {
+        "type": "ABHA",
+        "value": "28-5827-4949-9541"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6668586359"
+      },
+      {
+        "type": "EMAIL",
+        "value": "naveen.mishra69@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7540 7915 2556"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "hospital": "AIIMS, New Delhi",
+    "report_type": "Pediatric / General Clinical Note",
+    "text": "--- AIIMS, NEW DELHI ---\nCLINICAL REPORT / PEDIATRIC / GENERAL CLINICAL NOTE\nPatient Name: Mr. Divya Rao\nUHID: 486386 | MRN: MRN-38416\nDOB: 19/02/1990 | Age: 36 Y | Gender: Male\nABHA ID: 25-2731-7814-7568 | Aadhaar: 2204 9328 0053\nContact: 7591008216 | Email: divya.rao61@gmail.com\nConsultant: Dr. Pradeep Venkat\n\nCLINICAL SUMMARY & DIAGNOSIS:\nAcute Bronchiolitis, Mild Dehydration\n\nINVESTIGATIONS & LAB FINDINGS:\nWBC 11,200/mcL, Platelets 280,000/mcL, CRP 14 mg/L\n\nMEDICATIONS & TREATMENT PLAN:\nSaline nasal drops TDS, Paracetamol syrup 15mg/kg SOS, Oral rehydration therapy\n\nFollow-up in OPD after 14 days with repeat blood investigations.",
+    "entities": [
+      {
+        "type": "PATIENT_NAME",
+        "value": "Mr. Divya Rao"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "486386"
+      },
+      {
+        "type": "PATIENT_ID",
+        "value": "38416"
+      },
+      {
+        "type": "DOCTOR_NAME",
+        "value": "Dr. Pradeep Venkat"
+      },
+      {
+        "type": "DOB",
+        "value": "19/02/1990"
+      },
+      {
+        "type": "ABHA",
+        "value": "25-2731-7814-7568"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7591008216"
+      },
+      {
+        "type": "EMAIL",
+        "value": "divya.rao61@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2204 9328 0053"
+      }
+    ]
+  }
+]
