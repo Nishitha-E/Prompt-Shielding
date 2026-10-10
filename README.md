@@ -23,8 +23,8 @@ Crucially, **Prompt Shield preserves clinical diagnoses, drug dosages, lab value
 
 ### Day 3 Healthcare & Clinical Domain Specialization
 - **Healthcare Clinical PII Detectors & Surrogates**:
-  - **ABHA ID**: India's 14-digit Ayushman Bharat Health Account (`XX-XXXX-XXXX-XXXX`) & `@abdm` address.
-  - **Patient ID / MRN / UHID**: Hospital medical record numbers (`UHID: 984721`, `MRN: DEL-849204`).
+  - **ABHA ID**: India's 14-digit Ayushman Bharat Health Account (`XX-XXXX-XXXX-XXXX`) & `@abdm` virtual address.
+  - **Patient ID / MRN / UHID**: Hospital medical record identifiers (`UHID: 984721`, `MRN: DEL-849204`).
   - **Patient Names**: Contextual clinical header extraction (`Patient Name:`) and salutations (`Mr./Mrs./Ms.`).
   - **Doctor / Consultant Names**: `Dr. <Name>` and `Consultant: <Name>` matching.
   - **Date of Birth (DOB) / Age**: Preserves age range brackets to avoid invalid clinical advice.
@@ -32,12 +32,22 @@ Crucially, **Prompt Shield preserves clinical diagnoses, drug dosages, lab value
 
 ### Day 4 Evaluation Benchmark & Failure Analysis
 - **50 Hand-Labeled Medical Evaluation Samples** (`data/medical_eval_samples.json`):
-  - 50 diverse synthetic clinical reports across Cardiology, Endocrinology, Radiology, Pathology, Orthopedics, Gastroenterology, Nephrology, Dermatology, Neurology, and Pediatrics.
+  - 50 diverse synthetic clinical reports across 10 medical specialties.
   - Ground-truth annotated spans for all patient identifiers.
 - **Automated Precision / Recall Benchmark Script** (`src/promptshield/evaluate.py`):
   - Calculates True Positives (TP), False Positives (FP), False Negatives (FN), Precision, Recall, and F1 Score per identifier type and overall.
 - **Failure Modes & Boundary Analysis Report** (`docs/failure_analysis.md`):
   - Detailed analysis of 3 real-world clinical failure cases (free-form narrative names, short MRN ambiguity with lab counts, OCR line-breaks).
+
+### Day 5 Transparency Audit, Live Demo, & Gate 0 Technical Note
+- **Transparency Panel & Audit Subsystem** (`src/promptshield/audit.py`):
+  - Generates side-by-side terminal audit reports and exports interactive HTML visual inspection panels (`promptshield audit --html audit.html`).
+- **Live Screen-Share Demo Simulator** (`promptshield demo`):
+  - Complete 4-step live demonstration harness (Original $\to$ Local Redaction $\to$ Simulated LLM Response $\to$ Silent Restoration) for gate evaluation.
+- **Gate 0 Two-Page Technical Note** (`docs/technical_note.md`):
+  - Comprehensive write-up covering: what was built, retrospective on what to do differently, and roadmap to scale via Manifest V3 and on-device WebAssembly/WASM.
+- **Adversarial & Multi-Turn Stability Suite** (`tests/test_adversarial.py`):
+  - Validates 40-turn conversation consistency and audit export.
 
 ---
 
@@ -81,12 +91,18 @@ OVERALL              | 450   | 0     | 0     |   100.00% | 100.00% | 100.00%
    python src/promptshield/evaluate.py data/medical_eval_samples.json
    ```
 
-4. **Redact a Medical Report**:
+4. **Launch Live Screen-Share Demo**:
    ```powershell
-   python -m promptshield.cli redact --input clinical_report.txt --session session.json --output redacted_report.txt
+   python -m promptshield.cli demo
    ```
 
-5. **Restore Model Output**:
+5. **Generate Transparency Audit & HTML Panel**:
    ```powershell
+   python -m promptshield.cli audit --input sample.txt --session session.json --html audit.html
+   ```
+
+6. **Redact & Restore Files**:
+   ```powershell
+   python -m promptshield.cli redact --input clinical_report.txt --session session.json --output redacted_report.txt
    python -m promptshield.cli restore --input llm_response.txt --session session.json --output final_restored.txt
    ```
