@@ -35,6 +35,11 @@ def main():
     demo_parser = subparsers.add_parser("demo", help="Run interactive live demonstration of round-trip protection")
     demo_parser.add_argument("-i", "--input", help="Optional sample file to run demo with")
 
+    # Subcommand: benchmark
+    benchmark_parser = subparsers.add_parser("benchmark", help="Measure redaction latency and throughput")
+    benchmark_parser.add_argument("-d", "--dataset", default="data/medical_eval_samples.json", help="Dataset path")
+    benchmark_parser.add_argument("-n", "--iterations", type=int, default=5, help="Number of test iterations")
+
     args = parser.parse_args()
 
     engine = PromptShieldEngine()
@@ -129,6 +134,11 @@ def main():
         print(restored)
         print("=" * 65)
         print("[OK] Round-trip complete: Sensitive identifiers preserved locally. Medical advice accurate!\n")
+
+    elif args.command == "benchmark":
+        from promptshield.benchmarks import run_latency_benchmark, print_benchmark_report
+        b = run_latency_benchmark(dataset_path=args.dataset, iterations=args.iterations)
+        print_benchmark_report(b)
 
 
 if __name__ == "__main__":
