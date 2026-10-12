@@ -3,6 +3,7 @@
 import json
 from typing import Dict, Tuple, Optional
 from promptshield.detectors import PIIDetector
+from promptshield.normalizer import normalize_clinical_text
 
 
 class PromptShieldEngine:
@@ -14,8 +15,10 @@ class PromptShieldEngine:
         self.mapping: Dict[str, str] = {}  # original -> surrogate
         self.reverse_mapping: Dict[str, str] = {}  # surrogate -> original
 
-    def redact(self, text: str) -> str:
+    def redact(self, text: str, normalize: bool = True) -> str:
         """Detect PII in text, replace with surrogates, and update session mapping."""
+        if normalize:
+            text = normalize_clinical_text(text)
         matches = self.detector.detect_all(text)
         if not matches:
             return text
