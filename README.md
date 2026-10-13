@@ -56,7 +56,19 @@ Crucially, **Prompt Shield preserves clinical diagnoses, drug dosages, lab value
   - Throughput exceeding 1,000,000 characters/second.
 - **Verifiable Zero Network Exfiltration Test** (`tests/test_network_isolation.py`):
   - Intercepts all OS sockets and DNS calls to programmatically prove: *"Nothing leaves the user's machine. This must be demonstrable from the network trace, not merely claimed."*
-- **Test Suite**: 27 unit tests passing in 0.68s (`pytest -v`).
+
+### Day 7 Upstream Clinical Normalizer & OCR Repair (12-10-2026)
+- **Upstream Text Normalizer** (`src/promptshield/normalizer.py`):
+  - Directly resolves Failure Mode 3 from `docs/failure_analysis.md`.
+  - Automatically heals soft hyphens, OCR line breaks splitting 14-digit ABHA IDs, 12-digit Aadhaar digit blocks, phone numbers, and email strings.
+  - Unit tests in `tests/test_normalizer.py`.
+
+### Day 8 Batch Clinical Processing Subsystem (13-10-2026)
+- **Bulk Directory Sanitization Engine** (`src/promptshield/batch.py`):
+  - Processes entire directories of clinical text files (`.txt`, `.md`, `.json`) with unified session consistency.
+  - Generates a machine-readable `batch_manifest.json` recording latency, file count, and mapping metadata.
+  - New CLI subcommand: `promptshield batch --input-dir ... --output-dir ...`
+  - Comprehensive test suite expanded to **33 passing unit tests**.
 
 ---
 
@@ -112,7 +124,7 @@ OVERALL              | 450   | 0     | 0     |   100.00% | 100.00% | 100.00%
    .venv\Scripts\Activate.ps1
    ```
 
-2. **Run All 27 Unit Tests**:
+2. **Run All 33 Unit Tests**:
    ```powershell
    pytest -v
    ```
@@ -132,12 +144,17 @@ OVERALL              | 450   | 0     | 0     |   100.00% | 100.00% | 100.00%
    python -m promptshield.cli demo
    ```
 
-6. **Generate Transparency Audit & HTML Panel**:
+6. **Batch Sanitize a Folder of Documents**:
+   ```powershell
+   python -m promptshield.cli batch --input-dir raw_records/ --output-dir sanitized_records/ --session batch_session.json
+   ```
+
+7. **Generate Transparency Audit & HTML Panel**:
    ```powershell
    python -m promptshield.cli audit --input sample.txt --session session.json --html audit.html
    ```
 
-7. **Redact & Restore Files**:
+8. **Redact & Restore Single Files**:
    ```powershell
    python -m promptshield.cli redact --input clinical_report.txt --session session.json --output redacted_report.txt
    python -m promptshield.cli restore --input llm_response.txt --session session.json --output final_restored.txt

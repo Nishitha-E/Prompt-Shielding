@@ -40,6 +40,12 @@ def main():
     benchmark_parser.add_argument("-d", "--dataset", default="data/medical_eval_samples.json", help="Dataset path")
     benchmark_parser.add_argument("-n", "--iterations", type=int, default=5, help="Number of test iterations")
 
+    # Subcommand: batch
+    batch_parser = subparsers.add_parser("batch", help="Batch sanitize a directory of clinical text documents")
+    batch_parser.add_argument("-i", "--input-dir", required=True, help="Input directory containing documents")
+    batch_parser.add_argument("-o", "--output-dir", required=True, help="Output directory for sanitized documents")
+    batch_parser.add_argument("-s", "--session", help="Optional session mapping JSON file path")
+
     args = parser.parse_args()
 
     engine = PromptShieldEngine()
@@ -139,6 +145,23 @@ def main():
         from promptshield.benchmarks import run_latency_benchmark, print_benchmark_report
         b = run_latency_benchmark(dataset_path=args.dataset, iterations=args.iterations)
         print_benchmark_report(b)
+
+    elif args.command == "batch":
+        from promptshield.batch import BatchProcessor
+        processor = BatchProcessor(engine=engine)
+        summary = processor.process_directory(
+            input_dir=args.input_dir,
+            output_dir=args.output_dir,
+            session_file=args.session
+        )
+        print("=" * 65)
+        print(" PROMPT SHIELD: BATCH SANITIZATION SUMMARY")
+        print("=" * 65)
+        print(f"Total Files Processed    : {summary['total_files']}")
+        print(f"Total Unique PII Mapped  : {summary['total_pii_entities']}")
+        print(f"Total Processing Time    : {summary['total_elapsed_ms']} ms")
+        print(f"Sanitized Directory      : {args.output_dir}")
+        print("=" * 65)
 
 
 if __name__ == "__main__":
