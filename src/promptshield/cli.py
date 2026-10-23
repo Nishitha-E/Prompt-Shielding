@@ -46,6 +46,12 @@ def main():
     batch_parser.add_argument("-o", "--output-dir", required=True, help="Output directory for sanitized documents")
     batch_parser.add_argument("-s", "--session", help="Optional session mapping JSON file path")
 
+    # Subcommand: tabular
+    tabular_parser = subparsers.add_parser("tabular", help="Sanitize a clinical CSV dataset or table")
+    tabular_parser.add_argument("-i", "--input", required=True, help="Input CSV file path")
+    tabular_parser.add_argument("-o", "--output", required=True, help="Output sanitized CSV file path")
+    tabular_parser.add_argument("-s", "--session", help="Optional session mapping JSON file path")
+
     args = parser.parse_args()
 
     engine = PromptShieldEngine()
@@ -161,6 +167,23 @@ def main():
         print(f"Total Unique PII Mapped  : {summary['total_pii_entities']}")
         print(f"Total Processing Time    : {summary['total_elapsed_ms']} ms")
         print(f"Sanitized Directory      : {args.output_dir}")
+        print("=" * 65)
+
+    elif args.command == "tabular":
+        from promptshield.tabular import TabularSanitizer
+        sanitizer = TabularSanitizer(engine=engine)
+        summary = sanitizer.sanitize_csv(
+            input_file=args.input,
+            output_file=args.output,
+            session_file=args.session
+        )
+        print("=" * 65)
+        print(" PROMPT SHIELD: TABULAR CSV SANITIZATION SUMMARY")
+        print("=" * 65)
+        print(f"Rows Processed           : {summary['rows_processed']}")
+        print(f"Sanitized Columns        : {', '.join(summary['target_columns'])}")
+        print(f"Total Unique PII Mapped  : {summary['total_pii_entities']}")
+        print(f"Output File              : {summary['output_file']}")
         print("=" * 65)
 
 

@@ -68,7 +68,18 @@ Crucially, **Prompt Shield preserves clinical diagnoses, drug dosages, lab value
   - Processes entire directories of clinical text files (`.txt`, `.md`, `.json`) with unified session consistency.
   - Generates a machine-readable `batch_manifest.json` recording latency, file count, and mapping metadata.
   - New CLI subcommand: `promptshield batch --input-dir ... --output-dir ...`
-  - Comprehensive test suite expanded to **33 passing unit tests**.
+
+### Day 9 Tabular Clinical Dataset Sanitizer (18-10-2026)
+- **Structured CSV Medical Table Sanitizer** (`src/promptshield/tabular.py`):
+  - Processes tabular clinical datasets (Kaggle/HMS formats) preserving diagnostic columns while redacting patient PII and unstructured clinical note fields.
+  - Test suite in `tests/test_tabular.py`.
+
+### Day 10 Interim Progress Report & Tabular CLI (23-10-2026)
+- **Formal Interim Report** (`docs/interim_report.md`):
+  - Comprehensive report on problem formulation, bidirectional surrogate architecture, benchmark results, and Phase 1 roadmap.
+- **Tabular CLI Command** (`promptshield tabular`):
+  - Direct command-line interface for sanitizing medical CSV datasets.
+- **Test Suite**: 34 unit tests passing in 0.25s (`pytest -v`).
 
 ---
 
@@ -124,7 +135,7 @@ OVERALL              | 450   | 0     | 0     |   100.00% | 100.00% | 100.00%
    .venv\Scripts\Activate.ps1
    ```
 
-2. **Run All 33 Unit Tests**:
+2. **Run All 34 Unit Tests**:
    ```powershell
    pytest -v
    ```
@@ -149,12 +160,17 @@ OVERALL              | 450   | 0     | 0     |   100.00% | 100.00% | 100.00%
    python -m promptshield.cli batch --input-dir raw_records/ --output-dir sanitized_records/ --session batch_session.json
    ```
 
-7. **Generate Transparency Audit & HTML Panel**:
+7. **Sanitize a Clinical CSV Dataset**:
+   ```powershell
+   python -m promptshield.cli tabular --input clinical_dataset.csv --output sanitized_dataset.csv --session tabular_session.json
+   ```
+
+8. **Generate Transparency Audit & HTML Panel**:
    ```powershell
    python -m promptshield.cli audit --input sample.txt --session session.json --html audit.html
    ```
 
-8. **Redact & Restore Single Files**:
+9. **Redact & Restore Single Files**:
    ```powershell
    python -m promptshield.cli redact --input clinical_report.txt --session session.json --output redacted_report.txt
    python -m promptshield.cli restore --input llm_response.txt --session session.json --output final_restored.txt
