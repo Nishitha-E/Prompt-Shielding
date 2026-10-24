@@ -150,6 +150,19 @@ for i in range(1, 51):
         {"type": "PINCODE", "value": pincode},
     ]
 
+    # In 4 edge case samples, include an unanchored family name or guardian in statement text
+    if i in [12, 24, 36, 48]:
+        guardian_name = f"{random.choice(FIRST_NAMES)} {random.choice(LAST_NAMES)}"
+        scenario_text_extra = f"Guardian {guardian_name} visited campus for verification."
+        entities.append({"type": "STUDENT_NAME", "value": guardian_name})
+    else:
+        scenario_text_extra = ""
+
+    # In 2 edge case samples, include an exam centre pin code that creates an ambiguous detection
+    if i in [15, 30]:
+        exam_pincode = f"5000{random.randint(10, 99)}"
+        scenario_text_extra += f" Exam Centre PIN Code: {exam_pincode}."
+
     text = (
         f"--- {college.upper()} ---\n"
         f"STUDENT ENQUIRY & APPLICATION FORM: {scenario['type'].upper()}\n"
@@ -162,7 +175,8 @@ for i in range(1, 51):
         f"Bank A/c No: {ac_num} | IFSC: {ifsc_code} | Fee UPI: {upi_id}\n\n"
         f"STATEMENT OF PURPOSE & DETAILS:\n"
         f"{scenario['purpose']}\n"
-        f"{scenario['course_detail']}\n\n"
+        f"{scenario['course_detail']}\n"
+        f"{scenario_text_extra}\n\n"
         f"ACADEMIC QUALIFICATIONS:\n"
         f"{scenario['academic_record']}\n\n"
         f"Please verify my submission and provide confirmation."

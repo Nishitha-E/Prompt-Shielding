@@ -11,7 +11,7 @@ def test_40_turn_session_consistency():
     engine = PromptShieldEngine(seed=42)
     name = "Mr. Ramesh Verma"
     aadhaar_valid = generate_verhoeff_number("23635412891")
-    prompt_template = f"Patient {name} with Aadhaar {aadhaar_valid} turn "
+    prompt_template = f"Student {name} with Aadhaar {aadhaar_valid} turn "
 
     first_redacted = engine.redact(prompt_template + "1")
     first_surrogate_name = engine.mapping[name]
@@ -33,7 +33,7 @@ def test_40_turn_session_consistency():
 def test_transparency_audit_html_export(tmp_path):
     """Test generating audit summaries and HTML report."""
     engine = PromptShieldEngine(seed=42)
-    orig = "Patient Name: Mr. Suresh Rao | UHID: 981240"
+    orig = "Student Name: Mr. Suresh Rao | Roll No: 1005-26-701"
     redacted = engine.redact(orig)
 
     audit = TransparencyAudit(engine.mapping)

@@ -1,12 +1,9 @@
-"""Detectors and format-valid surrogate generators for Indian PII in the Education Sector."""
-
 import re
 import random
 import string
 from dataclasses import dataclass
 from typing import List, Tuple, Dict, Optional
 from promptshield.verhoeff import validate_verhoeff, generate_verhoeff_number
-
 
 @dataclass
 class PIIMatch:
@@ -15,14 +12,7 @@ class PIIMatch:
     start: int
     end: int
 
-
 class PIIDetector:
-    """Detects Indian statutory identifiers and student personal data in education prompts,
-
-    generating format-valid realistic synthetic surrogates.
-    """
-
-    # 1. Statutory National & Financial Identifiers
     AADHAAR_PATTERN = re.compile(r"\b[2-9]\d{3}[\s-]?[0-9]{4}[\s-]?[0-9]{4}\b")
     PAN_PATTERN = re.compile(r"\b[A-Z]{5}[0-9]{4}[A-Z]\b")
     UPI_PATTERN = re.compile(
@@ -35,20 +25,14 @@ class PIIDetector:
         r"\b[a-zA-Z0-9._%+-]+@(?!okhdfcbank|okaxis|oksbi|icici|ybl|paytm|upi|axl|ibl)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b",
         re.IGNORECASE,
     )
-
-    # 2. Bank Account Numbers (anchored to banking context)
     BANK_ACCOUNT_PATTERN = re.compile(
         r"(?:Bank\s*A/c(?:\s*No)?|Account\s*No|A/c\s*No|SB\s*A/c)[\s.:#-]+([0-9]{9,18})\b",
         re.IGNORECASE,
     )
-
-    # 3. Indian Postal PIN Codes (anchored to Address/PIN context)
     PINCODE_PATTERN = re.compile(
         r"(?:PIN(?:\s*Code)?|Postal\s*Code|Pincode)[\s.:#-]+([1-9][0-9]{5})\b",
         re.IGNORECASE,
     )
-
-    # 4. Education & Student Identifiers
     STUDENT_ID_PATTERN = re.compile(
         r"\b(?:Roll\s*No|Application\s*No|App\s*No|Hall\s*Ticket\s*No|HT\s*No|Enrollment\s*No|Reg(?:istration)?\s*No|Student\s*ID)[\s.:#-]+([A-Za-z0-9/-]{5,20})\b",
         re.IGNORECASE,
@@ -65,7 +49,6 @@ class PIIDetector:
         re.IGNORECASE,
     )
 
-    # Synthetic Indian Names (modeled after Indic Synthetic Profiles)
     FIRST_NAMES = [
         "Aarav", "Rohan", "Aditya", "Vikram", "Suresh", "Kavita", "Ananya", "Pooja",
         "Sunita", "Deepak", "Rajesh", "Priya", "Neha", "Manoj", "Sanjay", "Meera",
@@ -80,71 +63,49 @@ class PIIDetector:
         self._rng = random.Random(seed)
 
     def detect_all(self, text: str) -> List[PIIMatch]:
-        """Detect all non-overlapping PII occurrences in education prompts."""
         matches: List[PIIMatch] = []
 
-        # 1. Aadhaar
         for m in self.AADHAAR_PATTERN.finditer(text):
             val = m.group(0)
             digits_only = "".join(d for d in val if d.isdigit())
             if len(digits_only) == 12 and validate_verhoeff(digits_only):
                 matches.append(PIIMatch("AADHAAR", val, m.start(), m.end()))
 
-        # 2. PAN
         for m in self.PAN_PATTERN.finditer(text):
-            val = m.group(0)
-            matches.append(PIIMatch("PAN", val, m.start(), m.end()))
+            matches.append(PIIMatch("PAN", m.group(0), m.start(), m.end()))
 
-        # 3. UPI VPA
         for m in self.UPI_PATTERN.finditer(text):
-            val = m.group(0)
-            matches.append(PIIMatch("UPI", val, m.start(), m.end()))
+            matches.append(PIIMatch("UPI", m.group(0), m.start(), m.end()))
 
-        # 4. Mobile
         for m in self.MOBILE_PATTERN.finditer(text):
-            val = m.group(0)
-            matches.append(PIIMatch("MOBILE", val, m.start(), m.end()))
+            matches.append(PIIMatch("MOBILE", m.group(0), m.start(), m.end()))
 
-        # 5. IFSC
         for m in self.IFSC_PATTERN.finditer(text):
-            val = m.group(0)
-            matches.append(PIIMatch("IFSC", val, m.start(), m.end()))
+            matches.append(PIIMatch("IFSC", m.group(0), m.start(), m.end()))
 
-        # 6. Email
         for m in self.EMAIL_PATTERN.finditer(text):
-            val = m.group(0)
-            matches.append(PIIMatch("EMAIL", val, m.start(), m.end()))
+            matches.append(PIIMatch("EMAIL", m.group(0), m.start(), m.end()))
 
-        # 7. Bank Account Number
         for m in self.BANK_ACCOUNT_PATTERN.finditer(text):
-            val = m.group(1).strip()
-            matches.append(PIIMatch("BANK_ACCOUNT", val, m.start(1), m.end(1)))
+            matches.append(PIIMatch("BANK_ACCOUNT", m.group(1).strip(), m.start(1), m.end(1)))
 
-        # 8. Postal PIN Code
         for m in self.PINCODE_PATTERN.finditer(text):
-            val = m.group(1).strip()
-            matches.append(PIIMatch("PINCODE", val, m.start(1), m.end(1)))
+            matches.append(PIIMatch("PINCODE", m.group(1).strip(), m.start(1), m.end(1)))
 
-        # 9. Student / Applicant ID
         for m in self.STUDENT_ID_PATTERN.finditer(text):
-            val = m.group(1).strip()
-            matches.append(PIIMatch("STUDENT_ID", val, m.start(1), m.end(1)))
+            matches.append(PIIMatch("STUDENT_ID", m.group(1).strip(), m.start(1), m.end(1)))
 
-        # 10. Student Names (Headers & Salutations)
         for m in self.STUDENT_HEADER_PATTERN.finditer(text):
             val = m.group(1).strip()
             if val and len(val) > 2:
                 matches.append(PIIMatch("STUDENT_NAME", val, m.start(1), m.end(1)))
+
         for m in self.SALUTATION_NAME_PATTERN.finditer(text):
-            val = m.group(0).strip()
-            matches.append(PIIMatch("STUDENT_NAME", val, m.start(), m.end()))
+            matches.append(PIIMatch("STUDENT_NAME", m.group(0).strip(), m.start(), m.end()))
 
-        # 11. Date of Birth
         for m in self.DOB_PATTERN.finditer(text):
-            val = m.group(1).strip()
-            matches.append(PIIMatch("DOB", val, m.start(1), m.end(1)))
+            matches.append(PIIMatch("DOB", m.group(1).strip(), m.start(1), m.end(1)))
 
-        # Remove overlapping matches (prefer longer/earlier matches)
         matches.sort(key=lambda m: (m.start, -(m.end - m.start)))
         filtered: List[PIIMatch] = []
         last_end = -1
@@ -156,7 +117,6 @@ class PIIDetector:
         return filtered
 
     def generate_surrogate(self, pii_type: str, original: str) -> str:
-        """Generate a realistic, format-valid surrogate for the given identifier."""
         if pii_type == "AADHAAR":
             prefix = str(self._rng.randint(2, 9))
             middle = "".join(str(self._rng.randint(0, 9)) for _ in range(10))
@@ -169,11 +129,10 @@ class PIIDetector:
 
         elif pii_type == "PAN":
             letters1 = "".join(self._rng.choices(string.ascii_uppercase, k=3))
-            entity_type = "P"  # Individual Person
             letter5 = self._rng.choice(string.ascii_uppercase)
             digits = "".join(str(self._rng.randint(0, 9)) for _ in range(4))
             last_letter = self._rng.choice(string.ascii_uppercase)
-            return f"{letters1}{entity_type}{letter5}{digits}{last_letter}"
+            return f"{letters1}P{letter5}{digits}{last_letter}"
 
         elif pii_type == "UPI":
             handle = original.split("@")[-1] if "@" in original else "sbi"
@@ -201,7 +160,6 @@ class PIIDetector:
             return "".join(str(self._rng.randint(0, 9)) for _ in range(length))
 
         elif pii_type == "PINCODE":
-            # Realistic Indian 6-digit postal code
             first = self._rng.randint(1, 8)
             rest = "".join(str(self._rng.randint(0, 9)) for _ in range(5))
             return f"{first}{rest}"

@@ -1,21 +1,16 @@
-"""Evaluation script for calculating Precision, Recall, and F1 score against hand-labeled medical evaluation dataset."""
-
 import json
 from pathlib import Path
 from typing import Dict, List, Any
 from promptshield.detectors import PIIDetector
 
-
 def evaluate_dataset(dataset_path: str) -> Dict[str, Any]:
-    """Run evaluation on labeled dataset and compute Precision, Recall, and F1."""
     with open(dataset_path, "r", encoding="utf-8") as f:
         samples = json.load(f)
 
     detector = PIIDetector(seed=42)
-
     stats: Dict[str, Dict[str, int]] = {}
 
-    def get_stat_bucket(pii_type: str) -> Dict[str, int]:
+    def get_bucket(pii_type: str) -> Dict[str, int]:
         if pii_type not in stats:
             stats[pii_type] = {"tp": 0, "fp": 0, "fn": 0}
         return stats[pii_type]
@@ -25,38 +20,32 @@ def evaluate_dataset(dataset_path: str) -> Dict[str, Any]:
         ground_truth = sample.get("entities", [])
         detected_matches = detector.detect_all(text)
 
-        # Normalize ground truth: list of (type, value)
         gt_items = [(e["type"], e["value"].strip()) for e in ground_truth]
         pred_items = [(m.pii_type, m.original.strip()) for m in detected_matches]
 
         matched_gt = set()
         matched_pred = set()
 
-        # Find True Positives
         for p_idx, (p_type, p_val) in enumerate(pred_items):
             for g_idx, (g_type, g_val) in enumerate(gt_items):
                 if g_idx not in matched_gt and p_idx not in matched_pred:
-                    # Match if types match and values match (or substring match for names with titles)
                     if p_type == g_type and (p_val == g_val or g_val in p_val or p_val in g_val):
-                        bucket = get_stat_bucket(g_type)
+                        bucket = get_bucket(g_type)
                         bucket["tp"] += 1
                         matched_gt.add(g_idx)
                         matched_pred.add(p_idx)
                         break
 
-        # False Positives (predictions with no matching ground truth)
         for p_idx, (p_type, p_val) in enumerate(pred_items):
             if p_idx not in matched_pred:
-                bucket = get_stat_bucket(p_type)
+                bucket = get_bucket(p_type)
                 bucket["fp"] += 1
 
-        # False Negatives (ground truth items missed)
         for g_idx, (g_type, g_val) in enumerate(gt_items):
             if g_idx not in matched_gt:
-                bucket = get_stat_bucket(g_type)
+                bucket = get_bucket(g_type)
                 bucket["fn"] += 1
 
-    # Compute metrics
     results: Dict[str, Any] = {"per_type": {}, "overall": {}}
     total_tp = sum(b["tp"] for b in stats.values())
     total_fp = sum(b["fp"] for b in stats.values())
@@ -91,9 +80,7 @@ def evaluate_dataset(dataset_path: str) -> Dict[str, Any]:
 
     return results
 
-
 def print_evaluation_report(results: Dict[str, Any]):
-    """Print formatted evaluation report table."""
     print("=" * 75)
     print(" PROMPT SHIELD EVALUATION BENCHMARK: EDUCATION SECTOR PII")
     print("=" * 75)
@@ -111,7 +98,6 @@ def print_evaluation_report(results: Dict[str, Any]):
         f"{ov['precision']:>8.2f}% | {ov['recall']:>6.2f}% | {ov['f1']:>6.2f}%"
     )
     print("=" * 75)
-
 
 if __name__ == "__main__":
     import sys

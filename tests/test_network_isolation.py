@@ -30,14 +30,13 @@ def test_zero_network_exfiltration_guarantee(monkeypatch):
     # Test engine with dense clinical document containing multiple sensitive PII fields
     engine = PromptShieldEngine(seed=42)
     sample_text = (
-        "--- CLINICAL RECORD ---\n"
-        "Patient Name: Mr. Suresh Rao\n"
-        "UHID: 894021 | MRN: MRN-49102\n"
-        "Aadhaar: 2363 5412 8915 | ABHA: 14-8291-0391-4921\n"
+        "--- UNIVERSITY ADMISSION ENQUIRY ---\n"
+        "Student Name: Mr. Suresh Rao\n"
+        "Roll No: 1005-26-701 | Application No: OU26-49102\n"
+        "Aadhaar: 2363 5412 8915 | PAN: ABCPK1234Z\n"
         "Contact: 9876543210 | Email: suresh.rao@domain.com\n"
-        "Consultant: Dr. Arvind Swaminathan\n"
-        "Diagnosis: Essential Hypertension, Dyslipidemia.\n"
-        "Rx: Tab Telmisartan 40mg OD, Tab Atorvastatin 20mg OD."
+        "Course: M.E. Cyber Security, Osmania University.\n"
+        "GATE Score: 680, CGPA: 8.85 / 10.0."
     )
 
     # Redact must run without attempting any network I/O

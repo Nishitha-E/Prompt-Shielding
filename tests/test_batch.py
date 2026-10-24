@@ -12,17 +12,17 @@ def test_batch_directory_processing(tmp_path):
     session_file = tmp_path / "batch_session.json"
     input_dir.mkdir()
 
-    # Create 3 sample clinical reports
+    # Create 3 sample student enquiries
     (input_dir / "report1.txt").write_text(
-        "Patient Name: Mr. Ramesh Verma\nUHID: 849201\nDiagnosis: Hypertension.",
+        "Student Name: Mr. Ramesh Verma\nRoll No: 1005-26-701\nCourse: M.E. Cyber Security.",
         encoding="utf-8"
     )
     (input_dir / "report2.txt").write_text(
-        "Patient Name: Mrs. Sunita Sharma\nUHID: 104928\nDiagnosis: Type 2 Diabetes.",
+        "Student Name: Mrs. Sunita Sharma\nRoll No: 1005-26-702\nCourse: B.Tech CSE.",
         encoding="utf-8"
     )
     (input_dir / "report3.txt").write_text(
-        "Follow-up for Mr. Ramesh Verma with UHID: 849201.",
+        "Follow-up for Mr. Ramesh Verma with Roll No: 1005-26-701.",
         encoding="utf-8"
     )
 
