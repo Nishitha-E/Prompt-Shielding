@@ -95,7 +95,7 @@ def evaluate_dataset(dataset_path: str) -> Dict[str, Any]:
 def print_evaluation_report(results: Dict[str, Any]):
     """Print formatted evaluation report table."""
     print("=" * 75)
-    print(" PROMPT SHIELD EVALUATION BENCHMARK: HEALTHCARE CLINICAL PII")
+    print(" PROMPT SHIELD EVALUATION BENCHMARK: EDUCATION SECTOR PII")
     print("=" * 75)
     print(f"{'Identifier Type':<20} | {'TP':<5} | {'FP':<5} | {'FN':<5} | {'Precision':<10} | {'Recall':<8} | {'F1':<8}")
     print("-" * 75)
@@ -115,6 +115,6 @@ def print_evaluation_report(results: Dict[str, Any]):
 
 if __name__ == "__main__":
     import sys
-    dataset_file = sys.argv[1] if len(sys.argv) > 1 else "data/medical_eval_samples.json"
+    dataset_file = sys.argv[1] if len(sys.argv) > 1 else "data/education_eval_samples.json"
     res = evaluate_dataset(dataset_file)
     print_evaluation_report(res)

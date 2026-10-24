@@ -1,45 +1,48 @@
 # Prompt Shield: Failure Modes & Boundary Analysis Report
+**Domain**: Education Sector (Admissions, Scholarships, Student Enquiries)  
+**Dataset Reference**: [Indic Synthetic Profiles (Hugging Face: adwaith06/indic-synthetic-profiles)](https://huggingface.co/datasets/adwaith06/indic-synthetic-profiles)  
+**Program**: Pragya Cyber × Osmania University CCoE · AI Security Internship 2026–27  
 
-As part of the **P1 Qualification Sprint** criteria, this report provides an honest account of current failure modes, edge cases, and limitations of the rule-based / regex detection approach on Indian Healthcare & Clinical datasets.
+As part of the **P1 Qualification Sprint** criteria, this report provides an honest account of current failure modes, edge cases, and limitations of the rule-based / regex detection approach on Indian Education datasets.
 
 ---
 
-## Failure Case 1: Indian Names in Free Narrative Clinical Text
+## Failure Case 1: Indian Names in Free Narrative Statement of Purpose (SOP) Essays
 * **Example Scenario**:
-  > *"Prognosis explained to patient's brother Ramesh and daughter Sunita in ICU waiting area."*
+  > *"I completed my final year project under guidance of my senior batchmates Rahul and Ananya at Osmania University."*
 * **Observed Behavior**:
-  The detector missed both `Ramesh` and `Sunita`.
+  The detector missed both `Rahul` and `Ananya`.
 * **Root Cause & Why It Fails**:
-  In clinical notes, names frequently appear inside unstructured doctor's narrative progress notes without formal headers (e.g., without `Patient Name:`) or salutations (`Mr./Mrs./Dr.`). 
-  Because regex rules rely on structural anchors or honorifics, detecting bare proper nouns requires semantic Named Entity Recognition (NER) models (such as Clinical Indic-BERT or fine-tuned Transformer token classifiers). Pure regex dictionaries for Indian names cause unacceptable false positives when words share spelling with non-PII terms or medical jargon.
+  In admission essays and student correspondence, personal names often appear inside free-form narrative paragraphs without structured headers (such as `Student Name:`) or formal honorifics (`Mr./Ms.`).
+  Because regex rules rely on contextual anchors or salutations, detecting bare proper nouns requires semantic Named Entity Recognition (NER) models (such as Indic-BERT or fine-tuned Transformer token classifiers). Pure dictionary matching for Indian names produces unacceptable false positives when words share spelling with common nouns or technical terms.
 * **Path to Resolution (Phase 1 & 2)**:
   Integrate a quantized on-device token classifier (via ONNX Runtime Web / Transformers.js) running locally in the browser/CLI to identify PERSON entities in free-form narrative contexts without network transmission.
 
 ---
 
-## Failure Case 2: Numerical Ambiguity Between Short Hospital IDs and Clinical Lab Values
+## Failure Case 2: Numerical Ambiguity Between PIN Codes, Fee Amounts, and Roll Numbers
 * **Example Scenario**:
-  > *"Patient admitted under 40291. Vital signs: Pulse 78 bpm, Platelets 150000/mcL, Glucose 140 mg/dL."*
+  > *"Paid admission challan 500007 for registration 100526. Rank 50002."*
 * **Observed Behavior**:
-  If the `UHID:` or `MRN:` prefix is missing from `40291`, the detector fails to flag it to avoid false-positive flagging of clinical lab counts. Conversely, aggressive 5-digit number matching risks redacting physiological readings.
+  If context prefixes like `PIN Code:`, `Roll No:`, or `Fee:` are omitted, arbitrary 6-digit numbers (`500007`) are ambiguous—they could be a postal PIN code (Hyderabad GPO: 500007), a student registration number, or an exam rank. Overly aggressive 6-digit pattern matching risks redacting academic ranks or fee figures.
 * **Root Cause & Why It Fails**:
-  Unlike Aadhaar numbers (which have 12 digits and a strict Verhoeff mathematical checksum), local hospital patient record numbers (MRN/UHID) have arbitrary length (4 to 8 digits) and no standardized checksum algorithm across different hospital management software (HMS).
+  Unlike 12-digit Aadhaar numbers (which have a strict mathematical Verhoeff checksum), postal PIN codes, ranks, and roll numbers often share 6-digit lengths with no universal internal checksum.
 * **Path to Resolution (Phase 1 & 2)**:
-  Implement slot-filling heuristic parsing: extract key-value pairs from clinical header blocks and build hospital-specific HMS template adapters.
+  Implement slot-filling heuristic parsing: extract key-value pairs from structured student application blocks and build university-specific HMS/ERP template adapters.
 
 ---
 
-## Failure Case 3: Broken Token Boundaries from OCR / Markdown Formatting
+## Failure Case 3: Broken Token Boundaries from OCR / PDF Formatting in Scanned Marksheets
 * **Example Scenario**:
-  > Scanned discharge summary exported via OCR:
+  > Scanned bonafide or marksheet exported via OCR:
   > ```text
-  > ABHA ID: 14-8291-
-  > 0391-4921 | Aadhaar: 2363 5412
+  > Roll No: 1005-26-
+  > 749 | Aadhaar: 2363 5412
   > 8915
   > ```
 * **Observed Behavior**:
-  The line break separates the 14-digit ABHA and 12-digit Aadhaar into two disconnected segments. The Verhoeff checksum validator fails because the captured token is incomplete (`2363 5412` is only 8 digits).
+  The line break separates the 12-digit Aadhaar into two disconnected segments (`2363 5412` and `8915`). The Verhoeff checksum validator fails because the captured token is incomplete.
 * **Root Cause & Why It Fails**:
-  Regex pattern matching operates sequentially line-by-line or token-by-token. Hard line breaks introduced by fixed-width formatting or OCR scanning break regex boundaries.
+  Regex pattern matching operates sequentially line-by-line or token-by-token. Hard line breaks introduced by fixed-width columns or OCR scanning break regex boundaries.
 * **Path to Resolution (Phase 1 & 2)**:
-  Add an upstream text normalization pre-processing pipeline that strips soft line breaks within digit sequences before feeding text into `PIIDetector`.
+  Our upstream normalizer (`src/promptshield/normalizer.py`) recombines split digit sequences before regex detection.

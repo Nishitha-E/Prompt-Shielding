@@ -108,21 +108,25 @@ def main():
             Path(args.input).read_text(encoding="utf-8")
             if args.input
             else (
-                "--- APOLLO HOSPITALS ---\n"
-                "Patient Name: Mr. Ramesh Verma\n"
-                "UHID: 849201 | DOB: 14/06/1984 | Contact: 9876543210\n"
-                "ABHA ID: 14-9281-4029-8812 | Aadhaar: 2363 5412 8915\n"
-                "Consultant: Dr. Arvind Swaminathan\n\n"
-                "CLINICAL DIAGNOSIS:\n"
-                "Acute Coronary Syndrome, Type 2 Diabetes Mellitus.\n"
-                "Prescription: Tab Metformin 500mg BD, Tab Atorvastatin 40mg OD."
+                "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\n"
+                "STUDENT SCHOLARSHIP & ADMISSION ENQUIRY\n"
+                "Student Name: Mr. Rajesh Sharma\n"
+                "Roll No: 1005-26-701 | Application No: OU26-49102\n"
+                "Course: M.E. Cyber Security (Semester 1)\n"
+                "DOB: 14/06/2002 | Aadhaar: 2363 5412 8915 | PAN: ABCPK1234Z\n"
+                "Contact: 9876543210 | Email: rajesh.sharma@gmail.com\n"
+                "Bank A/c No: 38491029481 | IFSC: SBIN0001234 | Fee UPI: rajesh@oksbi\n"
+                "Address PIN Code: 500007\n\n"
+                "QUERY:\n"
+                "Applying for Post-Matric Scholarship fee waiver of Rs. 35,000 for M.E. Cyber Security.\n"
+                "GATE 2026 Score: 680, B.Tech CGPA: 8.85 / 10.0. Please confirm eligibility."
             )
         )
 
         print("\n" + "=" * 65)
-        print("[+] PROMPT SHIELD: LIVE CLINICAL DEMONSTRATION")
+        print("[+] PROMPT SHIELD: LIVE EDUCATION SECTOR DEMONSTRATION")
         print("=" * 65)
-        print("\n[STEP 1] ORIGINAL PATIENT CLINICAL DATA (LOCAL ONLY):")
+        print("\n[STEP 1] ORIGINAL STUDENT SENSITIVE DATA (LOCAL ONLY):")
         print("-" * 65)
         print(sample_text)
 
@@ -131,11 +135,12 @@ def main():
         print("-" * 65)
         print(redacted)
 
-        print("\n[STEP 3] SIMULATING LLM MEDICAL REASONING RESPONSE...")
+        print("\n[STEP 3] SIMULATING LLM ASSISTANT RESPONSE...")
+        student_surrogate = engine.mapping.get('Rajesh Sharma', engine.mapping.get('Mr. Rajesh Sharma', 'the student'))
         simulated_llm_response = (
-            f"Based on the clinical report for {engine.mapping.get('Mr. Ramesh Verma', 'the patient')}:\n"
-            f"The management plan for Acute Coronary Syndrome and Type 2 Diabetes is appropriate.\n"
-            f"Continue Tab Metformin 500mg and Tab Atorvastatin 40mg. Monitor fasting blood glucose."
+            f"Based on the application for {student_surrogate}:\n"
+            f"Your eligibility for the Post-Matric Scholarship in M.E. Cyber Security at Osmania University is verified.\n"
+            f"With a GATE score of 680 and CGPA 8.85, you satisfy the merit criteria. Proceed with online document submission."
         )
         print("-" * 65)
         print(simulated_llm_response)
@@ -145,7 +150,7 @@ def main():
         restored = engine.restore(simulated_llm_response)
         print(restored)
         print("=" * 65)
-        print("[OK] Round-trip complete: Sensitive identifiers preserved locally. Medical advice accurate!\n")
+        print("[OK] Round-trip complete: Sensitive identifiers protected. Academic context preserved!\n")
 
     elif args.command == "benchmark":
         from promptshield.benchmarks import run_latency_benchmark, print_benchmark_report

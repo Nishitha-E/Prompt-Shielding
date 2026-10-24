@@ -40,10 +40,10 @@ def test_end_to_end_redaction_with_ocr_broken_text():
     valid_base = "23635412891"
     full_aadhaar = generate_verhoeff_number(valid_base)
     broken_report = (
-        "Patient Name: Mr. Ramesh Verma\n"
+        "Student Name: Mr. Ramesh Verma\n"
         f"Aadhaar: {full_aadhaar[:4]} {full_aadhaar[4:8]}\n{full_aadhaar[8:]}\n"
-        "ABHA ID: 14-8291-\n0391-4921\n"
-        "Diagnosis: Acute Pancreatitis."
+        "Roll No: 1005-26-\n749\n"
+        "Course: M.E. Cyber Security."
     )
     engine = PromptShieldEngine(seed=42)
     redacted = engine.redact(broken_report)
@@ -51,5 +51,5 @@ def test_end_to_end_redaction_with_ocr_broken_text():
     # Identifiers should be detected and redacted despite original OCR line breaks
     assert "Ramesh Verma" not in redacted
     assert full_aadhaar[:4] not in redacted
-    assert "14-8291-0391-4921" not in redacted
-    assert "Acute Pancreatitis" in redacted
+    assert "1005-26-749" not in redacted
+    assert "M.E. Cyber Security" in redacted

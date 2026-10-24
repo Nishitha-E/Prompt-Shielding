@@ -13,7 +13,7 @@ from promptshield.redactor import PromptShieldEngine
 from promptshield.verhoeff import validate_verhoeff, generate_verhoeff_number
 
 
-def run_latency_benchmark(dataset_path: str = "data/medical_eval_samples.json", iterations: int = 5) -> Dict[str, Any]:
+def run_latency_benchmark(dataset_path: str = "data/education_eval_samples.json", iterations: int = 5) -> Dict[str, Any]:
     """Benchmark end-to-end redaction latency across clinical documents."""
     with open(dataset_path, "r", encoding="utf-8") as f:
         samples = json.load(f)

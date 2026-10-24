@@ -1,0 +1,2852 @@
+[
+  {
+    "id": 1,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "PG Admission Application",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: PG ADMISSION APPLICATION\nStudent Name: Mr. Priya Bose\nRoll No: 1005-26-729 | Application No: OU26-88778\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 20/09/2003 | Aadhaar: 9203 0509 0278 | PAN: ABCPK5706Z\nContact: 9906407983 | Email: priya.bose85@gmail.com\nAddress PIN Code: 500050\nBank A/c No: 21931252818 | IFSC: SBIN0009032 | Fee UPI: priya96@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for admission into Postgraduate Degree program.\nQualified GATE 2026 with score 680. Seeking admission under merit quota.\n\nACADEMIC QUALIFICATIONS:\nB.Tech CGPA: 8.85 / 10.0 from Osmania University.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Priya Bose"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-729"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-88778"
+      },
+      {
+        "type": "DOB",
+        "value": "20/09/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9203 0509 0278"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK5706Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9906407983"
+      },
+      {
+        "type": "EMAIL",
+        "value": "priya.bose85@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "21931252818"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0009032"
+      },
+      {
+        "type": "UPI",
+        "value": "priya96@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500050"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Post-Matric Scholarship & Fee Reimbursement",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: POST-MATRIC SCHOLARSHIP & FEE REIMBURSEMENT\nStudent Name: Ms. Rohan Mishra\nRoll No: 1005-26-745 | Application No: OU26-56745\nCourse: B.Tech Computer Science and Engineering\nDOB: 26/07/2004 | Aadhaar: 3654 9621 1848 | PAN: ABCPK6062Z\nContact: 6876435574 | Email: rohan.mishra53@gmail.com\nAddress PIN Code: 500021\nBank A/c No: 68828815762 | IFSC: SBIN0008554 | Fee UPI: rohan64@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nState Government ePASS Post-Matric Scholarship renewal.\nEnrolled in M.E. Cyber Security, Year 1. Annual family income below 2 Lakhs.\n\nACADEMIC QUALIFICATIONS:\nPrevious year semester attendance: 88%. Cleared all subjects in single attempt.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Rohan Mishra"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-745"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-56745"
+      },
+      {
+        "type": "DOB",
+        "value": "26/07/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3654 9621 1848"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK6062Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6876435574"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rohan.mishra53@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "68828815762"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008554"
+      },
+      {
+        "type": "UPI",
+        "value": "rohan64@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500021"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Campus Hostel Accommodation Request",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS HOSTEL ACCOMMODATION REQUEST\nStudent Name: Mr. Arun Iyer\nRoll No: 1005-26-755 | Application No: OU26-76369\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 26/10/2003 | Aadhaar: 8951 3756 6874 | PAN: ABCPK3113Z\nContact: 9663341564 | Email: arun.iyer43@gmail.com\nAddress PIN Code: 500028\nBank A/c No: 35764604686 | IFSC: SBIN0008035 | Fee UPI: arun70@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nHostel room allotment in Osmania University Campus Hostels.\nPermanent resident of Warangal district. Daily commuting not feasible.\n\nACADEMIC QUALIFICATIONS:\nHostel caution deposit paid. Category: Non-Local Merit.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Arun Iyer"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-755"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-76369"
+      },
+      {
+        "type": "DOB",
+        "value": "26/10/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8951 3756 6874"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK3113Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9663341564"
+      },
+      {
+        "type": "EMAIL",
+        "value": "arun.iyer43@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "35764604686"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008035"
+      },
+      {
+        "type": "UPI",
+        "value": "arun70@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500028"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Semester Examination Hall Ticket Verification",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: SEMESTER EXAMINATION HALL TICKET VERIFICATION\nStudent Name: Mr. Meera Kulkarni\nRoll No: 1005-26-781 | Application No: OU26-69873\nCourse: B.Tech Information Technology\nDOB: 22/08/2004 | Aadhaar: 6829 4244 1315 | PAN: ABCPK4318Z\nContact: 8701076435 | Email: meera.kulkarni61@gmail.com\nAddress PIN Code: 500029\nBank A/c No: 57932472558 | IFSC: SBIN0001151 | Fee UPI: meera14@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for issuance of duplicate hall ticket for Semester End Exams.\nExamination: M.E. Cyber Security regular examinations November 2026.\n\nACADEMIC QUALIFICATIONS:\nExamination fee paid challan submitted to college exam branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Meera Kulkarni"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-781"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-69873"
+      },
+      {
+        "type": "DOB",
+        "value": "22/08/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6829 4244 1315"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK4318Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8701076435"
+      },
+      {
+        "type": "EMAIL",
+        "value": "meera.kulkarni61@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "57932472558"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0001151"
+      },
+      {
+        "type": "UPI",
+        "value": "meera14@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500029"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Campus Placement & Internship Registration",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS PLACEMENT & INTERNSHIP REGISTRATION\nStudent Name: Ms. Ganesh Singhania\nRoll No: 1005-26-747 | Application No: OU26-36193\nCourse: M.Sc Computer Science\nDOB: 09/12/2003 | Aadhaar: 8489 6678 7813 | PAN: ABCPK8498Z\nContact: 9648968520 | Email: ganesh.singhania73@gmail.com\nAddress PIN Code: 500033\nBank A/c No: 92852178432 | IFSC: SBIN0005240 | Fee UPI: ganesh67@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRegistration for On-Campus Placement Drive 2026-27.\nPreferred roles: AI Security Engineer, Vulnerability Analyst, SOC Analyst.\n\nACADEMIC QUALIFICATIONS:\nAggregate CGPA: 8.65, zero active backlogs, Python and C++ certified.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Ganesh Singhania"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-747"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-36193"
+      },
+      {
+        "type": "DOB",
+        "value": "09/12/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8489 6678 7813"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK8498Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9648968520"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ganesh.singhania73@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "92852178432"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0005240"
+      },
+      {
+        "type": "UPI",
+        "value": "ganesh67@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500033"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "Education Loan Bank Account Verification",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: EDUCATION LOAN BANK ACCOUNT VERIFICATION\nStudent Name: Mr. Pooja Iyer\nRoll No: 1005-26-784 | Application No: OU26-44926\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 16/06/2000 | Aadhaar: 4106 0269 3417 | PAN: ABCPK9955Z\nContact: 7902677112 | Email: pooja.iyer62@gmail.com\nAddress PIN Code: 500015\nBank A/c No: 50918574924 | IFSC: SBIN0002979 | Fee UPI: pooja89@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nBank verification certificate for SBI Scholar Education Loan disbursement.\nTuition fee per annum: Rs. 85,000. Sanctioned loan amount: Rs. 2,00,000.\n\nACADEMIC QUALIFICATIONS:\nBonafide student certificate and fee structure estimation attached.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Pooja Iyer"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-784"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-44926"
+      },
+      {
+        "type": "DOB",
+        "value": "16/06/2000"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4106 0269 3417"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK9955Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7902677112"
+      },
+      {
+        "type": "EMAIL",
+        "value": "pooja.iyer62@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "50918574924"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0002979"
+      },
+      {
+        "type": "UPI",
+        "value": "pooja89@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500015"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Official Transcript & Degree Bonafide",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: OFFICIAL TRANSCRIPT & DEGREE BONAFIDE\nStudent Name: Ms. Swati Joshi\nRoll No: 1005-26-720 | Application No: OU26-10672\nCourse: B.Tech Computer Science and Engineering\nDOB: 11/11/2004 | Aadhaar: 5224 8461 7479 | PAN: ABCPK3217Z\nContact: 9840620525 | Email: swati.joshi27@gmail.com\nAddress PIN Code: 500076\nBank A/c No: 78015137866 | IFSC: SBIN0007396 | Fee UPI: swati29@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for official transcripts for higher education.\nCompleted M.E. coursework. Requesting 3 sets of sealed transcripts.\n\nACADEMIC QUALIFICATIONS:\nDegree awarded with First Class with Distinction.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Swati Joshi"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-720"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-10672"
+      },
+      {
+        "type": "DOB",
+        "value": "11/11/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5224 8461 7479"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK3217Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9840620525"
+      },
+      {
+        "type": "EMAIL",
+        "value": "swati.joshi27@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "78015137866"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0007396"
+      },
+      {
+        "type": "UPI",
+        "value": "swati29@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500076"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Tuition Fee Payment via UPI Verification",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: TUITION FEE PAYMENT VIA UPI VERIFICATION\nStudent Name: Mr. Rohan Mishra\nRoll No: 1005-26-714 | Application No: OU26-61032\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 03/01/2002 | Aadhaar: 2748 7066 3868 | PAN: ABCPK8375Z\nContact: 8926280554 | Email: rohan.mishra13@gmail.com\nAddress PIN Code: 500083\nBank A/c No: 36810316932 | IFSC: SBIN0009152 | Fee UPI: rohan69@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nOnline college fee payment confirmation slip.\nSemester 2 Tuition Fee Rs. 35,000 paid via SBI UPI Collect portal.\n\nACADEMIC QUALIFICATIONS:\nUTR Transaction reference successfully verified by accounts branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Rohan Mishra"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-714"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-61032"
+      },
+      {
+        "type": "DOB",
+        "value": "03/01/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2748 7066 3868"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK8375Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8926280554"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rohan.mishra13@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "36810316932"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0009152"
+      },
+      {
+        "type": "UPI",
+        "value": "rohan69@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500083"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Library Clearance & Digital Access Card",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: LIBRARY CLEARANCE & DIGITAL ACCESS CARD\nStudent Name: Mr. Divya Rao\nRoll No: 1005-26-776 | Application No: OU26-78106\nCourse: B.Tech Information Technology\nDOB: 07/07/2004 | Aadhaar: 5988 8471 2071 | PAN: ABCPK4202Z\nContact: 8592651274 | Email: divya.rao86@gmail.com\nAddress PIN Code: 500034\nBank A/c No: 27898360267 | IFSC: SBIN0008402 | Fee UPI: divya92@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nClearance certificate from University Central Library.\nAll borrowed IEEE and AI security textbooks returned without dues.\n\nACADEMIC QUALIFICATIONS:\nEligible for final semester hall ticket issuance.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Divya Rao"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-776"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-78106"
+      },
+      {
+        "type": "DOB",
+        "value": "07/07/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5988 8471 2071"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK4202Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8592651274"
+      },
+      {
+        "type": "EMAIL",
+        "value": "divya.rao86@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "27898360267"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008402"
+      },
+      {
+        "type": "UPI",
+        "value": "divya92@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500034"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Re-evaluation & Grade Verification Request",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: RE-EVALUATION & GRADE VERIFICATION REQUEST\nStudent Name: Mr. Meera Sharma\nRoll No: 1005-26-783 | Application No: OU26-79459\nCourse: M.Sc Computer Science\nDOB: 07/09/2001 | Aadhaar: 8646 6664 0022 | PAN: ABCPK7278Z\nContact: 7809982702 | Email: meera.sharma33@gmail.com\nAddress PIN Code: 500069\nBank A/c No: 68048652917 | IFSC: SBIN0003862 | Fee UPI: meera43@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for paper recounting and answer script photocopy.\nSubject: Advanced Cryptography and Network Security (Code: CS501).\n\nACADEMIC QUALIFICATIONS:\nCurrent grade: B+ (expected A grade based on answer key evaluation).\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Meera Sharma"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-783"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-79459"
+      },
+      {
+        "type": "DOB",
+        "value": "07/09/2001"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8646 6664 0022"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7278Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7809982702"
+      },
+      {
+        "type": "EMAIL",
+        "value": "meera.sharma33@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "68048652917"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0003862"
+      },
+      {
+        "type": "UPI",
+        "value": "meera43@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500069"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "PG Admission Application",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: PG ADMISSION APPLICATION\nStudent Name: Ms. Meera Deshmukh\nRoll No: 1005-26-760 | Application No: OU26-33194\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 11/09/2003 | Aadhaar: 6450 5347 6387 | PAN: ABCPK1080Z\nContact: 9228962426 | Email: meera.deshmukh77@gmail.com\nAddress PIN Code: 500079\nBank A/c No: 83903189602 | IFSC: SBIN0006413 | Fee UPI: meera62@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for admission into Postgraduate Degree program.\nQualified GATE 2026 with score 680. Seeking admission under merit quota.\n\nACADEMIC QUALIFICATIONS:\nB.Tech CGPA: 8.85 / 10.0 from Osmania University.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Meera Deshmukh"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-760"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-33194"
+      },
+      {
+        "type": "DOB",
+        "value": "11/09/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6450 5347 6387"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK1080Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9228962426"
+      },
+      {
+        "type": "EMAIL",
+        "value": "meera.deshmukh77@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "83903189602"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0006413"
+      },
+      {
+        "type": "UPI",
+        "value": "meera62@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500079"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Post-Matric Scholarship & Fee Reimbursement",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: POST-MATRIC SCHOLARSHIP & FEE REIMBURSEMENT\nStudent Name: Mr. Lakshmi Rao\nRoll No: 1005-26-746 | Application No: OU26-30546\nCourse: B.Tech Computer Science and Engineering\nDOB: 12/09/2004 | Aadhaar: 6338 6860 0325 | PAN: ABCPK2579Z\nContact: 7217782500 | Email: lakshmi.rao89@gmail.com\nAddress PIN Code: 500033\nBank A/c No: 33620522785 | IFSC: SBIN0001990 | Fee UPI: lakshmi55@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nState Government ePASS Post-Matric Scholarship renewal.\nEnrolled in M.E. Cyber Security, Year 1. Annual family income below 2 Lakhs.\n\nACADEMIC QUALIFICATIONS:\nPrevious year semester attendance: 88%. Cleared all subjects in single attempt.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Lakshmi Rao"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-746"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-30546"
+      },
+      {
+        "type": "DOB",
+        "value": "12/09/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6338 6860 0325"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK2579Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7217782500"
+      },
+      {
+        "type": "EMAIL",
+        "value": "lakshmi.rao89@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "33620522785"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0001990"
+      },
+      {
+        "type": "UPI",
+        "value": "lakshmi55@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500033"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Campus Hostel Accommodation Request",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS HOSTEL ACCOMMODATION REQUEST\nStudent Name: Ms. Ganesh Nair\nRoll No: 1005-26-736 | Application No: OU26-87084\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 27/02/2002 | Aadhaar: 6127 0063 6054 | PAN: ABCPK7791Z\nContact: 8273292139 | Email: ganesh.nair43@gmail.com\nAddress PIN Code: 500049\nBank A/c No: 33131053385 | IFSC: SBIN0004853 | Fee UPI: ganesh12@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nHostel room allotment in Osmania University Campus Hostels.\nPermanent resident of Warangal district. Daily commuting not feasible.\n\nACADEMIC QUALIFICATIONS:\nHostel caution deposit paid. Category: Non-Local Merit.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Ganesh Nair"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-736"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-87084"
+      },
+      {
+        "type": "DOB",
+        "value": "27/02/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6127 0063 6054"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7791Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8273292139"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ganesh.nair43@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "33131053385"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0004853"
+      },
+      {
+        "type": "UPI",
+        "value": "ganesh12@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500049"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Semester Examination Hall Ticket Verification",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: SEMESTER EXAMINATION HALL TICKET VERIFICATION\nStudent Name: Ms. Priya Nair\nRoll No: 1005-26-741 | Application No: OU26-69774\nCourse: B.Tech Information Technology\nDOB: 20/11/2004 | Aadhaar: 5784 6424 5945 | PAN: ABCPK7130Z\nContact: 6533996299 | Email: priya.nair50@gmail.com\nAddress PIN Code: 500065\nBank A/c No: 60325651129 | IFSC: SBIN0006837 | Fee UPI: priya17@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for issuance of duplicate hall ticket for Semester End Exams.\nExamination: M.E. Cyber Security regular examinations November 2026.\n\nACADEMIC QUALIFICATIONS:\nExamination fee paid challan submitted to college exam branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Priya Nair"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-741"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-69774"
+      },
+      {
+        "type": "DOB",
+        "value": "20/11/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5784 6424 5945"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7130Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6533996299"
+      },
+      {
+        "type": "EMAIL",
+        "value": "priya.nair50@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "60325651129"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0006837"
+      },
+      {
+        "type": "UPI",
+        "value": "priya17@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500065"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Campus Placement & Internship Registration",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS PLACEMENT & INTERNSHIP REGISTRATION\nStudent Name: Ms. Rajesh Mehta\nRoll No: 1005-26-738 | Application No: OU26-26032\nCourse: M.Sc Computer Science\nDOB: 10/07/2002 | Aadhaar: 5340 8887 5630 | PAN: ABCPK3010Z\nContact: 6682136465 | Email: rajesh.mehta53@gmail.com\nAddress PIN Code: 500086\nBank A/c No: 37340151904 | IFSC: SBIN0009562 | Fee UPI: rajesh55@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRegistration for On-Campus Placement Drive 2026-27.\nPreferred roles: AI Security Engineer, Vulnerability Analyst, SOC Analyst.\n\nACADEMIC QUALIFICATIONS:\nAggregate CGPA: 8.65, zero active backlogs, Python and C++ certified.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Rajesh Mehta"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-738"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-26032"
+      },
+      {
+        "type": "DOB",
+        "value": "10/07/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5340 8887 5630"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK3010Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6682136465"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rajesh.mehta53@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "37340151904"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0009562"
+      },
+      {
+        "type": "UPI",
+        "value": "rajesh55@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500086"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "Education Loan Bank Account Verification",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: EDUCATION LOAN BANK ACCOUNT VERIFICATION\nStudent Name: Mr. Ganesh Mehta\nRoll No: 1005-26-755 | Application No: OU26-85776\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 05/06/2003 | Aadhaar: 8384 5815 3985 | PAN: ABCPK9895Z\nContact: 9504996268 | Email: ganesh.mehta40@gmail.com\nAddress PIN Code: 500028\nBank A/c No: 97028801619 | IFSC: SBIN0007502 | Fee UPI: ganesh42@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nBank verification certificate for SBI Scholar Education Loan disbursement.\nTuition fee per annum: Rs. 85,000. Sanctioned loan amount: Rs. 2,00,000.\n\nACADEMIC QUALIFICATIONS:\nBonafide student certificate and fee structure estimation attached.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Ganesh Mehta"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-755"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-85776"
+      },
+      {
+        "type": "DOB",
+        "value": "05/06/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8384 5815 3985"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK9895Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9504996268"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ganesh.mehta40@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "97028801619"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0007502"
+      },
+      {
+        "type": "UPI",
+        "value": "ganesh42@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500028"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Official Transcript & Degree Bonafide",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: OFFICIAL TRANSCRIPT & DEGREE BONAFIDE\nStudent Name: Mr. Ananya Sharma\nRoll No: 1005-26-736 | Application No: OU26-80929\nCourse: B.Tech Computer Science and Engineering\nDOB: 16/07/2002 | Aadhaar: 3460 5853 9498 | PAN: ABCPK6582Z\nContact: 8248882296 | Email: ananya.sharma90@gmail.com\nAddress PIN Code: 500017\nBank A/c No: 23610573898 | IFSC: SBIN0004978 | Fee UPI: ananya70@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for official transcripts for higher education.\nCompleted M.E. coursework. Requesting 3 sets of sealed transcripts.\n\nACADEMIC QUALIFICATIONS:\nDegree awarded with First Class with Distinction.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Ananya Sharma"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-736"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-80929"
+      },
+      {
+        "type": "DOB",
+        "value": "16/07/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3460 5853 9498"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK6582Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8248882296"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ananya.sharma90@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "23610573898"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0004978"
+      },
+      {
+        "type": "UPI",
+        "value": "ananya70@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500017"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Tuition Fee Payment via UPI Verification",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: TUITION FEE PAYMENT VIA UPI VERIFICATION\nStudent Name: Ms. Ananya Verma\nRoll No: 1005-26-791 | Application No: OU26-57176\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 26/04/2004 | Aadhaar: 7683 7328 2474 | PAN: ABCPK6114Z\nContact: 8469032122 | Email: ananya.verma35@gmail.com\nAddress PIN Code: 500055\nBank A/c No: 38943117430 | IFSC: SBIN0008943 | Fee UPI: ananya10@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nOnline college fee payment confirmation slip.\nSemester 2 Tuition Fee Rs. 35,000 paid via SBI UPI Collect portal.\n\nACADEMIC QUALIFICATIONS:\nUTR Transaction reference successfully verified by accounts branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Ananya Verma"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-791"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-57176"
+      },
+      {
+        "type": "DOB",
+        "value": "26/04/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7683 7328 2474"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK6114Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8469032122"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ananya.verma35@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "38943117430"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008943"
+      },
+      {
+        "type": "UPI",
+        "value": "ananya10@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500055"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Library Clearance & Digital Access Card",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: LIBRARY CLEARANCE & DIGITAL ACCESS CARD\nStudent Name: Mr. Karthik Deshmukh\nRoll No: 1005-26-782 | Application No: OU26-32619\nCourse: B.Tech Information Technology\nDOB: 03/05/2002 | Aadhaar: 2329 1002 3451 | PAN: ABCPK7443Z\nContact: 8248134051 | Email: karthik.deshmukh22@gmail.com\nAddress PIN Code: 500023\nBank A/c No: 92890267232 | IFSC: SBIN0003589 | Fee UPI: karthik75@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nClearance certificate from University Central Library.\nAll borrowed IEEE and AI security textbooks returned without dues.\n\nACADEMIC QUALIFICATIONS:\nEligible for final semester hall ticket issuance.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Karthik Deshmukh"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-782"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-32619"
+      },
+      {
+        "type": "DOB",
+        "value": "03/05/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2329 1002 3451"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7443Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8248134051"
+      },
+      {
+        "type": "EMAIL",
+        "value": "karthik.deshmukh22@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "92890267232"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0003589"
+      },
+      {
+        "type": "UPI",
+        "value": "karthik75@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500023"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Re-evaluation & Grade Verification Request",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: RE-EVALUATION & GRADE VERIFICATION REQUEST\nStudent Name: Ms. Amit Verma\nRoll No: 1005-26-743 | Application No: OU26-81760\nCourse: M.Sc Computer Science\nDOB: 09/05/2000 | Aadhaar: 6761 9254 6491 | PAN: ABCPK7367Z\nContact: 7274172362 | Email: amit.verma47@gmail.com\nAddress PIN Code: 500055\nBank A/c No: 22705045627 | IFSC: SBIN0008864 | Fee UPI: amit64@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for paper recounting and answer script photocopy.\nSubject: Advanced Cryptography and Network Security (Code: CS501).\n\nACADEMIC QUALIFICATIONS:\nCurrent grade: B+ (expected A grade based on answer key evaluation).\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Amit Verma"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-743"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-81760"
+      },
+      {
+        "type": "DOB",
+        "value": "09/05/2000"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6761 9254 6491"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7367Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7274172362"
+      },
+      {
+        "type": "EMAIL",
+        "value": "amit.verma47@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "22705045627"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008864"
+      },
+      {
+        "type": "UPI",
+        "value": "amit64@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500055"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "PG Admission Application",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: PG ADMISSION APPLICATION\nStudent Name: Mr. Swati Rao\nRoll No: 1005-26-723 | Application No: OU26-51244\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 18/03/2001 | Aadhaar: 2891 0956 2609 | PAN: ABCPK5958Z\nContact: 6225302957 | Email: swati.rao75@gmail.com\nAddress PIN Code: 500023\nBank A/c No: 39465359089 | IFSC: SBIN0005065 | Fee UPI: swati26@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for admission into Postgraduate Degree program.\nQualified GATE 2026 with score 680. Seeking admission under merit quota.\n\nACADEMIC QUALIFICATIONS:\nB.Tech CGPA: 8.85 / 10.0 from Osmania University.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Swati Rao"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-723"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-51244"
+      },
+      {
+        "type": "DOB",
+        "value": "18/03/2001"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2891 0956 2609"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK5958Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6225302957"
+      },
+      {
+        "type": "EMAIL",
+        "value": "swati.rao75@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "39465359089"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0005065"
+      },
+      {
+        "type": "UPI",
+        "value": "swati26@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500023"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Post-Matric Scholarship & Fee Reimbursement",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: POST-MATRIC SCHOLARSHIP & FEE REIMBURSEMENT\nStudent Name: Mr. Manoj Iyer\nRoll No: 1005-26-794 | Application No: OU26-19585\nCourse: B.Tech Computer Science and Engineering\nDOB: 13/05/2004 | Aadhaar: 7314 2112 3635 | PAN: ABCPK8470Z\nContact: 8795296770 | Email: manoj.iyer25@gmail.com\nAddress PIN Code: 500049\nBank A/c No: 28944481874 | IFSC: SBIN0002439 | Fee UPI: manoj73@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nState Government ePASS Post-Matric Scholarship renewal.\nEnrolled in M.E. Cyber Security, Year 1. Annual family income below 2 Lakhs.\n\nACADEMIC QUALIFICATIONS:\nPrevious year semester attendance: 88%. Cleared all subjects in single attempt.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Manoj Iyer"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-794"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-19585"
+      },
+      {
+        "type": "DOB",
+        "value": "13/05/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7314 2112 3635"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK8470Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8795296770"
+      },
+      {
+        "type": "EMAIL",
+        "value": "manoj.iyer25@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "28944481874"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0002439"
+      },
+      {
+        "type": "UPI",
+        "value": "manoj73@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500049"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Campus Hostel Accommodation Request",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS HOSTEL ACCOMMODATION REQUEST\nStudent Name: Mr. Suresh Kulkarni\nRoll No: 1005-26-742 | Application No: OU26-66701\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 17/09/2002 | Aadhaar: 9702 6137 0039 | PAN: ABCPK8585Z\nContact: 8877226485 | Email: suresh.kulkarni94@gmail.com\nAddress PIN Code: 500085\nBank A/c No: 71194898063 | IFSC: SBIN0006736 | Fee UPI: suresh62@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nHostel room allotment in Osmania University Campus Hostels.\nPermanent resident of Warangal district. Daily commuting not feasible.\n\nACADEMIC QUALIFICATIONS:\nHostel caution deposit paid. Category: Non-Local Merit.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Suresh Kulkarni"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-742"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-66701"
+      },
+      {
+        "type": "DOB",
+        "value": "17/09/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9702 6137 0039"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK8585Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8877226485"
+      },
+      {
+        "type": "EMAIL",
+        "value": "suresh.kulkarni94@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "71194898063"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0006736"
+      },
+      {
+        "type": "UPI",
+        "value": "suresh62@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500085"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Semester Examination Hall Ticket Verification",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: SEMESTER EXAMINATION HALL TICKET VERIFICATION\nStudent Name: Mr. Arun Gupta\nRoll No: 1005-26-757 | Application No: OU26-84261\nCourse: B.Tech Information Technology\nDOB: 22/12/2001 | Aadhaar: 3666 9505 2508 | PAN: ABCPK3381Z\nContact: 9387364453 | Email: arun.gupta52@gmail.com\nAddress PIN Code: 500025\nBank A/c No: 63955953308 | IFSC: SBIN0003350 | Fee UPI: arun81@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for issuance of duplicate hall ticket for Semester End Exams.\nExamination: M.E. Cyber Security regular examinations November 2026.\n\nACADEMIC QUALIFICATIONS:\nExamination fee paid challan submitted to college exam branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Arun Gupta"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-757"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-84261"
+      },
+      {
+        "type": "DOB",
+        "value": "22/12/2001"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "3666 9505 2508"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK3381Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9387364453"
+      },
+      {
+        "type": "EMAIL",
+        "value": "arun.gupta52@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "63955953308"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0003350"
+      },
+      {
+        "type": "UPI",
+        "value": "arun81@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500025"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Campus Placement & Internship Registration",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS PLACEMENT & INTERNSHIP REGISTRATION\nStudent Name: Ms. Suresh Mehta\nRoll No: 1005-26-782 | Application No: OU26-62591\nCourse: M.Sc Computer Science\nDOB: 13/01/2004 | Aadhaar: 7999 7982 6530 | PAN: ABCPK7953Z\nContact: 8823827514 | Email: suresh.mehta62@gmail.com\nAddress PIN Code: 500032\nBank A/c No: 65733779681 | IFSC: SBIN0001983 | Fee UPI: suresh61@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRegistration for On-Campus Placement Drive 2026-27.\nPreferred roles: AI Security Engineer, Vulnerability Analyst, SOC Analyst.\n\nACADEMIC QUALIFICATIONS:\nAggregate CGPA: 8.65, zero active backlogs, Python and C++ certified.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Suresh Mehta"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-782"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-62591"
+      },
+      {
+        "type": "DOB",
+        "value": "13/01/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7999 7982 6530"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7953Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8823827514"
+      },
+      {
+        "type": "EMAIL",
+        "value": "suresh.mehta62@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "65733779681"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0001983"
+      },
+      {
+        "type": "UPI",
+        "value": "suresh61@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500032"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "Education Loan Bank Account Verification",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: EDUCATION LOAN BANK ACCOUNT VERIFICATION\nStudent Name: Ms. Rajesh Joshi\nRoll No: 1005-26-717 | Application No: OU26-53779\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 19/11/2004 | Aadhaar: 9245 4905 3428 | PAN: ABCPK2979Z\nContact: 9994343086 | Email: rajesh.joshi70@gmail.com\nAddress PIN Code: 500075\nBank A/c No: 21402795050 | IFSC: SBIN0004427 | Fee UPI: rajesh68@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nBank verification certificate for SBI Scholar Education Loan disbursement.\nTuition fee per annum: Rs. 85,000. Sanctioned loan amount: Rs. 2,00,000.\n\nACADEMIC QUALIFICATIONS:\nBonafide student certificate and fee structure estimation attached.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Rajesh Joshi"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-717"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-53779"
+      },
+      {
+        "type": "DOB",
+        "value": "19/11/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9245 4905 3428"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK2979Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9994343086"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rajesh.joshi70@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "21402795050"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0004427"
+      },
+      {
+        "type": "UPI",
+        "value": "rajesh68@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500075"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Official Transcript & Degree Bonafide",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: OFFICIAL TRANSCRIPT & DEGREE BONAFIDE\nStudent Name: Mr. Suresh Chatterjee\nRoll No: 1005-26-772 | Application No: OU26-34596\nCourse: B.Tech Computer Science and Engineering\nDOB: 18/01/2000 | Aadhaar: 9389 1126 8508 | PAN: ABCPK7832Z\nContact: 7454317051 | Email: suresh.chatterjee38@gmail.com\nAddress PIN Code: 500015\nBank A/c No: 20464096519 | IFSC: SBIN0005438 | Fee UPI: suresh63@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for official transcripts for higher education.\nCompleted M.E. coursework. Requesting 3 sets of sealed transcripts.\n\nACADEMIC QUALIFICATIONS:\nDegree awarded with First Class with Distinction.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Suresh Chatterjee"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-772"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-34596"
+      },
+      {
+        "type": "DOB",
+        "value": "18/01/2000"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9389 1126 8508"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7832Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7454317051"
+      },
+      {
+        "type": "EMAIL",
+        "value": "suresh.chatterjee38@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "20464096519"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0005438"
+      },
+      {
+        "type": "UPI",
+        "value": "suresh63@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500015"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Tuition Fee Payment via UPI Verification",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: TUITION FEE PAYMENT VIA UPI VERIFICATION\nStudent Name: Ms. Sneha Kulkarni\nRoll No: 1005-26-785 | Application No: OU26-96907\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 11/06/2002 | Aadhaar: 6207 4180 7882 | PAN: ABCPK1356Z\nContact: 8751338562 | Email: sneha.kulkarni71@gmail.com\nAddress PIN Code: 500035\nBank A/c No: 70719058740 | IFSC: SBIN0005159 | Fee UPI: sneha69@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nOnline college fee payment confirmation slip.\nSemester 2 Tuition Fee Rs. 35,000 paid via SBI UPI Collect portal.\n\nACADEMIC QUALIFICATIONS:\nUTR Transaction reference successfully verified by accounts branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Sneha Kulkarni"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-785"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-96907"
+      },
+      {
+        "type": "DOB",
+        "value": "11/06/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6207 4180 7882"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK1356Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8751338562"
+      },
+      {
+        "type": "EMAIL",
+        "value": "sneha.kulkarni71@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "70719058740"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0005159"
+      },
+      {
+        "type": "UPI",
+        "value": "sneha69@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500035"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Library Clearance & Digital Access Card",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: LIBRARY CLEARANCE & DIGITAL ACCESS CARD\nStudent Name: Ms. Deepa Joshi\nRoll No: 1005-26-739 | Application No: OU26-38612\nCourse: B.Tech Information Technology\nDOB: 19/01/2003 | Aadhaar: 6950 8469 2117 | PAN: ABCPK9015Z\nContact: 6879419380 | Email: deepa.joshi92@gmail.com\nAddress PIN Code: 500019\nBank A/c No: 65786748462 | IFSC: SBIN0006899 | Fee UPI: deepa33@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nClearance certificate from University Central Library.\nAll borrowed IEEE and AI security textbooks returned without dues.\n\nACADEMIC QUALIFICATIONS:\nEligible for final semester hall ticket issuance.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Deepa Joshi"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-739"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-38612"
+      },
+      {
+        "type": "DOB",
+        "value": "19/01/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6950 8469 2117"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK9015Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6879419380"
+      },
+      {
+        "type": "EMAIL",
+        "value": "deepa.joshi92@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "65786748462"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0006899"
+      },
+      {
+        "type": "UPI",
+        "value": "deepa33@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500019"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Re-evaluation & Grade Verification Request",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: RE-EVALUATION & GRADE VERIFICATION REQUEST\nStudent Name: Ms. Swati Rao\nRoll No: 1005-26-768 | Application No: OU26-78228\nCourse: M.Sc Computer Science\nDOB: 28/07/2000 | Aadhaar: 5619 5493 6962 | PAN: ABCPK5434Z\nContact: 7131005178 | Email: swati.rao69@gmail.com\nAddress PIN Code: 500093\nBank A/c No: 93601612846 | IFSC: SBIN0006337 | Fee UPI: swati56@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for paper recounting and answer script photocopy.\nSubject: Advanced Cryptography and Network Security (Code: CS501).\n\nACADEMIC QUALIFICATIONS:\nCurrent grade: B+ (expected A grade based on answer key evaluation).\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Swati Rao"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-768"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-78228"
+      },
+      {
+        "type": "DOB",
+        "value": "28/07/2000"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5619 5493 6962"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK5434Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7131005178"
+      },
+      {
+        "type": "EMAIL",
+        "value": "swati.rao69@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "93601612846"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0006337"
+      },
+      {
+        "type": "UPI",
+        "value": "swati56@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500093"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "PG Admission Application",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: PG ADMISSION APPLICATION\nStudent Name: Mr. Arun Gupta\nRoll No: 1005-26-778 | Application No: OU26-82261\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 23/03/2001 | Aadhaar: 2471 6951 1569 | PAN: ABCPK3932Z\nContact: 7956110879 | Email: arun.gupta94@gmail.com\nAddress PIN Code: 500033\nBank A/c No: 38711672930 | IFSC: SBIN0008492 | Fee UPI: arun31@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for admission into Postgraduate Degree program.\nQualified GATE 2026 with score 680. Seeking admission under merit quota.\n\nACADEMIC QUALIFICATIONS:\nB.Tech CGPA: 8.85 / 10.0 from Osmania University.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Arun Gupta"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-778"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-82261"
+      },
+      {
+        "type": "DOB",
+        "value": "23/03/2001"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2471 6951 1569"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK3932Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7956110879"
+      },
+      {
+        "type": "EMAIL",
+        "value": "arun.gupta94@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "38711672930"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008492"
+      },
+      {
+        "type": "UPI",
+        "value": "arun31@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500033"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Post-Matric Scholarship & Fee Reimbursement",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: POST-MATRIC SCHOLARSHIP & FEE REIMBURSEMENT\nStudent Name: Mr. Ramesh Patel\nRoll No: 1005-26-788 | Application No: OU26-30171\nCourse: B.Tech Computer Science and Engineering\nDOB: 14/11/2004 | Aadhaar: 6333 1075 9156 | PAN: ABCPK3539Z\nContact: 9686338634 | Email: ramesh.patel13@gmail.com\nAddress PIN Code: 500017\nBank A/c No: 26477832840 | IFSC: SBIN0008714 | Fee UPI: ramesh10@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nState Government ePASS Post-Matric Scholarship renewal.\nEnrolled in M.E. Cyber Security, Year 1. Annual family income below 2 Lakhs.\n\nACADEMIC QUALIFICATIONS:\nPrevious year semester attendance: 88%. Cleared all subjects in single attempt.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Ramesh Patel"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-788"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-30171"
+      },
+      {
+        "type": "DOB",
+        "value": "14/11/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6333 1075 9156"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK3539Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9686338634"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ramesh.patel13@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "26477832840"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008714"
+      },
+      {
+        "type": "UPI",
+        "value": "ramesh10@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500017"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Campus Hostel Accommodation Request",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS HOSTEL ACCOMMODATION REQUEST\nStudent Name: Ms. Priya Chatterjee\nRoll No: 1005-26-743 | Application No: OU26-13681\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 06/09/2001 | Aadhaar: 8461 5552 9683 | PAN: ABCPK9102Z\nContact: 6554021160 | Email: priya.chatterjee94@gmail.com\nAddress PIN Code: 500064\nBank A/c No: 43074066372 | IFSC: SBIN0009779 | Fee UPI: priya64@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nHostel room allotment in Osmania University Campus Hostels.\nPermanent resident of Warangal district. Daily commuting not feasible.\n\nACADEMIC QUALIFICATIONS:\nHostel caution deposit paid. Category: Non-Local Merit.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Priya Chatterjee"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-743"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-13681"
+      },
+      {
+        "type": "DOB",
+        "value": "06/09/2001"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8461 5552 9683"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK9102Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6554021160"
+      },
+      {
+        "type": "EMAIL",
+        "value": "priya.chatterjee94@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "43074066372"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0009779"
+      },
+      {
+        "type": "UPI",
+        "value": "priya64@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500064"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Semester Examination Hall Ticket Verification",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: SEMESTER EXAMINATION HALL TICKET VERIFICATION\nStudent Name: Mr. Harish Chatterjee\nRoll No: 1005-26-740 | Application No: OU26-92489\nCourse: B.Tech Information Technology\nDOB: 24/08/2004 | Aadhaar: 5563 3491 2562 | PAN: ABCPK3820Z\nContact: 9198530417 | Email: harish.chatterjee37@gmail.com\nAddress PIN Code: 500013\nBank A/c No: 78588101291 | IFSC: SBIN0004101 | Fee UPI: harish64@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for issuance of duplicate hall ticket for Semester End Exams.\nExamination: M.E. Cyber Security regular examinations November 2026.\n\nACADEMIC QUALIFICATIONS:\nExamination fee paid challan submitted to college exam branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Harish Chatterjee"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-740"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-92489"
+      },
+      {
+        "type": "DOB",
+        "value": "24/08/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5563 3491 2562"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK3820Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9198530417"
+      },
+      {
+        "type": "EMAIL",
+        "value": "harish.chatterjee37@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "78588101291"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0004101"
+      },
+      {
+        "type": "UPI",
+        "value": "harish64@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500013"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Campus Placement & Internship Registration",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS PLACEMENT & INTERNSHIP REGISTRATION\nStudent Name: Ms. Swati Verma\nRoll No: 1005-26-737 | Application No: OU26-57871\nCourse: M.Sc Computer Science\nDOB: 13/01/2003 | Aadhaar: 9522 9281 0787 | PAN: ABCPK4646Z\nContact: 9393223880 | Email: swati.verma55@gmail.com\nAddress PIN Code: 500095\nBank A/c No: 73498184952 | IFSC: SBIN0001790 | Fee UPI: swati99@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRegistration for On-Campus Placement Drive 2026-27.\nPreferred roles: AI Security Engineer, Vulnerability Analyst, SOC Analyst.\n\nACADEMIC QUALIFICATIONS:\nAggregate CGPA: 8.65, zero active backlogs, Python and C++ certified.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Swati Verma"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-737"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-57871"
+      },
+      {
+        "type": "DOB",
+        "value": "13/01/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9522 9281 0787"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK4646Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9393223880"
+      },
+      {
+        "type": "EMAIL",
+        "value": "swati.verma55@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "73498184952"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0001790"
+      },
+      {
+        "type": "UPI",
+        "value": "swati99@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500095"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "Education Loan Bank Account Verification",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: EDUCATION LOAN BANK ACCOUNT VERIFICATION\nStudent Name: Ms. Swati Bose\nRoll No: 1005-26-788 | Application No: OU26-20332\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 15/08/2002 | Aadhaar: 6115 9902 7351 | PAN: ABCPK9644Z\nContact: 6973579479 | Email: swati.bose45@gmail.com\nAddress PIN Code: 500083\nBank A/c No: 35308886711 | IFSC: SBIN0007328 | Fee UPI: swati92@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nBank verification certificate for SBI Scholar Education Loan disbursement.\nTuition fee per annum: Rs. 85,000. Sanctioned loan amount: Rs. 2,00,000.\n\nACADEMIC QUALIFICATIONS:\nBonafide student certificate and fee structure estimation attached.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Swati Bose"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-788"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-20332"
+      },
+      {
+        "type": "DOB",
+        "value": "15/08/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6115 9902 7351"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK9644Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6973579479"
+      },
+      {
+        "type": "EMAIL",
+        "value": "swati.bose45@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "35308886711"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0007328"
+      },
+      {
+        "type": "UPI",
+        "value": "swati92@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500083"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Official Transcript & Degree Bonafide",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: OFFICIAL TRANSCRIPT & DEGREE BONAFIDE\nStudent Name: Mr. Harish Iyer\nRoll No: 1005-26-720 | Application No: OU26-51735\nCourse: B.Tech Computer Science and Engineering\nDOB: 05/01/2000 | Aadhaar: 6978 8317 1008 | PAN: ABCPK6487Z\nContact: 9198632535 | Email: harish.iyer31@gmail.com\nAddress PIN Code: 500098\nBank A/c No: 52086759568 | IFSC: SBIN0006279 | Fee UPI: harish69@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for official transcripts for higher education.\nCompleted M.E. coursework. Requesting 3 sets of sealed transcripts.\n\nACADEMIC QUALIFICATIONS:\nDegree awarded with First Class with Distinction.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Harish Iyer"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-720"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-51735"
+      },
+      {
+        "type": "DOB",
+        "value": "05/01/2000"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "6978 8317 1008"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK6487Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9198632535"
+      },
+      {
+        "type": "EMAIL",
+        "value": "harish.iyer31@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "52086759568"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0006279"
+      },
+      {
+        "type": "UPI",
+        "value": "harish69@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500098"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Tuition Fee Payment via UPI Verification",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: TUITION FEE PAYMENT VIA UPI VERIFICATION\nStudent Name: Mr. Ananya Mishra\nRoll No: 1005-26-766 | Application No: OU26-50975\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 14/01/2003 | Aadhaar: 9693 4008 0500 | PAN: ABCPK4580Z\nContact: 7739615729 | Email: ananya.mishra33@gmail.com\nAddress PIN Code: 500027\nBank A/c No: 27431319668 | IFSC: SBIN0009675 | Fee UPI: ananya69@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nOnline college fee payment confirmation slip.\nSemester 2 Tuition Fee Rs. 35,000 paid via SBI UPI Collect portal.\n\nACADEMIC QUALIFICATIONS:\nUTR Transaction reference successfully verified by accounts branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Ananya Mishra"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-766"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-50975"
+      },
+      {
+        "type": "DOB",
+        "value": "14/01/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "9693 4008 0500"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK4580Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7739615729"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ananya.mishra33@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "27431319668"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0009675"
+      },
+      {
+        "type": "UPI",
+        "value": "ananya69@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500027"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Library Clearance & Digital Access Card",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: LIBRARY CLEARANCE & DIGITAL ACCESS CARD\nStudent Name: Ms. Kavita Kulkarni\nRoll No: 1005-26-735 | Application No: OU26-66585\nCourse: B.Tech Information Technology\nDOB: 28/12/2004 | Aadhaar: 4991 6269 5868 | PAN: ABCPK7642Z\nContact: 6479535285 | Email: kavita.kulkarni87@gmail.com\nAddress PIN Code: 500010\nBank A/c No: 36328331733 | IFSC: SBIN0007814 | Fee UPI: kavita61@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nClearance certificate from University Central Library.\nAll borrowed IEEE and AI security textbooks returned without dues.\n\nACADEMIC QUALIFICATIONS:\nEligible for final semester hall ticket issuance.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Kavita Kulkarni"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-735"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-66585"
+      },
+      {
+        "type": "DOB",
+        "value": "28/12/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4991 6269 5868"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7642Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6479535285"
+      },
+      {
+        "type": "EMAIL",
+        "value": "kavita.kulkarni87@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "36328331733"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0007814"
+      },
+      {
+        "type": "UPI",
+        "value": "kavita61@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500010"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Re-evaluation & Grade Verification Request",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: RE-EVALUATION & GRADE VERIFICATION REQUEST\nStudent Name: Mr. Ananya Gupta\nRoll No: 1005-26-734 | Application No: OU26-32150\nCourse: M.Sc Computer Science\nDOB: 17/05/2002 | Aadhaar: 2341 5238 3421 | PAN: ABCPK6827Z\nContact: 6374180000 | Email: ananya.gupta31@gmail.com\nAddress PIN Code: 500093\nBank A/c No: 28306374741 | IFSC: SBIN0004113 | Fee UPI: ananya93@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for paper recounting and answer script photocopy.\nSubject: Advanced Cryptography and Network Security (Code: CS501).\n\nACADEMIC QUALIFICATIONS:\nCurrent grade: B+ (expected A grade based on answer key evaluation).\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Ananya Gupta"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-734"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-32150"
+      },
+      {
+        "type": "DOB",
+        "value": "17/05/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2341 5238 3421"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK6827Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6374180000"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ananya.gupta31@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "28306374741"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0004113"
+      },
+      {
+        "type": "UPI",
+        "value": "ananya93@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500093"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "PG Admission Application",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: PG ADMISSION APPLICATION\nStudent Name: Ms. Meera Patel\nRoll No: 1005-26-712 | Application No: OU26-32064\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 21/02/2002 | Aadhaar: 2211 3864 2772 | PAN: ABCPK9114Z\nContact: 7107841344 | Email: meera.patel46@gmail.com\nAddress PIN Code: 500060\nBank A/c No: 69571099154 | IFSC: SBIN0004740 | Fee UPI: meera78@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for admission into Postgraduate Degree program.\nQualified GATE 2026 with score 680. Seeking admission under merit quota.\n\nACADEMIC QUALIFICATIONS:\nB.Tech CGPA: 8.85 / 10.0 from Osmania University.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Meera Patel"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-712"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-32064"
+      },
+      {
+        "type": "DOB",
+        "value": "21/02/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "2211 3864 2772"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK9114Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7107841344"
+      },
+      {
+        "type": "EMAIL",
+        "value": "meera.patel46@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "69571099154"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0004740"
+      },
+      {
+        "type": "UPI",
+        "value": "meera78@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500060"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Post-Matric Scholarship & Fee Reimbursement",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: POST-MATRIC SCHOLARSHIP & FEE REIMBURSEMENT\nStudent Name: Mr. Harish Reddy\nRoll No: 1005-26-705 | Application No: OU26-11983\nCourse: B.Tech Computer Science and Engineering\nDOB: 14/07/2004 | Aadhaar: 4173 6899 4765 | PAN: ABCPK9271Z\nContact: 6573662968 | Email: harish.reddy96@gmail.com\nAddress PIN Code: 500021\nBank A/c No: 56076995235 | IFSC: SBIN0003767 | Fee UPI: harish69@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nState Government ePASS Post-Matric Scholarship renewal.\nEnrolled in M.E. Cyber Security, Year 1. Annual family income below 2 Lakhs.\n\nACADEMIC QUALIFICATIONS:\nPrevious year semester attendance: 88%. Cleared all subjects in single attempt.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Harish Reddy"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-705"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-11983"
+      },
+      {
+        "type": "DOB",
+        "value": "14/07/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4173 6899 4765"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK9271Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6573662968"
+      },
+      {
+        "type": "EMAIL",
+        "value": "harish.reddy96@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "56076995235"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0003767"
+      },
+      {
+        "type": "UPI",
+        "value": "harish69@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500021"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Campus Hostel Accommodation Request",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS HOSTEL ACCOMMODATION REQUEST\nStudent Name: Mr. Rajesh Chatterjee\nRoll No: 1005-26-796 | Application No: OU26-27077\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 19/09/2001 | Aadhaar: 7604 9620 1982 | PAN: ABCPK1024Z\nContact: 9844573155 | Email: rajesh.chatterjee29@gmail.com\nAddress PIN Code: 500082\nBank A/c No: 87422302716 | IFSC: SBIN0007858 | Fee UPI: rajesh95@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nHostel room allotment in Osmania University Campus Hostels.\nPermanent resident of Warangal district. Daily commuting not feasible.\n\nACADEMIC QUALIFICATIONS:\nHostel caution deposit paid. Category: Non-Local Merit.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Rajesh Chatterjee"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-796"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-27077"
+      },
+      {
+        "type": "DOB",
+        "value": "19/09/2001"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7604 9620 1982"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK1024Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9844573155"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rajesh.chatterjee29@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "87422302716"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0007858"
+      },
+      {
+        "type": "UPI",
+        "value": "rajesh95@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500082"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Semester Examination Hall Ticket Verification",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: SEMESTER EXAMINATION HALL TICKET VERIFICATION\nStudent Name: Mr. Manoj Chatterjee\nRoll No: 1005-26-796 | Application No: OU26-99345\nCourse: B.Tech Information Technology\nDOB: 19/01/2002 | Aadhaar: 5934 6732 7607 | PAN: ABCPK9704Z\nContact: 7224104665 | Email: manoj.chatterjee58@gmail.com\nAddress PIN Code: 500068\nBank A/c No: 24176591697 | IFSC: SBIN0006612 | Fee UPI: manoj32@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for issuance of duplicate hall ticket for Semester End Exams.\nExamination: M.E. Cyber Security regular examinations November 2026.\n\nACADEMIC QUALIFICATIONS:\nExamination fee paid challan submitted to college exam branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Manoj Chatterjee"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-796"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-99345"
+      },
+      {
+        "type": "DOB",
+        "value": "19/01/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5934 6732 7607"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK9704Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7224104665"
+      },
+      {
+        "type": "EMAIL",
+        "value": "manoj.chatterjee58@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "24176591697"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0006612"
+      },
+      {
+        "type": "UPI",
+        "value": "manoj32@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500068"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Campus Placement & Internship Registration",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: CAMPUS PLACEMENT & INTERNSHIP REGISTRATION\nStudent Name: Mr. Naveen Nair\nRoll No: 1005-26-786 | Application No: OU26-71795\nCourse: M.Sc Computer Science\nDOB: 25/03/2004 | Aadhaar: 4960 7015 6794 | PAN: ABCPK7679Z\nContact: 9221476936 | Email: naveen.nair18@gmail.com\nAddress PIN Code: 500058\nBank A/c No: 80216685486 | IFSC: SBIN0005841 | Fee UPI: naveen29@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRegistration for On-Campus Placement Drive 2026-27.\nPreferred roles: AI Security Engineer, Vulnerability Analyst, SOC Analyst.\n\nACADEMIC QUALIFICATIONS:\nAggregate CGPA: 8.65, zero active backlogs, Python and C++ certified.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Naveen Nair"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-786"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-71795"
+      },
+      {
+        "type": "DOB",
+        "value": "25/03/2004"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "4960 7015 6794"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7679Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9221476936"
+      },
+      {
+        "type": "EMAIL",
+        "value": "naveen.nair18@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "80216685486"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0005841"
+      },
+      {
+        "type": "UPI",
+        "value": "naveen29@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500058"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "college": "University College of Engineering, Osmania University",
+    "degree": "M.E. Cyber Security (Semester 1)",
+    "scenario_type": "Education Loan Bank Account Verification",
+    "text": "--- UNIVERSITY COLLEGE OF ENGINEERING, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: EDUCATION LOAN BANK ACCOUNT VERIFICATION\nStudent Name: Ms. Ganesh Sharma\nRoll No: 1005-26-776 | Application No: OU26-25923\nCourse: M.E. Cyber Security (Semester 1)\nDOB: 04/04/2002 | Aadhaar: 8938 9207 2952 | PAN: ABCPK5872Z\nContact: 9969418599 | Email: ganesh.sharma18@gmail.com\nAddress PIN Code: 500050\nBank A/c No: 78506280972 | IFSC: SBIN0008692 | Fee UPI: ganesh47@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nBank verification certificate for SBI Scholar Education Loan disbursement.\nTuition fee per annum: Rs. 85,000. Sanctioned loan amount: Rs. 2,00,000.\n\nACADEMIC QUALIFICATIONS:\nBonafide student certificate and fee structure estimation attached.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Ganesh Sharma"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-776"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-25923"
+      },
+      {
+        "type": "DOB",
+        "value": "04/04/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "8938 9207 2952"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK5872Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "9969418599"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ganesh.sharma18@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "78506280972"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008692"
+      },
+      {
+        "type": "UPI",
+        "value": "ganesh47@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500050"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "college": "JNTU College of Engineering, Hyderabad",
+    "degree": "B.Tech Computer Science and Engineering",
+    "scenario_type": "Official Transcript & Degree Bonafide",
+    "text": "--- JNTU COLLEGE OF ENGINEERING, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: OFFICIAL TRANSCRIPT & DEGREE BONAFIDE\nStudent Name: Mr. Sneha Nair\nRoll No: 1005-26-727 | Application No: OU26-37961\nCourse: B.Tech Computer Science and Engineering\nDOB: 23/05/2003 | Aadhaar: 7143 5967 8964 | PAN: ABCPK6492Z\nContact: 7843389584 | Email: sneha.nair95@gmail.com\nAddress PIN Code: 500058\nBank A/c No: 61012979723 | IFSC: SBIN0009895 | Fee UPI: sneha78@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nApplication for official transcripts for higher education.\nCompleted M.E. coursework. Requesting 3 sets of sealed transcripts.\n\nACADEMIC QUALIFICATIONS:\nDegree awarded with First Class with Distinction.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Sneha Nair"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-727"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-37961"
+      },
+      {
+        "type": "DOB",
+        "value": "23/05/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7143 5967 8964"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK6492Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7843389584"
+      },
+      {
+        "type": "EMAIL",
+        "value": "sneha.nair95@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "61012979723"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0009895"
+      },
+      {
+        "type": "UPI",
+        "value": "sneha78@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500058"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "college": "National Institute of Technology, Warangal",
+    "degree": "M.Tech Artificial Intelligence and Data Science",
+    "scenario_type": "Tuition Fee Payment via UPI Verification",
+    "text": "--- NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL ---\nSTUDENT ENQUIRY & APPLICATION FORM: TUITION FEE PAYMENT VIA UPI VERIFICATION\nStudent Name: Ms. Ramesh Joshi\nRoll No: 1005-26-758 | Application No: OU26-41793\nCourse: M.Tech Artificial Intelligence and Data Science\nDOB: 06/09/2002 | Aadhaar: 5228 9776 0957 | PAN: ABCPK8288Z\nContact: 6889131109 | Email: ramesh.joshi89@gmail.com\nAddress PIN Code: 500049\nBank A/c No: 87157679740 | IFSC: SBIN0001969 | Fee UPI: ramesh88@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nOnline college fee payment confirmation slip.\nSemester 2 Tuition Fee Rs. 35,000 paid via SBI UPI Collect portal.\n\nACADEMIC QUALIFICATIONS:\nUTR Transaction reference successfully verified by accounts branch.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Ramesh Joshi"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-758"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-41793"
+      },
+      {
+        "type": "DOB",
+        "value": "06/09/2002"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5228 9776 0957"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK8288Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "6889131109"
+      },
+      {
+        "type": "EMAIL",
+        "value": "ramesh.joshi89@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "87157679740"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0001969"
+      },
+      {
+        "type": "UPI",
+        "value": "ramesh88@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500049"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "college": "College of Technology, Osmania University",
+    "degree": "B.Tech Information Technology",
+    "scenario_type": "Library Clearance & Digital Access Card",
+    "text": "--- COLLEGE OF TECHNOLOGY, OSMANIA UNIVERSITY ---\nSTUDENT ENQUIRY & APPLICATION FORM: LIBRARY CLEARANCE & DIGITAL ACCESS CARD\nStudent Name: Ms. Shalini Patel\nRoll No: 1005-26-772 | Application No: OU26-49052\nCourse: B.Tech Information Technology\nDOB: 27/07/2001 | Aadhaar: 7194 7264 3804 | PAN: ABCPK7347Z\nContact: 8960132984 | Email: shalini.patel95@gmail.com\nAddress PIN Code: 500013\nBank A/c No: 53502233244 | IFSC: SBIN0007191 | Fee UPI: shalini55@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nClearance certificate from University Central Library.\nAll borrowed IEEE and AI security textbooks returned without dues.\n\nACADEMIC QUALIFICATIONS:\nEligible for final semester hall ticket issuance.\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Ms. Shalini Patel"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-772"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-49052"
+      },
+      {
+        "type": "DOB",
+        "value": "27/07/2001"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "7194 7264 3804"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK7347Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "8960132984"
+      },
+      {
+        "type": "EMAIL",
+        "value": "shalini.patel95@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "53502233244"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0007191"
+      },
+      {
+        "type": "UPI",
+        "value": "shalini55@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500013"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "college": "Indian Institute of Technology, Hyderabad",
+    "degree": "M.Sc Computer Science",
+    "scenario_type": "Re-evaluation & Grade Verification Request",
+    "text": "--- INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD ---\nSTUDENT ENQUIRY & APPLICATION FORM: RE-EVALUATION & GRADE VERIFICATION REQUEST\nStudent Name: Mr. Priya Kulkarni\nRoll No: 1005-26-723 | Application No: OU26-74294\nCourse: M.Sc Computer Science\nDOB: 20/07/2003 | Aadhaar: 5260 6293 1610 | PAN: ABCPK2915Z\nContact: 7567558287 | Email: priya.kulkarni75@gmail.com\nAddress PIN Code: 500054\nBank A/c No: 34592341344 | IFSC: SBIN0008493 | Fee UPI: priya86@oksbi\n\nSTATEMENT OF PURPOSE & DETAILS:\nRequest for paper recounting and answer script photocopy.\nSubject: Advanced Cryptography and Network Security (Code: CS501).\n\nACADEMIC QUALIFICATIONS:\nCurrent grade: B+ (expected A grade based on answer key evaluation).\n\nPlease verify my submission and provide confirmation.",
+    "entities": [
+      {
+        "type": "STUDENT_NAME",
+        "value": "Mr. Priya Kulkarni"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "1005-26-723"
+      },
+      {
+        "type": "STUDENT_ID",
+        "value": "OU26-74294"
+      },
+      {
+        "type": "DOB",
+        "value": "20/07/2003"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "5260 6293 1610"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCPK2915Z"
+      },
+      {
+        "type": "MOBILE",
+        "value": "7567558287"
+      },
+      {
+        "type": "EMAIL",
+        "value": "priya.kulkarni75@gmail.com"
+      },
+      {
+        "type": "BANK_ACCOUNT",
+        "value": "34592341344"
+      },
+      {
+        "type": "IFSC",
+        "value": "SBIN0008493"
+      },
+      {
+        "type": "UPI",
+        "value": "priya86@oksbi"
+      },
+      {
+        "type": "PINCODE",
+        "value": "500054"
+      }
+    ]
+  }
+]
