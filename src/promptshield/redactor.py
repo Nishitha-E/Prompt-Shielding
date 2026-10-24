@@ -1,23 +1,28 @@
 import json
-from typing import Dict, Tuple, Optional
+import re
 from promptshield.detectors import PIIDetector
-from promptshield.normalizer import normalize_clinical_text
 
 class PromptShieldEngine:
-    def __init__(self, seed: Optional[int] = 42):
-        self.detector = PIIDetector(seed=seed if seed is not None else 42)
-        self.mapping: Dict[str, str] = {}
-        self.reverse_mapping: Dict[str, str] = {}
+    def __init__(self, seed=42):
+        self.detector = PIIDetector(seed=seed)
+        self.mapping = {}
+        self.reverse_mapping = {}
 
-    def redact(self, text: str, normalize: bool = True) -> str:
+    def normalize(self, text):
+        text = text.replace("\u00ad", "")
+        text = re.sub(r'(\b\d{4})[ \t]*\n[ \t]*(\d{4})[ \t]*\n[ \t]*(\d{4}\b)', r'\1 \2 \3', text)
+        text = re.sub(r'(\b\d{5})[ \t]*\n[ \t]*(\d{5}\b)', r'\1\2', text)
+        return text
+
+    def redact(self, text, normalize=True):
         if normalize:
-            text = normalize_clinical_text(text)
+            text = self.normalize(text)
         matches = self.detector.detect_all(text)
         if not matches:
             return text
 
         matches.sort(key=lambda m: m.start, reverse=True)
-        result_chars = list(text)
+        chars = list(text)
 
         for match in matches:
             orig = match.original
@@ -30,26 +35,21 @@ class PromptShieldEngine:
             else:
                 surrogate = self.mapping[orig]
 
-            result_chars[match.start : match.end] = list(surrogate)
+            chars[match.start:match.end] = list(surrogate)
 
-        return "".join(result_chars)
+        return "".join(chars)
 
-    def restore(self, text: str) -> str:
-        restored = text
-        for surrogate, original in sorted(
-            self.reverse_mapping.items(), key=lambda item: len(item[0]), reverse=True
-        ):
-            restored = restored.replace(surrogate, original)
-        return restored
+    def restore(self, text):
+        res = text
+        for surrogate, original in sorted(self.reverse_mapping.items(), key=lambda item: len(item[0]), reverse=True):
+            res = res.replace(surrogate, original)
+        return res
 
-    def export_session(self) -> Dict[str, str]:
-        return dict(self.mapping)
-
-    def save_session(self, filepath: str) -> None:
+    def save_session(self, filepath):
         with open(filepath, "w", encoding="utf-8") as f:
             json.dump({"mapping": self.mapping, "reverse_mapping": self.reverse_mapping}, f, indent=2)
 
-    def load_session(self, filepath: str) -> None:
+    def load_session(self, filepath):
         with open(filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
             self.mapping = data.get("mapping", {})

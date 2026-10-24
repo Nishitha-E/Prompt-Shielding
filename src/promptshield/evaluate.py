@@ -1,16 +1,14 @@
 import json
-from pathlib import Path
-from typing import Dict, List, Any
 from promptshield.detectors import PIIDetector
 
-def evaluate_dataset(dataset_path: str) -> Dict[str, Any]:
+def evaluate_dataset(dataset_path):
     with open(dataset_path, "r", encoding="utf-8") as f:
         samples = json.load(f)
 
     detector = PIIDetector(seed=42)
-    stats: Dict[str, Dict[str, int]] = {}
+    stats = {}
 
-    def get_bucket(pii_type: str) -> Dict[str, int]:
+    def get_bucket(pii_type):
         if pii_type not in stats:
             stats[pii_type] = {"tp": 0, "fp": 0, "fn": 0}
         return stats[pii_type]
@@ -46,7 +44,7 @@ def evaluate_dataset(dataset_path: str) -> Dict[str, Any]:
                 bucket = get_bucket(g_type)
                 bucket["fn"] += 1
 
-    results: Dict[str, Any] = {"per_type": {}, "overall": {}}
+    results = {"per_type": {}, "overall": {}}
     total_tp = sum(b["tp"] for b in stats.values())
     total_fp = sum(b["fp"] for b in stats.values())
     total_fn = sum(b["fn"] for b in stats.values())
@@ -80,24 +78,14 @@ def evaluate_dataset(dataset_path: str) -> Dict[str, Any]:
 
     return results
 
-def print_evaluation_report(results: Dict[str, Any]):
-    print("=" * 75)
-    print(" PROMPT SHIELD EVALUATION BENCHMARK: EDUCATION SECTOR PII")
-    print("=" * 75)
-    print(f"{'Identifier Type':<20} | {'TP':<5} | {'FP':<5} | {'FN':<5} | {'Precision':<10} | {'Recall':<8} | {'F1':<8}")
-    print("-" * 75)
+def print_evaluation_report(results):
+    print("Prompt Shield Benchmark Results (Education PII):\n")
+    header = f"{'Identifier':<16} {'TP':<5} {'FP':<5} {'FN':<5} {'Precision':<10} {'Recall':<8} {'F1':<8}"
+    print(header)
     for pii_type, m in results["per_type"].items():
-        print(
-            f"{pii_type:<20} | {m['tp']:<5} | {m['fp']:<5} | {m['fn']:<5} | "
-            f"{m['precision']:>8.2f}% | {m['recall']:>6.2f}% | {m['f1']:>6.2f}%"
-        )
-    print("-" * 75)
+        print(f"{pii_type:<16} {m['tp']:<5} {m['fp']:<5} {m['fn']:<5} {m['precision']:>8.2f}% {m['recall']:>6.2f}% {m['f1']:>6.2f}%")
     ov = results["overall"]
-    print(
-        f"{'OVERALL':<20} | {ov['tp']:<5} | {ov['fp']:<5} | {ov['fn']:<5} | "
-        f"{ov['precision']:>8.2f}% | {ov['recall']:>6.2f}% | {ov['f1']:>6.2f}%"
-    )
-    print("=" * 75)
+    print(f"{'OVERALL':<16} {ov['tp']:<5} {ov['fp']:<5} {ov['fn']:<5} {ov['precision']:>8.2f}% {ov['recall']:>6.2f}% {ov['f1']:>6.2f}%\n")
 
 if __name__ == "__main__":
     import sys

@@ -1,65 +1,65 @@
-"""Unit tests for Indian PII detectors and surrogate generators."""
-
-import pytest
 from promptshield.detectors import PIIDetector
 from promptshield.verhoeff import validate_verhoeff, generate_verhoeff_number
 
-
-@pytest.fixture
-def detector():
-    return PIIDetector(seed=12345)
-
-
-def test_detect_aadhaar(detector):
-    valid_aadhaar = generate_verhoeff_number("23635412891")  # 12 digits starting with 2
-    formatted_aadhaar = f"{valid_aadhaar[:4]} {valid_aadhaar[4:8]} {valid_aadhaar[8:]}"
-    text = f"My Aadhaar number is {formatted_aadhaar}."
-    
-    matches = detector.detect_all(text)
+def test_detect_aadhaar():
+    d = PIIDetector(seed=42)
+    val = generate_verhoeff_number("23635412891")
+    formatted = f"{val[:4]} {val[4:8]} {val[8:]}"
+    matches = d.detect_all(f"Aadhaar: {formatted}")
     assert len(matches) == 1
     assert matches[0].pii_type == "AADHAAR"
-    assert matches[0].original == formatted_aadhaar
+    assert matches[0].original == formatted
 
-
-def test_detect_pan(detector):
-    text = "Please check PAN card ABCDE1234F for verification."
-    matches = detector.detect_all(text)
+def test_detect_pan():
+    d = PIIDetector(seed=42)
+    matches = d.detect_all("PAN card is ABCDE1234F.")
     assert len(matches) == 1
     assert matches[0].pii_type == "PAN"
     assert matches[0].original == "ABCDE1234F"
 
-
-def test_detect_upi(detector):
-    text = "Transfer money to rahul@okhdfcbank or priya@ybl."
-    matches = detector.detect_all(text)
+def test_detect_upi():
+    d = PIIDetector(seed=42)
+    matches = d.detect_all("Pay to student@oksbi or rahul@ybl")
     assert len(matches) == 2
-    types = [m.pii_type for m in matches]
-    assert types == ["UPI", "UPI"]
+    assert [m.pii_type for m in matches] == ["UPI", "UPI"]
 
-
-def test_detect_mobile(detector):
-    text = "Call me at +91 9876543210 or 8765432109."
-    matches = detector.detect_all(text)
+def test_detect_mobile():
+    d = PIIDetector(seed=42)
+    matches = d.detect_all("Contact: +91 9876543210 or 8765432109")
     assert len(matches) == 2
     assert all(m.pii_type == "MOBILE" for m in matches)
 
-
-def test_detect_ifsc(detector):
-    text = "Bank branch code is SBIN0001234."
-    matches = detector.detect_all(text)
+def test_detect_ifsc():
+    d = PIIDetector(seed=42)
+    matches = d.detect_all("IFSC code is SBIN0001234")
     assert len(matches) == 1
     assert matches[0].pii_type == "IFSC"
 
-
-def test_detect_email(detector):
-    text = "Contact me at user.name@example.com for details."
-    matches = detector.detect_all(text)
+def test_detect_email():
+    d = PIIDetector(seed=42)
+    matches = d.detect_all("Email: user@example.com")
     assert len(matches) == 1
     assert matches[0].pii_type == "EMAIL"
 
+def test_detect_student_id_and_name():
+    d = PIIDetector(seed=42)
+    text = "Student Name: Rajesh Sharma\nRoll No: 1005-26-701"
+    matches = d.detect_all(text)
+    types = [m.pii_type for m in matches]
+    assert "STUDENT_NAME" in types
+    assert "STUDENT_ID" in types
 
-def test_surrogate_aadhaar_checksum_validity(detector):
-    surrogate = detector.generate_surrogate("AADHAAR", "2363 5412 8913")
-    digits = "".join(d for d in surrogate if d.isdigit())
+def test_detect_bank_and_pincode():
+    d = PIIDetector(seed=42)
+    text = "Bank A/c No: 38491029481, Address PIN Code: 500007"
+    matches = d.detect_all(text)
+    types = [m.pii_type for m in matches]
+    assert "BANK_ACCOUNT" in types
+    assert "PINCODE" in types
+
+def test_surrogate_aadhaar_validity():
+    d = PIIDetector(seed=42)
+    surrogate = d.generate_surrogate("AADHAAR", "2363 5412 8913")
+    digits = "".join(ch for ch in surrogate if ch.isdigit())
     assert len(digits) == 12
     assert validate_verhoeff(digits) is True

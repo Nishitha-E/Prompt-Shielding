@@ -1,16 +1,14 @@
 import re
 import random
 import string
-from dataclasses import dataclass
-from typing import List, Tuple, Dict, Optional
 from promptshield.verhoeff import validate_verhoeff, generate_verhoeff_number
 
-@dataclass
 class PIIMatch:
-    pii_type: str
-    original: str
-    start: int
-    end: int
+    def __init__(self, pii_type, original, start, end):
+        self.pii_type = pii_type
+        self.original = original
+        self.start = start
+        self.end = end
 
 class PIIDetector:
     AADHAAR_PATTERN = re.compile(r"\b[2-9]\d{3}[\s-]?[0-9]{4}[\s-]?[0-9]{4}\b")
@@ -59,16 +57,16 @@ class PIIDetector:
         "Joshi", "Mehta", "Bose", "Chatterjee", "Mishra", "Deshmukh", "Singhania", "Iyer"
     ]
 
-    def __init__(self, seed: int = 42):
+    def __init__(self, seed=42):
         self._rng = random.Random(seed)
 
-    def detect_all(self, text: str) -> List[PIIMatch]:
-        matches: List[PIIMatch] = []
+    def detect_all(self, text):
+        matches = []
 
         for m in self.AADHAAR_PATTERN.finditer(text):
             val = m.group(0)
-            digits_only = "".join(d for d in val if d.isdigit())
-            if len(digits_only) == 12 and validate_verhoeff(digits_only):
+            digits = "".join(d for d in val if d.isdigit())
+            if len(digits) == 12 and validate_verhoeff(digits):
                 matches.append(PIIMatch("AADHAAR", val, m.start(), m.end()))
 
         for m in self.PAN_PATTERN.finditer(text):
@@ -107,7 +105,7 @@ class PIIDetector:
             matches.append(PIIMatch("DOB", m.group(1).strip(), m.start(1), m.end(1)))
 
         matches.sort(key=lambda m: (m.start, -(m.end - m.start)))
-        filtered: List[PIIMatch] = []
+        filtered = []
         last_end = -1
         for m in matches:
             if m.start >= last_end:
@@ -116,7 +114,7 @@ class PIIDetector:
 
         return filtered
 
-    def generate_surrogate(self, pii_type: str, original: str) -> str:
+    def generate_surrogate(self, pii_type, original):
         if pii_type == "AADHAAR":
             prefix = str(self._rng.randint(2, 9))
             middle = "".join(str(self._rng.randint(0, 9)) for _ in range(10))
@@ -128,22 +126,22 @@ class PIIDetector:
             return surrogate_digits
 
         elif pii_type == "PAN":
-            letters1 = "".join(self._rng.choices(string.ascii_uppercase, k=3))
-            letter5 = self._rng.choice(string.ascii_uppercase)
+            l1 = "".join(self._rng.choices(string.ascii_uppercase, k=3))
+            l5 = self._rng.choice(string.ascii_uppercase)
             digits = "".join(str(self._rng.randint(0, 9)) for _ in range(4))
-            last_letter = self._rng.choice(string.ascii_uppercase)
-            return f"{letters1}P{letter5}{digits}{last_letter}"
+            l_last = self._rng.choice(string.ascii_uppercase)
+            return f"{l1}P{l5}{digits}{l_last}"
 
         elif pii_type == "UPI":
             handle = original.split("@")[-1] if "@" in original else "sbi"
-            user_part = "student" + "".join(str(self._rng.randint(0, 9)) for _ in range(4))
-            return f"{user_part}@{handle}"
+            user = "student" + "".join(str(self._rng.randint(0, 9)) for _ in range(4))
+            return f"{user}@{handle}"
 
         elif pii_type == "MOBILE":
-            prefix_char = "+91 " if original.startswith("+91 ") else ("+91-" if original.startswith("+91-") else ("+91" if original.startswith("+91") else ""))
+            prefix = "+91 " if original.startswith("+91 ") else ("+91-" if original.startswith("+91-") else ("+91" if original.startswith("+91") else ""))
             first_digit = str(self._rng.randint(6, 9))
-            rest_digits = "".join(str(self._rng.randint(0, 9)) for _ in range(9))
-            return f"{prefix_char}{first_digit}{rest_digits}"
+            rest = "".join(str(self._rng.randint(0, 9)) for _ in range(9))
+            return f"{prefix}{first_digit}{rest}"
 
         elif pii_type == "IFSC":
             bank = "".join(self._rng.choices(string.ascii_uppercase, k=4))
@@ -172,9 +170,9 @@ class PIIDetector:
         elif pii_type == "STUDENT_NAME":
             first = self._rng.choice(self.FIRST_NAMES)
             last = self._rng.choice(self.LAST_NAMES)
-            for prefix in ["Mr. ", "Ms. ", "Shri ", "Smt. ", "Kumar ", "Kumari "]:
-                if original.startswith(prefix):
-                    return f"{prefix}{first} {last}"
+            for sal in ["Mr. ", "Ms. ", "Shri ", "Smt. ", "Kumar ", "Kumari "]:
+                if original.startswith(sal):
+                    return f"{sal}{first} {last}"
             return f"{first} {last}"
 
         elif pii_type == "DOB":
