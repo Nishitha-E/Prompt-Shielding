@@ -19,7 +19,7 @@ def test_detect_pan():
 
 def test_detect_upi():
     d = PIIDetector(seed=42)
-    matches = d.detect_all("Pay to student@oksbi or rahul@ybl")
+    matches = d.detect_all("Pay to user@oksbi or rahul@ybl")
     assert len(matches) == 2
     assert [m.pii_type for m in matches] == ["UPI", "UPI"]
 
@@ -41,13 +41,12 @@ def test_detect_email():
     assert len(matches) == 1
     assert matches[0].pii_type == "EMAIL"
 
-def test_detect_student_id_and_name():
+def test_detect_name():
     d = PIIDetector(seed=42)
-    text = "Student Name: Rajesh Sharma\nRoll No: 1005-26-701"
+    text = "Student Name: Rajesh Sharma\nApplicant: Suresh Reddy"
     matches = d.detect_all(text)
     types = [m.pii_type for m in matches]
-    assert "STUDENT_NAME" in types
-    assert "STUDENT_ID" in types
+    assert types == ["NAME", "NAME"]
 
 def test_detect_bank_and_pincode():
     d = PIIDetector(seed=42)

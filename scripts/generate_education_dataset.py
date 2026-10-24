@@ -31,55 +31,25 @@ DEGREES = [
     "M.Sc Computer Science"
 ]
 
-SCENARIO_TEMPLATES = [
-    {
-        "type": "PG Admission Application",
-        "sop": "I am applying for admission into Postgraduate Degree program having qualified GATE 2026 with score {gate_score}. B.Tech CGPA: {cgpa} / 10.0.",
-    },
-    {
-        "type": "Post-Matric Scholarship & Fee Reimbursement",
-        "sop": "Submitting application for State Government ePASS scholarship renewal. Cleared all semester exams with 88% attendance.",
-    },
-    {
-        "type": "Campus Hostel Accommodation Request",
-        "sop": "Requesting hostel room allotment in campus hostel. Permanent resident of Warangal district, daily travel not possible.",
-    },
-    {
-        "type": "Semester Examination Hall Ticket Verification",
-        "sop": "Requesting duplicate hall ticket for semester exams. Paid exam challan fee of Rs. 1,500.",
-    },
-    {
-        "type": "Campus Placement & Internship Registration",
-        "sop": "Registering for campus placement drive. Preferred role: AI Security Analyst. Completed Python and Network Security projects.",
-    },
-    {
-        "type": "Education Loan Bank Verification",
-        "sop": "Bank verification certificate for SBI Scholar education loan sanction of Rs. 2,00,000.",
-    },
-    {
-        "type": "Official Transcript Application",
-        "sop": "Requesting official transcripts for higher education. Completed M.E. coursework with distinction.",
-    },
-    {
-        "type": "Tuition Fee Payment via UPI Verification",
-        "sop": "Paid semester tuition fee of Rs. 35,000 through UPI portal. UTR transaction verified by bank.",
-    },
-    {
-        "type": "Library Clearance Certificate",
-        "sop": "Central library dues clearance request for semester hall ticket issuance. All borrowed books returned.",
-    },
-    {
-        "type": "Re-evaluation & Recounting Request",
-        "sop": "Requesting recounting for Advanced Cryptography subject. Current grade B+, expected A grade.",
-    }
+SCENARIOS = [
+    "I am applying for admission having qualified GATE 2026 with score {gate_score}. B.Tech CGPA: {cgpa} / 10.0.",
+    "Submitting application for state post-matric scholarship fee reimbursement. Attendance 88%.",
+    "Requesting hostel accommodation in campus hostel. Permanent resident of Warangal.",
+    "Requesting duplicate hall ticket for semester exams. Paid exam challan fee of Rs. 1,500.",
+    "Registering for campus placement drive. Preferred role: AI Security Analyst.",
+    "Bank verification certificate for SBI Scholar education loan sanction of Rs. 2,00,000.",
+    "Requesting official transcripts for higher education. Coursework completed with distinction.",
+    "Paid semester tuition fee of Rs. 35,000 through online UPI portal. Transaction verified.",
+    "Central library clearance request for semester hall ticket issuance. Books returned.",
+    "Requesting recounting for Advanced Cryptography subject. Current grade B+, expected A."
 ]
 
 samples = []
 
 for i in range(1, 51):
-    template = SCENARIO_TEMPLATES[(i - 1) % len(SCENARIO_TEMPLATES)]
     college = COLLEGES[(i - 1) % len(COLLEGES)]
     degree = DEGREES[(i - 1) % len(DEGREES)]
+    scenario_sop = SCENARIOS[(i - 1) % len(SCENARIOS)]
 
     first = random.choice(FIRST_NAMES)
     last = random.choice(LAST_NAMES)
@@ -87,17 +57,13 @@ for i in range(1, 51):
     has_salutation = (i % 3 != 0)
     if has_salutation:
         salutation = "Mr." if i % 2 == 0 else "Ms."
-        student_name = f"{salutation} {first} {last}"
+        name_val = f"{salutation} {first} {last}"
     else:
-        student_name = f"{first} {last}"
+        name_val = f"{first} {last}"
 
     roll_num = f"1005-26-{random.randint(701, 799)}"
     app_num = f"OU26-{random.randint(10000, 99999)}"
-
-    dob_day = random.randint(1, 28)
-    dob_month = random.randint(1, 12)
-    dob_year = random.randint(2000, 2004)
-    dob_str = f"{dob_day:02d}/{dob_month:02d}/{dob_year}"
+    dob = f"{random.randint(1, 28):02d}/{random.randint(1, 12):02d}/{random.randint(2000, 2004)}"
 
     phone = f"{random.randint(6, 9)}{random.randint(100000000, 999999999)}"
     email = f"{first.lower()}.{last.lower()}{random.randint(10, 99)}@gmail.com"
@@ -112,10 +78,8 @@ for i in range(1, 51):
     upi_id = f"{first.lower()}{random.randint(10, 99)}@oksbi"
     pincode = f"5000{random.randint(10, 99)}"
 
+    # Minimal Indian PII only: Aadhaar, PAN, Mobile, Email, Bank A/c, IFSC, UPI, PIN, Name
     entities = [
-        {"type": "STUDENT_ID", "value": roll_num},
-        {"type": "STUDENT_ID", "value": app_num},
-        {"type": "DOB", "value": dob_str},
         {"type": "AADHAAR", "value": aadhaar_fmt},
         {"type": "PAN", "value": pan_code},
         {"type": "MOBILE", "value": phone},
@@ -126,47 +90,43 @@ for i in range(1, 51):
         {"type": "PINCODE", "value": pincode},
     ]
 
-    extra_narrative = ""
+    extra_note = ""
 
     # Real-world challenge 1: Unanchored names in body text (FN)
-    # In 14 samples, student or guardian name appears in narrative without header
     if i % 3 == 0:
         guardian = f"{random.choice(FIRST_NAMES)} {random.choice(LAST_NAMES)}"
-        extra_narrative += f" I discussed my admission with my guardian {guardian}."
-        entities.append({"type": "STUDENT_NAME", "value": student_name})
-        entities.append({"type": "STUDENT_NAME", "value": guardian})
-        name_line = f"Applicant: {student_name}" if i % 2 == 0 else f"I, {student_name}, submit this form."
+        extra_note += f" I consulted with my guardian {guardian}."
+        entities.append({"type": "NAME", "value": name_val})
+        entities.append({"type": "NAME", "value": guardian})
+        name_line = f"Applicant: {name_val}" if i % 2 == 0 else f"I, {name_val}, submit this form."
     else:
-        entities.append({"type": "STUDENT_NAME", "value": student_name})
-        name_line = f"Student Name: {student_name}"
+        entities.append({"type": "NAME", "value": name_val})
+        name_line = f"Student Name: {name_val}"
 
-    # Real-world challenge 2: Ambiguous 6-digit numbers in text (causing FP)
-    # In 8 samples, 6-digit challan or rank number triggers pincode regex or vice versa
+    # Real-world challenge 2: Ambiguous 6-digit campus venue PIN (FP)
     if i in [5, 11, 17, 23, 29, 35, 41, 47]:
-        challan_no = f"5000{random.randint(10, 99)}"
-        extra_narrative += f" Venue PIN Code: {challan_no}."
+        venue_code = f"5000{random.randint(10, 99)}"
+        extra_note += f" Venue PIN Code: {venue_code}."
 
-    # Real-world challenge 3: Pincode without header (FN)
-    # In 6 samples, pincode is written inline like "Hyderabad 500007"
+    # Real-world challenge 3: Inline address without "PIN Code:" keyword (FN)
     if i in [7, 14, 21, 28, 38, 44]:
-        address_line = f"Address: Near Tarnaka, Hyderabad - {pincode}"
+        address_line = f"Address: Hyderabad - {pincode}"
     else:
         address_line = f"Address PIN Code: {pincode}"
 
-    sop_text = template["sop"].format(gate_score=random.randint(620, 750), cgpa=round(random.uniform(8.1, 9.4), 2))
+    sop_formatted = scenario_sop.format(gate_score=random.randint(620, 750), cgpa=round(random.uniform(8.1, 9.4), 2))
 
     text = (
         f"{college}\n"
-        f"Application: {template['type']}\n"
         f"{name_line}\n"
         f"Roll No: {roll_num} | Application No: {app_num}\n"
-        f"Course: {degree}\n"
-        f"DOB: {dob_str} | Aadhaar: {aadhaar_fmt} | PAN: {pan_code}\n"
+        f"Course: {degree} | DOB: {dob}\n"
+        f"Aadhaar: {aadhaar_fmt} | PAN: {pan_code}\n"
         f"Contact: {phone} | Email: {email}\n"
         f"{address_line}\n"
         f"Bank A/c No: {ac_num} | IFSC: {ifsc_code} | Fee UPI: {upi_id}\n\n"
         f"Statement:\n"
-        f"{sop_text}{extra_narrative}\n\n"
+        f"{sop_formatted}{extra_note}\n\n"
         f"Please verify my details."
     )
 
@@ -174,7 +134,6 @@ for i in range(1, 51):
         "id": i,
         "college": college,
         "degree": degree,
-        "scenario_type": template["type"],
         "text": text,
         "entities": entities
     })
@@ -182,4 +141,4 @@ for i in range(1, 51):
 with open("data/education_eval_samples.json", "w", encoding="utf-8") as f:
     json.dump(samples, f, indent=2)
 
-print(f"Generated {len(samples)} realistic test samples in data/education_eval_samples.json")
+print(f"Generated {len(samples)} samples with minimal Indian PII only.")

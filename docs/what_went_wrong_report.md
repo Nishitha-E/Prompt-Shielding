@@ -31,7 +31,7 @@ Across the qualification sprint, work was carried out in progressive stages and 
 - Implemented `generate_verhoeff_number()` to generate format-valid synthetic Aadhaar surrogates that pass external validation.
 
 ### B. Core Indian PII Detectors & Surrogate Generators (`src/promptshield/detectors.py`)
-Implemented deterministic recognizers and realistic surrogate generators for **11 identifier types**:
+Implemented deterministic recognizers and realistic surrogate generators for the core **Indian identifier types**:
 1. **Aadhaar**: 12-digit format with Verhoeff validation and checksum-valid synthetic surrogates.
 2. **PAN Card**: Standard 10-character alphanumeric structure (`[A-Z]{5}[0-9]{4}[A-Z]`).
 3. **Indian Mobile**: 10-digit mobile numbers starting with 6–9, supporting `+91` international prefixes.
@@ -40,9 +40,9 @@ Implemented deterministic recognizers and realistic surrogate generators for **1
 6. **Bank Account Number**: 9 to 18 digit account numbers with contextual keywords.
 7. **UPI ID**: Virtual Payment Addresses with Indian bank and PSP handles (`@oksbi`, `@okhdfcbank`, `@paytm`, `@ybl`).
 8. **Postal PIN Code**: 6-digit Indian postal codes (100000–899999).
-9. **Date of Birth (DOB)**: Common Indian date formats (`DD/MM/YYYY`, `DD-MM-YYYY`).
-10. **Student Roll / Application ID**: University roll numbers (`1005-26-701`) and application IDs (`OU26-49102`).
-11. **Student Names**: Extraction via contextual headers (`Student Name:`, `Applicant:`) and Indian salutations (`Mr.`, `Ms.`, `Kumar`, `Kumari`).
+9. **Person / Student Name**: Extraction via contextual headers (`Name:`, `Student Name:`, `Applicant:`) and Indian salutations (`Mr.`, `Ms.`, `Kumar`, `Kumari`).
+
+Academic context fields such as student roll numbers, college names, degrees, marks, and GATE scores are preserved unchanged.
 
 ### C. Reversible Session Engine & Academic Context Preservation (`src/promptshield/redactor.py`)
 - **Session Consistency**: Ensures that if an original identifier appears multiple times in a conversation, it receives the exact same synthetic surrogate.
@@ -80,23 +80,21 @@ Created 18 automated unit tests across 3 clean test modules (`test_verhoeff.py`,
 Identifier       TP    FP    FN    Precision  Recall   F1      
 AADHAAR          50    0     0       100.00% 100.00% 100.00%
 BANK_ACCOUNT     50    0     0       100.00% 100.00% 100.00%
-DOB              50    0     0       100.00% 100.00% 100.00%
 EMAIL            50    0     0       100.00% 100.00% 100.00%
 IFSC             50    0     0       100.00% 100.00% 100.00%
 MOBILE           50    0     0       100.00% 100.00% 100.00%
+NAME             42    0     24      100.00%  63.64%  77.78%
 PAN              50    0     0       100.00% 100.00% 100.00%
 PINCODE          44    8     6        84.62%  88.00%  86.27%
-STUDENT_ID       100   0     0       100.00% 100.00% 100.00%
-STUDENT_NAME     42    0     24      100.00%  63.64%  77.78%
 UPI              50    0     0       100.00% 100.00% 100.00%
 -----------------------------------------------------------------
-OVERALL          586   8     30       98.65%  95.13%  96.86%
+OVERALL          436   8     30       98.20%  93.56%  95.82%
 ```
 
-Overall metrics across 624 evaluated entities:
-- **Precision**: **98.65%**
-- **Recall**: **95.13%**
-- **F1 Score**: **96.86%**
+Overall metrics across 466 evaluated entities:
+- **Precision**: **98.20%**
+- **Recall**: **93.56%**
+- **F1 Score**: **95.82%**
 - **Total Errors**: **38** (8 False Positives, 30 False Negatives).
 
 ---

@@ -3,10 +3,10 @@
 Prompt Shield is a Python tool designed to protect Indian Personally Identifiable Information (PII) in text prompts sent to AI assistants. It replaces sensitive student and personal data with realistic, format-valid synthetic surrogates, and restores the original values when the AI assistant responds.
 
 ## Key Features
-- Detects 11 Indian identifier types: Aadhaar, PAN, Mobile, Email, IFSC, Bank Account Number, UPI ID, PIN code, DOB, Student Roll Number, and Student Name.
+- Detects core Indian identifier types: Aadhaar, PAN, Mobile, Email, IFSC, Bank Account Number, UPI ID, PIN code, and Person Name.
 - Mathematical checksum validation for Aadhaar using the Verhoeff algorithm.
 - Reversible local mapping: original data never leaves your computer and is restored silently.
-- Preserves academic context such as college names, degree programs, CGPA, and GATE scores.
+- Preserves academic and institutional context such as college names, degree programs, student roll numbers, CGPA, and GATE scores.
 
 ## Project Structure
 ```
