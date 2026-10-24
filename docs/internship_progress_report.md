@@ -11,11 +11,11 @@
 
 ## 1. Problem Statement & Introduction
 
-Public Large Language Models (ChatGPT, Claude, Gemini) are increasingly used by students and university applicants to review statements of purpose (SOP), verify scholarship applications, and draft admission queries. In doing so, users often share sensitive personal identifiers in their prompts.
+Public Large Language Models (ChatGPT, Claude, Gemini) are frequently used by students and applicants to review statements of purpose (SOP), verify scholarship applications, and draft admission queries. Users often share sensitive personal identifiers in these prompts.
 
-Conventional redaction methods replace sensitive data with generic tokens like `[REDACTED]` or `[NAME]`, which degrades the grammatical coherence and reasoning ability of the LLM. 
+Conventional redaction methods replace sensitive data with generic tokens like `[REDACTED]` or `[NAME]`, which damages the grammatical coherence and reasoning ability of the LLM. 
 
-To address this, I am developing **Prompt Shield**. The goal is to detect sensitive Indian personal identifiers in user prompts, substitute them with realistic, format-valid synthetic surrogates, and later restore the original values when the AI assistant returns its response. The original personal data remains local to the user's environment.
+To address this, I am developing **Prompt Shield**. The goal is to detect sensitive Indian personal identifiers in user prompts, substitute them with realistic, format-valid synthetic surrogates, and restore the original values when the AI assistant returns its response. All personal data and session mappings remain strictly local to the user's machine.
 
 ---
 
@@ -23,8 +23,8 @@ To address this, I am developing **Prompt Shield**. The goal is to detect sensit
 
 For this project, I selected the public, MIT-licensed **Indic Synthetic Profiles** dataset (`adwaith06/indic-synthetic-profiles`) hosted on Hugging Face.
 
-* **Dataset Characteristics**: It contains 10,000 synthetic Indian profile records across 8 Indian languages (Devanagari, Telugu, Tamil, Malayalam, Bengali, Kannada, Gujarati, Marathi) with native scripts, contact details, identity identifiers, and bank details.
-* **Why Education Scenarios**: Because the dataset contains structured profile rows rather than conversation logs, I am using these profile schemas to construct realistic education-related prompts (such as admission queries, scholarship forms, and hostel requests).
+* **Dataset Characteristics**: It contains 10,000 synthetic Indian profile records across 8 Indian languages (Devanagari, Telugu, Tamil, Malayalam, Bengali, Kannada, Gujarati, Marathi) with native scripts, contact details, identity numbers, and bank details.
+* **Why Education Scenarios**: Because the dataset contains structured profile rows rather than conversational text, I am using these profile schemas to construct realistic education-related prompts (such as admission queries, scholarship forms, and hostel requests).
 * **Minimal Indian PII Scope**:
   I identified and scoped the core Indian personal identifiers:
   1. Aadhaar Numbers (with Verhoeff checksum validation)
@@ -43,7 +43,7 @@ Educational context—such as university names (*Osmania University*), degree co
 
 ## 3. What I Have Implemented So Far
 
-To date, I have completed the foundational dataset setup, mathematical checksum logic, and core PII detection and surrogate generation:
+To date, I have completed the foundational dataset setup, mathematical checksum logic, core PII detection, format-valid surrogacy, and the reversible session engine:
 
 ### A. Aadhaar Checksum Engine via Verhoeff Algorithm (`src/promptshield/verhoeff.py`)
 To meet the requirement for mathematical validation, I implemented the **Verhoeff algorithm** using dihedral group $D_5$ matrix arithmetic:
@@ -66,28 +66,29 @@ I implemented deterministic regular expression detectors and format-valid surrog
 
 Crucially, the detector isolates and protects academic qualifications, college names, and marks from being treated as PII.
 
+### C. Reversible Session Vault & Silent Restoration Engine (`src/promptshield/redactor.py`)
+I implemented the core redaction and restoration engine:
+* **Session Consistency**: Built a local mapping dictionary so that if an original identifier appears multiple times across turns, it consistently receives the exact same synthetic surrogate.
+* **Exact Restoration**: Implemented client-side reverse-mapping (`surrogate -> original`) that intercepts the AI assistant's response and restores the original values silently before presentation. Replacements are ordered by surrogate length in descending order to prevent substring collisions.
+* **Zero Network Exfiltration**: All session mappings remain strictly local in memory or can be exported to a local session JSON file. No user data ever leaves the local machine.
+
 ---
 
 ## 4. Current Work in Progress & Next Steps (To Be Completed for 29th Review)
 
-With the detection and surrogate logic in place, I am now completing the remaining pipeline stages:
-
-### C. Reversible Session Vault & Silent Restoration Engine (`src/promptshield/redactor.py`)
-* **Session Consistency**: I am implementing a local mapping store so that if an original identifier appears multiple times across turns, it consistently receives the exact same synthetic surrogate.
-* **Exact Restoration**: Building the client-side reverse-mapping engine (`surrogate -> original`) that intercepts the AI assistant's response and restores the original values silently before presentation.
-* **Zero Exfiltration**: All session mappings will remain strictly local in memory or in a local session JSON file.
+With the core engine (Parts A, B, and C) working, I am now completing the final user-facing and evaluation stages:
 
 ### D. User-Facing Command-Line Interface (`src/promptshield/cli.py`)
-* Developing a clean CLI with four commands:
+* Finalizing a clean CLI with four commands:
   - `redact`: Mask PII in a file and export the local session mapping.
   - `restore`: Restore original values in the model's response using the session mapping.
   - `demo`: An interactive 4-step demonstration using an Osmania University scholarship inquiry.
   - `eval`: Automated benchmark runner.
 
 ### E. Evaluation Benchmark & Failure Case Analysis (`data/` & `tests/`)
-* **50 Ground-Truth Test Records**: I am creating 50 hand-labeled synthetic education scenarios modeled after the Indic Synthetic Profiles dataset across 10 academic workflows (admissions, scholarships, hostel allotment, fees, transcripts).
-* **Metrics to Report**: I will measure and report Precision, Recall, and F1-score across all supported categories.
-* **Failure Analysis**: I will document known real-world edge cases where deterministic rules face challenges—specifically unanchored names in free-form narrative essays (which require future on-device NER) and ambiguous 6-digit campus venue codes versus postal PIN codes.
+* **50 Ground-Truth Test Records**: Creating 50 hand-labeled synthetic education scenarios modeled after the Indic Synthetic Profiles dataset across 10 academic workflows (admissions, scholarships, hostel allotment, fees, transcripts).
+* **Metrics to Report**: Measuring Precision, Recall, and F1-score across all supported categories.
+* **Failure Analysis**: Documenting real-world edge cases where deterministic rules face challenges—specifically unanchored names in free-form narrative essays (which require future on-device NER) and ambiguous 6-digit campus venue codes versus postal PIN codes.
 
 ---
 
@@ -97,10 +98,11 @@ With the detection and surrogate logic in place, I am now completing the remaini
   - Dataset selection and scoping (`adwaith06/indic-synthetic-profiles`).
   - Verhoeff dihedral group $D_5$ algorithm for Aadhaar validation and checksum-valid surrogates.
   - Core Indian PII recognizers and format-preserving synthetic surrogate generators.
+  - Reversible session engine with local vault and round-trip restoration.
 * **Target for October 29th Connection**:
-  - Complete integration of the reversible session redactor and CLI tool.
-  - Finalize benchmark evaluation on the 50 hand-labeled samples and document the failure cases.
-  - Prepare a 10-minute live terminal demonstration showing round-trip redaction and restoration.
+  - Finalize CLI integration and screen-share demo mode.
+  - Complete the 50-sample benchmark evaluation and document the failure cases.
+  - Present the full working prototype during the Gate 0 review call.
 
 ---
 *Report submitted by M.Tech Student Researcher for Pragya Cyber × Osmania University CCoE AI Security Internship.*
