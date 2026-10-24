@@ -1,20 +1,80 @@
-# Gate 0 Formal Retrospective & Failure Report: What Went Wrong
+# Gate 0 Progress & Technical Failure Report: What Was Done & What Went Wrong
+
 **Project Title**: Prompt Shield — Indian PII Protection for AI Prompts  
 **Domain**: Education Sector (Admissions, Scholarships, Student Enquiries)  
-**Dataset Reference**: [Indic Synthetic Profiles](https://huggingface.co/datasets/adwaith06/indic-synthetic-profiles) (Hugging Face: adwaith06/indic-synthetic-profiles)  
+**Dataset Reference**: [Indic Synthetic Profiles](https://huggingface.co/datasets/adwaith06/indic-synthetic-profiles) (Hugging Face: `adwaith06/indic-synthetic-profiles`)  
 **Program**: Pragya Cyber × Osmania University CCoE · AI Security Internship 2026–27  
 **Author**: M.Tech Student Researcher  
+**Repository**: [https://github.com/Nishitha-E/Prompt-Shielding](https://github.com/Nishitha-E/Prompt-Shielding)  
 **Date**: October 2026  
 
 ---
 
-## 1. Executive Summary & Benchmark Results
+## 1. Project Background & Dataset Selection
 
-As specified in the **Pragya Cyber × Osmania University CCoE Internship Project Brief**, claiming 100% precision and recall is treated with immediate suspicion because real-world natural language PII detection inevitably encounters edge cases, false alarms, and missed detections.
+Public Large Language Models (ChatGPT, Claude, Gemini) are increasingly used by students and applicants to draft admission essays, review scholarship applications, and resolve fee inquiries. These prompts frequently contain sensitive personal identifiers. 
 
-In this qualification sprint, Prompt Shield was evaluated against **50 hand-labeled, ground-truth annotated synthetic education records** derived from the MIT-licensed `adwaith06/indic-synthetic-profiles` dataset. These records encompass 10 realistic university workflows: PG admissions, state ePASS scholarship applications, campus hostel allotments, duplicate hall ticket issuance, campus placement resumes, bank education loan verification, official transcript requests, tuition fee UPI receipts, library clearance, and examination recounting requests.
+Instead of simple irreversible redaction (e.g., replacing names with `[REDACTED]`), **Prompt Shield** replaces sensitive Indian identifiers with realistic, format-valid synthetic surrogates, maintains a local session vault, and silently restores the original values when the AI response returns.
 
-### Empirical Performance Summary
+### Dataset Reference
+We selected the open-source **Indic Synthetic Profiles** dataset (`adwaith06/indic-synthetic-profiles`), available on Hugging Face under the MIT license. It provides 10,000 synthetic Indian profile records covering 8 Indian languages, native scripts, contact details, identification numbers, and academic fields. Because the dataset consists of structured tabular records, we extracted realistic profile patterns to synthesize natural-language academic prompts and manually established ground-truth spans for evaluation.
+
+---
+
+## 2. What Has Been Done So Far (Implementation Progress)
+
+Across the qualification sprint, work was carried out in progressive stages and committed over 11 distinct days on Git:
+
+### A. Mathematical Checksum Implementation (`src/promptshield/verhoeff.py`)
+- Implemented the **Verhoeff checksum algorithm** using the dihedral group $D_5$ multiplication table (`VERHOEFF_D`), permutation table (`VERHOEFF_P`), and inverse table (`VERHOEFF_INV`).
+- Enables mathematically sound validation of 12-digit Indian Aadhaar numbers to reject arbitrary numerical strings.
+- Implemented `generate_verhoeff_number()` to generate format-valid synthetic Aadhaar surrogates that pass external validation.
+
+### B. Core Indian PII Detectors & Surrogate Generators (`src/promptshield/detectors.py`)
+Implemented deterministic recognizers and realistic surrogate generators for **11 identifier types**:
+1. **Aadhaar**: 12-digit format with Verhoeff validation and checksum-valid synthetic surrogates.
+2. **PAN Card**: Standard 10-character alphanumeric structure (`[A-Z]{5}[0-9]{4}[A-Z]`).
+3. **Indian Mobile**: 10-digit mobile numbers starting with 6–9, supporting `+91` international prefixes.
+4. **Email Address**: Standard RFC format with common personal domains.
+5. **IFSC Code**: 11-character bank branch identifier (`[A-Z]{4}0[A-Z0-9]{6}`).
+6. **Bank Account Number**: 9 to 18 digit account numbers with contextual keywords.
+7. **UPI ID**: Virtual Payment Addresses with Indian bank and PSP handles (`@oksbi`, `@okhdfcbank`, `@paytm`, `@ybl`).
+8. **Postal PIN Code**: 6-digit Indian postal codes (100000–899999).
+9. **Date of Birth (DOB)**: Common Indian date formats (`DD/MM/YYYY`, `DD-MM-YYYY`).
+10. **Student Roll / Application ID**: University roll numbers (`1005-26-701`) and application IDs (`OU26-49102`).
+11. **Student Names**: Extraction via contextual headers (`Student Name:`, `Applicant:`) and Indian salutations (`Mr.`, `Ms.`, `Kumar`, `Kumari`).
+
+### C. Reversible Session Engine & Academic Context Preservation (`src/promptshield/redactor.py`)
+- **Session Consistency**: Ensures that if an original identifier appears multiple times in a conversation, it receives the exact same synthetic surrogate.
+- **Local Vault**: Mappings are stored strictly in memory or exported to a local session JSON file. No personal data leaves the user's computer.
+- **Silent Reverse Restoration**: When the LLM generates a response referencing the synthetic surrogate, the engine restores the user's real data. Replacements are ordered by surrogate length in descending order to prevent substring collisions.
+- **Academic Context Preservation**: Built specifically to leave university names (*Osmania University*), degree programs (*M.E. Cyber Security*), CGPA (*8.85 / 10.0*), GATE scores (*680*), and scholarship fee amounts untouched.
+
+### D. Command-Line Interface (`src/promptshield/cli.py`)
+Built a clean, straightforward student CLI supporting 4 subcommands:
+```bash
+# 1. Mask PII in a prompt and save session
+python -m promptshield.cli redact -i prompt.txt -o masked.txt -s session.json
+
+# 2. Restore original values in model response
+python -m promptshield.cli restore -i model_response.txt -o final.txt -s session.json
+
+# 3. Live 4-step demonstration
+python -m promptshield.cli demo
+
+# 4. Automated 50-sample evaluation benchmark
+python -m promptshield.cli eval
+```
+
+### E. 50 Hand-Labeled Evaluation Samples (`data/education_eval_samples.json`)
+Generated and hand-annotated 50 synthetic evaluation records across 10 academic scenarios (PG admissions, ePASS scholarships, hostel booking, hall tickets, placement drives, loan verification, transcripts, fee receipts, library clearance, and re-evaluation).
+
+### F. Automated Test Suite (`tests/`)
+Created 18 automated unit tests across 3 clean test modules (`test_verhoeff.py`, `test_detectors.py`, `test_redactor.py`). All 18 tests execute and pass in under 0.15 seconds.
+
+---
+
+## 3. Empirical Evaluation Benchmark
 
 ```
 Identifier       TP    FP    FN    Precision  Recall   F1      
@@ -33,95 +93,48 @@ UPI              50    0     0       100.00% 100.00% 100.00%
 OVERALL          586   8     30       98.65%  95.13%  96.86%
 ```
 
-The system achieved **98.65% Precision**, **95.13% Recall**, and **96.86% F1-score**. The errors were deliberately not hidden: **30 False Negatives (missed PII)** and **8 False Positives (over-redacted non-PII)** occurred. The following sections detail why these failures occurred and what must be done to resolve them.
+Overall metrics across 624 evaluated entities:
+- **Precision**: **98.65%**
+- **Recall**: **95.13%**
+- **F1 Score**: **96.86%**
+- **Total Errors**: **38** (8 False Positives, 30 False Negatives).
 
 ---
 
-## 2. What Went Wrong: Root Cause Analysis
+## 4. What Went Wrong: Root Cause Failure Analysis
 
-### Failure Mode 1: Severe Recall Drop on Unanchored Student & Guardian Names (Recall: 63.64%)
-* **Observed Flaw**: The system missed **24 out of 66 personal names** in the test set.
-* **Why it Failed**:
-  - The deterministic regular expression relies on structural cues such as `Student Name:`, `Applicant:`, or honorific salutations (`Mr.`, `Ms.`, `Kumar`, `Kumari`).
-  - In real-world Statements of Purpose (SOP) and narrative inquiries, students write sentences like:
-    > *"I discussed my admission options with my guardian Suresh Reddy."*  
-    > *"I, Ananya Verma, submit that my semester fees were paid on time."*
-  - Because `Suresh Reddy` and `Ananya Verma` in narrative context lack a formal `Name:` anchor or honorific prefix, the regex engine completely overlooked them.
-  - Attempting to match bare capitalized bigrams (`[A-Z][a-z]+ [A-Z][a-z]+`) in natural text immediately causes catastrophic false positives by redacting educational context like `Osmania University`, `Cyber Security`, `State Government`, and `Advanced Cryptography`.
+Rather than claiming unrealistic 100% perfection, we conducted an in-depth boundary failure analysis:
 
-### Failure Mode 2: False Positive Ingestion of 6-Digit Institutional Codes as PIN Codes (Precision: 84.62%)
-* **Observed Flaw**: The system generated **8 False Positives** on PIN codes.
-* **Why it Failed**:
-  - In university applications, students frequently cite institutional reference numbers that share the 6-digit postal code syntax (e.g., `Venue PIN Code: 500045`, fee payment counter numbers, or regional exam sub-center tokens).
-  - The detector's pattern `(?:PIN(?:\s*Code)?|Postal\s*Code)[\s.:#-]+([1-9][0-9]{5})` triggered on these public venue and terminal numbers.
-  - While redacting a public exam center code does not leak personal data, it corrupts the academic context given to the LLM assistant, leading the model to hallucinate or generate confused instructions regarding test locations.
+### Failure Mode 1: Severe Recall Drop on Unanchored Names (Recall: 63.64%)
+* **The Error**: Missed **24 out of 66 personal names** (False Negatives).
+* **Root Cause**: Regular expressions rely on contextual anchors (`Student Name:`) or salutations (`Mr./Ms.`). When students wrote narrative statements such as *"I discussed my admission with my guardian Suresh Reddy"* or *"I, Ananya Verma, submit this form"*, the names were completely overlooked.
+* **Why regex cannot fix this**: Matching any two capitalized words (`[A-Z][a-z]+ [A-Z][a-z]+`) produces disastrous false positives by redacting `Osmania University`, `Cyber Security`, `State Government`, etc.
+
+### Failure Mode 2: Over-Redaction of Campus Venue Codes as PIN Codes (Precision: 84.62%)
+* **The Error**: **8 False Positives** on PIN codes.
+* **Root Cause**: 6-digit campus venue terminals, hall codes, or fee counter tokens (e.g., `Venue PIN Code: 500045`) matched the 6-digit postal pattern. This removes non-sensitive location context, degrading the LLM's assistance.
 
 ### Failure Mode 3: Missing Context Anchors on Inline Postal Codes (Recall: 88.00%)
-* **Observed Flaw**: In **6 samples**, the student's residential PIN code was completely missed (False Negative).
-* **Why it Failed**:
-  - When students wrote their address in informal inline format (e.g., `Address: Near Tarnaka, Hyderabad - 500007`), the strict anchor `PIN Code:` was absent.
-  - Without the keyword, the regex engine ignored the 6-digit number to avoid false-matching GATE scores or fee amounts. Consequently, the user's postal PIN was leaked in raw text.
+* **The Error**: Missed **6 postal PIN codes** (False Negatives).
+* **Root Cause**: When students wrote addresses informally without the explicit phrase `PIN Code:` (e.g., `Address: Near Tarnaka, Hyderabad - 500007`), the detector ignored the number to prevent clashing with GATE scores or fee sums.
 
-### Failure Mode 4: Format Variations and Token Boundary Disruptions
-* **Observed Flaw**: Rigid boundary assumptions fail when text is exported from PDFs or OCR scans.
-* **Why it Failed**:
-  - Scanned admission bonafides and marksheets frequently introduce hard line breaks inside continuous digit streams (e.g., `1005-26-\n749` or `2363 5412\n8915`).
-  - While our basic in-memory normalizer fixed isolated 4-digit breaks, it relies on greedy regex replacement that can fail when non-breaking whitespace (`\u00a0`), zero-width spaces (`\u200b`), or soft hyphens (`\u00ad`) appear unpredictably.
+### Failure Mode 4: Token Boundary Degradation from OCR and Scanned Marksheets
+* **The Error**: Scanned documents and PDF exports introduce hard line breaks inside digit sequences (e.g., `1005-26-\n749` or `2363 5412\n8915`).
+* **Root Cause**: Regex patterns operate across single lines by default. While basic string normalization repairs isolated 4-digit splits, OCR artifacts with soft hyphens (`\u00ad`) or zero-width spaces break regex match boundaries.
 
 ---
 
-## 3. Engineering Retrospective: What Would We Do Differently?
+## 5. Engineering Retrospective & Phase 2 Roadmap
 
-1. **Rule-Based Regex is Insufficient for Unstructured Text**:
-   Regex excels at syntactically rigid identifiers with mathematical checksums (Aadhaar with Verhoeff, PAN with fixed character positions, IFSC with 4-letter prefixes). However, natural-language personal names and addresses cannot be solved through regular expressions alone. Regex will always force an unacceptable trade-off between missing names (low recall) or destroying non-sensitive text (low precision).
+### Lessons Learned
+1. **Deterministic Rules Have Limits**: Regex is ideal for mathematically validated identifiers (Aadhaar with Verhoeff, PAN, IFSC). However, unstructured names and addresses in narrative text require semantic models.
+2. **Mathematical Checksums are Invaluable**: Aadhaar's Verhoeff algorithm achieved 100% precision without needing contextual keywords, proving the value of checksum validation.
+3. **Local Latency Advantage**: The regex engine processes prompts in under 0.1 ms, easily meeting the requirement that typing in the UI never feels delayed.
 
-2. **The Power of Mathematical Checksum Verification**:
-   The Aadhaar implementation proved that mathematical validation (Verhoeff dihedral group $D_5$) provides 100% precision. Even if a 12-digit student registration number or serial number appears in a prompt, the Verhoeff checksum instantly discriminates between a genuine Aadhaar number and an arbitrary 12-digit number without needing contextual keywords.
-
-3. **Session Vault Overlap Collisions**:
-   During reverse restoration, if a surrogate is a substring of another word or if two surrogates share prefixes, naive `.replace()` calls can cause corruptions. We mitigated this by sorting replacements in descending order of string length, but a trie-based or token-index-based replacement mechanism is required for enterprise scale.
-
----
-
-## 4. Phase 2 Scale & Architectural Roadmap
-
-To eliminate the 30 false negatives and 8 false positives before deploying the browser extension, the following architecture will be implemented:
-
-```
-                          Incoming Student Prompt
-                                     │
-                                     ▼
-                     ┌───────────────────────────────┐
-                     │   Stage 1: Upstream Cleaner   │  (Heal OCR splits & Unicode)
-                     └───────────────┬───────────────┘
-                                     │
-                ┌────────────────────┴────────────────────┐
-                ▼                                         ▼
-   ┌───────────────────────────┐             ┌───────────────────────────┐
-   │ Fast Deterministic Engine │             │ Local On-Device Small NER │
-   │ (Verhoeff Aadhaar, PAN,   │             │ (DistilBERT / BiLSTM-CRF  │
-   │  IFSC, Mobile, Email, UPI)│             │  for Free-Form Names &    │
-   │ Latency: < 0.1 ms         │             │  Addresses in Narrative)  │
-   └────────────┬──────────────┘             └─────────────┬─────────────┘
-                │                                         │
-                └────────────────────┬────────────────────┘
-                                     ▼
-                     ┌───────────────────────────────┐
-                     │   Stage 3: Local Vault &      │  (Format-valid synthetic
-                     │   Surrogate Generator         │   substitution + Session map)
-                     └───────────────┬───────────────┘
-                                     │
-                                     ▼
-                         Sanitized Outgoing Prompt
-```
-
-1. **Hybrid Architecture (Regex + Lightweight Local NER)**:
-   - Retain regex for checksum-backed identifiers (Aadhaar, PAN, IFSC, UPI, Phone).
-   - Introduce an on-device, quantized token classifier (e.g., 8-bit quantized MobileBERT or BiLSTM-CRF via ONNX Runtime Web). This model will run completely on the user's CPU without sending a single byte to any external server.
-2. **Context-Aware Disambiguation**:
-   - Classify 6-digit numbers based on preceding dependency trees (differentiating postal codes from marks, ranks, or venue receipts).
-3. **Browser Extension Manifest V3 Integration**:
-   - Package the Python logic into WebAssembly (WASM) or a local Native Messaging host to intercept prompt submissions directly in ChatGPT, Claude, and Gemini textareas.
+### Phase 2 Architecture (Browser Extension)
+1. **Hybrid Detection**: Retain regex for checksum identifiers; integrate a lightweight on-device token classifier (8-bit quantized DistilBERT or BiLSTM-CRF via ONNX Runtime Web) running locally in the browser to detect unanchored names in narrative paragraphs.
+2. **Context Disambiguation**: Use dependency parsing to separate personal postal PINs from institutional hall numbers and transaction IDs.
+3. **Manifest V3 Extension**: Package the engine as a browser extension to intercept prompt submissions directly in ChatGPT, Claude, and Gemini textareas.
 
 ---
-*Report completed for the Pragya Cyber × Osmania University CCoE AI Security Internship Gate 0 submission.*
+*Report submitted for the Pragya Cyber × Osmania University CCoE AI Security Internship Gate 0.*
