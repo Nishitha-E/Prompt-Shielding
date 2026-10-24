@@ -57,8 +57,12 @@ python -m promptshield.cli restore -i model_response.txt -o final.txt -s session
 ```
 
 ## Evaluation Results
-Tested against 50 hand-labeled education scenarios:
-- Precision: 99.67%
-- Recall: 99.34%
-- F1 Score: 99.50%
-- Documented edge cases: 6-digit rank numbers vs PIN codes, and unanchored names in narrative essays.
+Tested against 50 hand-labeled education scenarios (incorporating real-world edge cases):
+- Precision: 98.65%
+- Recall: 95.13%
+- F1 Score: 96.86%
+- Documented Failures (38 total errors: 8 False Positives, 30 False Negatives):
+  - Personal names in narrative statement of purpose (SOP) essays without salutations or headers (Recall: 63.64%).
+  - 6-digit campus venue / receipt codes falsely flagged as personal PIN codes (Precision: 84.62%).
+  - Inline postal PIN codes without explicit "PIN Code:" keyword.
+- Complete 2-page failure analysis available in `docs/what_went_wrong_report.md`.

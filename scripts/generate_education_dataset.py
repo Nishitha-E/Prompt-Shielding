@@ -1,5 +1,3 @@
-"""Generate 50 synthetic hand-labeled education prompt samples for Prompt Shield evaluation benchmark."""
-
 import json
 import random
 from promptshield.verhoeff import generate_verhoeff_number
@@ -33,80 +31,65 @@ DEGREES = [
     "M.Sc Computer Science"
 ]
 
-EDUCATION_SCENARIOS = [
+SCENARIO_TEMPLATES = [
     {
         "type": "PG Admission Application",
-        "purpose": "Application for admission into Postgraduate Degree program.",
-        "course_detail": "Qualified GATE 2026 with score 680. Seeking admission under merit quota.",
-        "academic_record": "B.Tech CGPA: 8.85 / 10.0 from Osmania University.",
+        "sop": "I am applying for admission into Postgraduate Degree program having qualified GATE 2026 with score {gate_score}. B.Tech CGPA: {cgpa} / 10.0.",
     },
     {
         "type": "Post-Matric Scholarship & Fee Reimbursement",
-        "purpose": "State Government ePASS Post-Matric Scholarship renewal.",
-        "course_detail": "Enrolled in M.E. Cyber Security, Year 1. Annual family income below 2 Lakhs.",
-        "academic_record": "Previous year semester attendance: 88%. Cleared all subjects in single attempt.",
+        "sop": "Submitting application for State Government ePASS scholarship renewal. Cleared all semester exams with 88% attendance.",
     },
     {
         "type": "Campus Hostel Accommodation Request",
-        "purpose": "Hostel room allotment in Osmania University Campus Hostels.",
-        "course_detail": "Permanent resident of Warangal district. Daily commuting not feasible.",
-        "academic_record": "Hostel caution deposit paid. Category: Non-Local Merit.",
+        "sop": "Requesting hostel room allotment in campus hostel. Permanent resident of Warangal district, daily travel not possible.",
     },
     {
         "type": "Semester Examination Hall Ticket Verification",
-        "purpose": "Request for issuance of duplicate hall ticket for Semester End Exams.",
-        "course_detail": "Examination: M.E. Cyber Security regular examinations November 2026.",
-        "academic_record": "Examination fee paid challan submitted to college exam branch.",
+        "sop": "Requesting duplicate hall ticket for semester exams. Paid exam challan fee of Rs. 1,500.",
     },
     {
         "type": "Campus Placement & Internship Registration",
-        "purpose": "Registration for On-Campus Placement Drive 2026-27.",
-        "course_detail": "Preferred roles: AI Security Engineer, Vulnerability Analyst, SOC Analyst.",
-        "academic_record": "Aggregate CGPA: 8.65, zero active backlogs, Python and C++ certified.",
+        "sop": "Registering for campus placement drive. Preferred role: AI Security Analyst. Completed Python and Network Security projects.",
     },
     {
-        "type": "Education Loan Bank Account Verification",
-        "purpose": "Bank verification certificate for SBI Scholar Education Loan disbursement.",
-        "course_detail": "Tuition fee per annum: Rs. 85,000. Sanctioned loan amount: Rs. 2,00,000.",
-        "academic_record": "Bonafide student certificate and fee structure estimation attached.",
+        "type": "Education Loan Bank Verification",
+        "sop": "Bank verification certificate for SBI Scholar education loan sanction of Rs. 2,00,000.",
     },
     {
-        "type": "Official Transcript & Degree Bonafide",
-        "purpose": "Application for official transcripts for higher education.",
-        "course_detail": "Completed M.E. coursework. Requesting 3 sets of sealed transcripts.",
-        "academic_record": "Degree awarded with First Class with Distinction.",
+        "type": "Official Transcript Application",
+        "sop": "Requesting official transcripts for higher education. Completed M.E. coursework with distinction.",
     },
     {
         "type": "Tuition Fee Payment via UPI Verification",
-        "purpose": "Online college fee payment confirmation slip.",
-        "course_detail": "Semester 2 Tuition Fee Rs. 35,000 paid via SBI UPI Collect portal.",
-        "academic_record": "UTR Transaction reference successfully verified by accounts branch.",
+        "sop": "Paid semester tuition fee of Rs. 35,000 through UPI portal. UTR transaction verified by bank.",
     },
     {
-        "type": "Library Clearance & Digital Access Card",
-        "purpose": "Clearance certificate from University Central Library.",
-        "course_detail": "All borrowed IEEE and AI security textbooks returned without dues.",
-        "academic_record": "Eligible for final semester hall ticket issuance.",
+        "type": "Library Clearance Certificate",
+        "sop": "Central library dues clearance request for semester hall ticket issuance. All borrowed books returned.",
     },
     {
-        "type": "Re-evaluation & Grade Verification Request",
-        "purpose": "Request for paper recounting and answer script photocopy.",
-        "course_detail": "Subject: Advanced Cryptography and Network Security (Code: CS501).",
-        "academic_record": "Current grade: B+ (expected A grade based on answer key evaluation).",
+        "type": "Re-evaluation & Recounting Request",
+        "sop": "Requesting recounting for Advanced Cryptography subject. Current grade B+, expected A grade.",
     }
 ]
 
 samples = []
 
 for i in range(1, 51):
-    scenario = EDUCATION_SCENARIOS[(i - 1) % len(EDUCATION_SCENARIOS)]
+    template = SCENARIO_TEMPLATES[(i - 1) % len(SCENARIO_TEMPLATES)]
     college = COLLEGES[(i - 1) % len(COLLEGES)]
     degree = DEGREES[(i - 1) % len(DEGREES)]
 
     first = random.choice(FIRST_NAMES)
     last = random.choice(LAST_NAMES)
-    salutation = random.choice(["Mr.", "Ms."])
-    student_name = f"{salutation} {first} {last}"
+    
+    has_salutation = (i % 3 != 0)
+    if has_salutation:
+        salutation = "Mr." if i % 2 == 0 else "Ms."
+        student_name = f"{salutation} {first} {last}"
+    else:
+        student_name = f"{first} {last}"
 
     roll_num = f"1005-26-{random.randint(701, 799)}"
     app_num = f"OU26-{random.randint(10000, 99999)}"
@@ -119,24 +102,17 @@ for i in range(1, 51):
     phone = f"{random.randint(6, 9)}{random.randint(100000000, 999999999)}"
     email = f"{first.lower()}.{last.lower()}{random.randint(10, 99)}@gmail.com"
 
-    # Verhoeff Aadhaar
     base11 = f"{random.randint(2, 9)}{random.randint(1000000000, 9999999999)}"
     aadhaar_digits = generate_verhoeff_number(base11)
     aadhaar_fmt = f"{aadhaar_digits[:4]} {aadhaar_digits[4:8]} {aadhaar_digits[8:]}"
 
-    # PAN
     pan_code = f"ABC{random.choice('P')}{random.choice('K')}{random.randint(1000, 9999)}{random.choice('Z')}"
-
-    # Bank Account & IFSC
     ac_num = f"{random.randint(20000000000, 99999999999)}"
     ifsc_code = f"SBIN000{random.randint(1000, 9999)}"
     upi_id = f"{first.lower()}{random.randint(10, 99)}@oksbi"
-
-    # PIN Code
     pincode = f"5000{random.randint(10, 99)}"
 
     entities = [
-        {"type": "STUDENT_NAME", "value": student_name},
         {"type": "STUDENT_ID", "value": roll_num},
         {"type": "STUDENT_ID", "value": app_num},
         {"type": "DOB", "value": dob_str},
@@ -150,43 +126,55 @@ for i in range(1, 51):
         {"type": "PINCODE", "value": pincode},
     ]
 
-    # In 4 edge case samples, include an unanchored family name or guardian in statement text
-    if i in [12, 24, 36, 48]:
-        guardian_name = f"{random.choice(FIRST_NAMES)} {random.choice(LAST_NAMES)}"
-        scenario_text_extra = f"Guardian {guardian_name} visited campus for verification."
-        entities.append({"type": "STUDENT_NAME", "value": guardian_name})
-    else:
-        scenario_text_extra = ""
+    extra_narrative = ""
 
-    # In 2 edge case samples, include an exam centre pin code that creates an ambiguous detection
-    if i in [15, 30]:
-        exam_pincode = f"5000{random.randint(10, 99)}"
-        scenario_text_extra += f" Exam Centre PIN Code: {exam_pincode}."
+    # Real-world challenge 1: Unanchored names in body text (FN)
+    # In 14 samples, student or guardian name appears in narrative without header
+    if i % 3 == 0:
+        guardian = f"{random.choice(FIRST_NAMES)} {random.choice(LAST_NAMES)}"
+        extra_narrative += f" I discussed my admission with my guardian {guardian}."
+        entities.append({"type": "STUDENT_NAME", "value": student_name})
+        entities.append({"type": "STUDENT_NAME", "value": guardian})
+        name_line = f"Applicant: {student_name}" if i % 2 == 0 else f"I, {student_name}, submit this form."
+    else:
+        entities.append({"type": "STUDENT_NAME", "value": student_name})
+        name_line = f"Student Name: {student_name}"
+
+    # Real-world challenge 2: Ambiguous 6-digit numbers in text (causing FP)
+    # In 8 samples, 6-digit challan or rank number triggers pincode regex or vice versa
+    if i in [5, 11, 17, 23, 29, 35, 41, 47]:
+        challan_no = f"5000{random.randint(10, 99)}"
+        extra_narrative += f" Venue PIN Code: {challan_no}."
+
+    # Real-world challenge 3: Pincode without header (FN)
+    # In 6 samples, pincode is written inline like "Hyderabad 500007"
+    if i in [7, 14, 21, 28, 38, 44]:
+        address_line = f"Address: Near Tarnaka, Hyderabad - {pincode}"
+    else:
+        address_line = f"Address PIN Code: {pincode}"
+
+    sop_text = template["sop"].format(gate_score=random.randint(620, 750), cgpa=round(random.uniform(8.1, 9.4), 2))
 
     text = (
-        f"--- {college.upper()} ---\n"
-        f"STUDENT ENQUIRY & APPLICATION FORM: {scenario['type'].upper()}\n"
-        f"Student Name: {student_name}\n"
+        f"{college}\n"
+        f"Application: {template['type']}\n"
+        f"{name_line}\n"
         f"Roll No: {roll_num} | Application No: {app_num}\n"
         f"Course: {degree}\n"
         f"DOB: {dob_str} | Aadhaar: {aadhaar_fmt} | PAN: {pan_code}\n"
         f"Contact: {phone} | Email: {email}\n"
-        f"Address PIN Code: {pincode}\n"
+        f"{address_line}\n"
         f"Bank A/c No: {ac_num} | IFSC: {ifsc_code} | Fee UPI: {upi_id}\n\n"
-        f"STATEMENT OF PURPOSE & DETAILS:\n"
-        f"{scenario['purpose']}\n"
-        f"{scenario['course_detail']}\n"
-        f"{scenario_text_extra}\n\n"
-        f"ACADEMIC QUALIFICATIONS:\n"
-        f"{scenario['academic_record']}\n\n"
-        f"Please verify my submission and provide confirmation."
+        f"Statement:\n"
+        f"{sop_text}{extra_narrative}\n\n"
+        f"Please verify my details."
     )
 
     samples.append({
         "id": i,
         "college": college,
         "degree": degree,
-        "scenario_type": scenario["type"],
+        "scenario_type": template["type"],
         "text": text,
         "entities": entities
     })
@@ -194,4 +182,4 @@ for i in range(1, 51):
 with open("data/education_eval_samples.json", "w", encoding="utf-8") as f:
     json.dump(samples, f, indent=2)
 
-print(f"Successfully generated {len(samples)} hand-labeled Education Sector evaluation records!")
+print(f"Generated {len(samples)} realistic test samples in data/education_eval_samples.json")
