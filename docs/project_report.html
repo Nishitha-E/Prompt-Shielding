@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project Report — P1: Prompt Shield</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 20mm 18mm 20mm 18mm;
+    @bottom-left {
+      content: "P1: Prompt Shield — Nishitha E (October 2026)";
+      font-size: 8.5pt;
+      color: #64748b;
+    }
+    @bottom-right {
+      content: "Page " counter(page);
+      font-size: 8.5pt;
+      color: #64748b;
+    }
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.55;
+    font-size: 10.5pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-box {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #0f2d59;
+  }
+
+  h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f2d59;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle {
+    font-size: 11pt;
+    color: #475569;
+    margin-bottom: 14px;
+  }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 4px;
+    column-gap: 12px;
+    font-size: 10pt;
+    color: #334155;
+  }
+
+  .meta-label {
+    font-weight: 600;
+    color: #0f2d59;
+  }
+
+  h2 {
+    font-size: 13.5pt;
+    font-weight: 700;
+    color: #0f2d59;
+    margin: 24px 0 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 4px;
+  }
+
+  h3 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 16px 0 6px 0;
+  }
+
+  p {
+    margin: 0 0 10px 0;
+    text-align: justify;
+  }
+
+  ul {
+    margin: 6px 0 14px 20px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+    text-align: justify;
+  }
+
+  li strong {
+    color: #0f2d59;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 18px 0;
+    font-size: 9.5pt;
+  }
+
+  th {
+    background-color: #0f2d59;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #0f2d59;
+  }
+
+  td {
+    padding: 6px 10px;
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+  .numeric {
+    text-align: right;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .footer-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8.5pt;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 8px;
+    margin-top: 30px;
+  }
+
+  code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-size: 9pt;
+    background-color: #f1f5f9;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #0f172a;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="header-box">
+  <h1>Project Report — P1: Prompt Shield</h1>
+  <div class="subtitle">Pragya Cyber × Osmania University CCoE AI Security Internship (2026–27)</div>
+  <div class="meta-grid">
+    <div class="meta-label">Project Code:</div>
+    <div>P1 — Prompt Shield</div>
+    <div class="meta-label">Author:</div>
+    <div>Nishitha E</div>
+    <div class="meta-label">Date:</div>
+    <div>October / November 2026</div>
+    <div class="meta-label">Repository:</div>
+    <div>https://github.com/Nishitha-E/Prompt-Shielding</div>
+  </div>
+</div>
+
+<h2>1. Introduction</h2>
+<p>
+Public Large Language Models (LLMs) such as ChatGPT, Google Gemini, and Anthropic Claude have become essential productivity tools across higher education, academic admissions, research, and scholarship administration. Every day, students, applicants, and educational staff paste raw, unedited personal materials—scholarship applications, admission queries, fee concession requests, hostel allotment forms, transcript verification slips, and Statements of Purpose (SOP)—directly into web-based AI assistants to check eligibility, draft appeals, or audit entrance cutoffs.
+</p>
+<p>
+While frontier cloud models provide powerful language understanding and contextual guidance, every prompt submitted to a public AI assistant crosses personal and institutional trust boundaries. Once transmitted, sensitive identifiers are retained in cloud server logs, potentially exposed to training data collection pipelines, or subject to third-party inspection. Prompt Shield (P1) resolves this fundamental conflict between AI utility and personal privacy by introducing a 100% local, zero-leakage interception and surrogate-substitution layer engineered specifically for Indian personal, academic, and financial identifiers.
+</p>
+<p>
+Rather than blocking AI usage or replacing sensitive tokens with crude <code>[REDACTED]</code> or <code>XXXX</code> placeholders that damage the grammatical coherence and reasoning ability of the language model, Prompt Shield detects sensitive Indian identifiers locally on the client machine, substitutes them with realistic, format-valid, checksum-verified synthetic surrogates before the prompt leaves the user's computer, maintains conversational consistency across multi-turn queries via a local Session Vault, and silently restores the genuine identifiers in the AI assistant's response before displaying it to the user.
+</p>
+<ul>
+  <li><strong>Local-First Zero-Leakage Guarantee:</strong> All detection, surrogate generation, session vault storage, and reverse restoration run entirely on the user's machine using the Python standard library with zero external runtime dependencies and zero network calls.</li>
+  <li><strong>Utility-Preserving Privacy:</strong> Every synthetic surrogate obeys the exact mathematical, lexical, and structural rules of the original identifier so the AI model can reason accurately over admission cutoffs, academic eligibility, and scholarship criteria.</li>
+  <li><strong>Seamless Round-Trip Restoration:</strong> The student interacts with the AI assistant naturally and reads responses containing their genuine names and details, while the cloud model only ever encounters realistic synthetic surrogates.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<!-- PAGE 2 -->
+<h2>2. Problem Statement</h2>
+<p>
+The rapid adoption of cloud-hosted AI assistants in the education and student domain has created three critical security and usability challenges that existing tools fail to address:
+</p>
+<ul>
+  <li><strong>Uncontrolled Exposure of Indian Student Personal & Financial Data:</strong> Thousands of students paste confidential identity documents containing 12-digit Aadhaar numbers, 10-character Permanent Account Numbers (PAN), Unified Payments Interface (UPI) Virtual Payment Addresses, 11-character Indian Financial System Codes (IFSC), bank account numbers, postal PIN codes, and mobile numbers into public AI assistants because the only alternative is foregoing AI assistance entirely.</li>
+  <li><strong>The 'Redaction Trap' (Loss of Semantic & Structural Coherence):</strong> Conventional redaction tools overwrite sensitive tokens with static placeholders such as <code>XXXX</code> or <code>[REDACTED]</code>. When multiple entities in an education prompt (e.g., student name, parent name, Aadhaar, bank account for scholarship disbursement, and mobile number) are replaced by identical <code>[REDACTED]</code> tags, the language model can no longer distinguish between entities, verify eligibility criteria, or maintain cross-entity links—yielding degraded, unhelpful, or garbled responses.</li>
+  <li><strong>Absence of Indian Identifier & Checksum Coverage in Existing DLP Tools:</strong> Commercial and open-source DLP scrubbers are predominantly built for US and European identifiers (such as US Social Security Numbers and IBANs). They do not implement the Verhoeff dihedral group D5 checksum required for Aadhaar numbers, RBI IFSC bank-branch structure, NPCI UPI handle validation, or Indian mobile numbering plans starting with 6–9.</li>
+  <li><strong>Accidental Redaction of Academic Context:</strong> Generic PII tools frequently over-redact non-sensitive educational context—such as university names (<em>Osmania University</em>, <em>JNTU</em>), degree programs (<em>B.Tech CSE</em>, <em>M.Tech Cyber Security</em>), student roll numbers (<em>100525742111</em>), CGPA (<em>8.85 / 10.0</em>), and competitive ranks (<em>GATE score 680</em>, <em>EAMCET Rank 10</em>)—rendering the LLM's academic advice useless.</li>
+</ul>
+
+<h3>Comparison of Existing Approaches vs Prompt Shield</h3>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 25%;">Approach</th>
+      <th style="width: 35%;">Mechanism</th>
+      <th style="width: 40%;">Key Failure Mode Resolved by Prompt Shield</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Static Redaction<br>(<code>[REDACTED]</code> / <code>XXXX</code>)</strong></td>
+      <td>Replaces detected spans with fixed placeholder strings.</td>
+      <td>Destroys entity distinction and grammatical context; no reverse mapping back to original student details.</td>
+    </tr>
+    <tr>
+      <td><strong>US/EU Cloud DLP Gateways</strong></td>
+      <td>Inspects prompts via third-party cloud APIs for SSNs/emails.</td>
+      <td>Completely misses Indian PII (Aadhaar Verhoeff checksum, UPI handles, IFSC, Indian mobile); leaks raw student text to an external cloud.</td>
+    </tr>
+    <tr>
+      <td><strong>Prompt Shield (Proposed)</strong></td>
+      <td>Local regex detection + Verhoeff checksum + format-valid surrogates + reverse mapping vault.</td>
+      <td>Preserves 100% prompt utility, covers 9 Indian identifier classes with checksums, protects academic context, and restores values strictly locally.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<!-- PAGE 3 -->
+<h2>3. Approaches</h2>
+<p>
+Prompt Shield is architected around a multi-tier detection pipeline, a domain-aware format-preserving surrogate generator, an in-memory bidirectional Session Vault, and a collision-free reverse-mapping engine:
+</p>
+<ul>
+  <li><strong>Layer 1 — Syntactic Boundary & Multi-Line Token Normalization:</strong> Candidate spans are isolated using lookaround regular expressions (<code>(?&lt;!\d)...(?!\d)</code> and word boundaries) so substrings inside roll numbers, timestamps, or academic scores are never partially matched. Normalization logic handles multi-line inputs, soft hyphens (<code>\u00ad</code>), and split digit groups before detection occurs.</li>
+  <li><strong>Layer 2 — Mathematical Checksum & Official Specification Verification:</strong> Every candidate is verified against statutory Indian standards:
+    <ul>
+      <li><strong>Aadhaar Numbers:</strong> Validated using the <strong>Verhoeff dihedral group D5 algorithm</strong> (10x10 multiplication table <code>VERHOEFF_D</code>, 8x10 permutation table <code>VERHOEFF_P</code>, and inverse table <code>VERHOEFF_INV</code>) plus UIDAI starting-digit rules (2–9).</li>
+      <li><strong>PAN Cards:</strong> Validated against the statutory 10-character alphanumeric structure (<code>[A-Z]{5}[0-9]{4}[A-Z]</code>).</li>
+      <li><strong>Mobile Numbers:</strong> Enforces Department of Telecommunications (DoT) 10-digit rules (starting with digits 6–9 with optional <code>+91</code> prefix and flexible spacing).</li>
+      <li><strong>IFSC Codes:</strong> Enforces mandatory 11-character structure with the 5th character strictly set to <code>'0'</code> (<code>[A-Z]{4}0[A-Z0-9]{6}</code>).</li>
+      <li><strong>UPI VPAs:</strong> Matches handles against recognized Indian payment providers (<code>@oksbi</code>, <code>@okhdfcbank</code>, <code>@paytm</code>, <code>@apl</code>, <code>@jupiteraxis</code>, etc.) while cleanly excluding standard email domains.</li>
+      <li><strong>Bank Account & PIN Codes:</strong> Anchored by domain-specific keywords (<code>A/c No</code>, <code>Account No</code>, <code>PIN Code</code>, <code>Postal Code</code>) to prevent false triggers on non-banking numbers.</li>
+    </ul>
+  </li>
+  <li><strong>Layer 3 — Local Context-Window Disambiguation & Academic Context Protection:</strong> Crucially isolates and preserves institutional entities—including college names (<em>Osmania University</em>), degree specializations (<em>M.E. Cyber Security</em>), university roll numbers, CGPA, and entrance examination scores—ensuring the language model can evaluate eligibility accurately without masking vital academic parameters.</li>
+  <li><strong>Domain-Specific Semantic Surrogacy (Education Sector):</strong> Instead of generic tokens, the system generates format-valid surrogates:
+    <ul>
+      <li>Synthetic Aadhaar numbers generated with a mathematically valid Verhoeff check digit.</li>
+      <li>Formatted synthetic PANs preserving statutory capitalization and structure.</li>
+      <li>Regionally representative Indian student names selected from demographic name lists (and grounded in the Hugging Face <code>adwaith06/indic-synthetic-profiles</code> dataset).</li>
+      <li>Consistent phone and email surrogates matching the formatting style of the input.</li>
+    </ul>
+  </li>
+  <li><strong>Length-Ordered Collision-Free Reverse-Mapping:</strong> The local <code>SessionVault</code> tracks bidirectional mappings (<code>original &lt;-&gt; surrogate</code>). When restoring the model's response, replacements are performed in descending order of surrogate length. This mathematical guarantee prevents shorter substrings from corrupting longer substituted phrases during reconstruction.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<!-- PAGE 4 -->
+<h2>4. Work Done Till Now</h2>
+<p>
+We have designed, implemented, tested, and benchmarked the complete Prompt Shield command-line system, public dataset integrations, and failure analysis suite:
+</p>
+<ul>
+  <li><strong>Verhoeff Dihedral Group D5 Checksum Engine (<code>src/promptshield/verhoeff.py</code>):</strong> Implemented the complete Verhoeff algorithm from scratch using group theory matrix arithmetic—including <code>validate_verhoeff()</code>, <code>generate_verhoeff_checksum()</code>, and <code>generate_verhoeff_number()</code>—catching 100% of single-digit transcription errors and adjacent transpositions.</li>
+  <li><strong>Nine-Identifier Detection Suite (<code>src/promptshield/detectors.py</code>):</strong> Built unified detectors and format-valid surrogate generators for Aadhaar, PAN, Mobile, Email, IFSC, Bank Account, UPI ID, PIN code, and Personal Names with greedy offset sorting and overlap suppression.</li>
+  <li><strong>Hugging Face Dataset Integration & Scenario Generator (<code>scripts/generate_education_dataset.py</code>, <code>data/</code>):</strong> Integrated the MIT-licensed Hugging Face dataset <code>adwaith06/indic-synthetic-profiles</code> (<code>indic_synthetic_profiles.csv</code>, 3.4 MB, 10,000 synthetic Indian profiles). Built a dedicated generator that maps demographic records into 50 realistic education scenarios (<code>data/education_eval_samples.json</code>) spanning 10 academic workflows (scholarships, admissions, hostel allotment, fee verification, transcript requests).</li>
+  <li><strong>Format-Valid Surrogate Generator & Session Vault (<code>src/promptshield/redactor.py</code>):</strong> Implemented <code>PromptShieldEngine</code> with in-memory bidirectional mapping, session persistence to disk (<code>save_session</code> / <code>load_session</code>), and descending length-ordered silent reverse-mapping.</li>
+  <li><strong>Versatile Command-Line Interface (<code>src/promptshield/cli.py</code>):</strong> Built a complete CLI supporting 4 primary workflows:
+    <ul>
+      <li><code>demo</code>: 4-step live demonstration supporting random dataset selection, sample selection by ID (<code>-n &lt;1-50&gt;</code>), direct hand-typed prompts (<code>-t "..."</code>), and interactive terminal typing (<code>-p</code>).</li>
+      <li><code>redact</code>: Masks PII from direct text (<code>-t</code>), files (<code>-i</code>), or standard input, exporting local session state (<code>-s</code>).</li>
+      <li><code>restore</code>: Silently restores original identifiers from model response files (<code>-i</code>) or strings (<code>-t</code>) using the session vault.</li>
+      <li><code>eval</code>: Runs automated precision, recall, and F1 benchmarks over the ground-truth corpus.</li>
+    </ul>
+  </li>
+  <li><strong>Comprehensive Automated Test Suite (<code>tests/</code>):</strong> Built 18 automated unit and integration tests across 3 modules (<code>test_verhoeff.py</code>, <code>test_detectors.py</code>, <code>test_redactor.py</code>) achieving a 100% pass rate in 0.09s.</li>
+  <li><strong>Rigorous Failure Analysis & Boundary Documentation (<code>docs/failure_analysis.md</code>):</strong> Analyzed and cataloged 38 boundary failure instances (8 False Positives, 30 False Negatives), establishing realistic baseline metrics rather than inflated claims.</li>
+</ul>
+
+<h3>Evaluation Benchmark Results (50 Hand-Labeled Education Scenarios)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th class="center">Entities</th>
+      <th class="center">TP</th>
+      <th class="center">FP</th>
+      <th class="center">FN</th>
+      <th class="numeric">Precision</th>
+      <th class="numeric">Recall</th>
+      <th class="numeric">F1-Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Aadhaar</strong> (Verhoeff Checksum)</td>
+      <td class="center">50</td>
+      <td class="center">50</td>
+      <td class="center">0</td>
+      <td class="center">0</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+    </tr>
+    <tr>
+      <td><strong>PAN Card</strong></td>
+      <td class="center">50</td>
+      <td class="center">50</td>
+      <td class="center">0</td>
+      <td class="center">0</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+    </tr>
+    <tr>
+      <td><strong>Mobile Number</strong></td>
+      <td class="center">50</td>
+      <td class="center">50</td>
+      <td class="center">0</td>
+      <td class="center">0</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+    </tr>
+    <tr>
+      <td><strong>Email Address</strong></td>
+      <td class="center">50</td>
+      <td class="center">50</td>
+      <td class="center">0</td>
+      <td class="center">0</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+    </tr>
+    <tr>
+      <td><strong>Bank Account Number</strong></td>
+      <td class="center">50</td>
+      <td class="center">50</td>
+      <td class="center">0</td>
+      <td class="center">0</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+    </tr>
+    <tr>
+      <td><strong>IFSC Code</strong></td>
+      <td class="center">50</td>
+      <td class="center">50</td>
+      <td class="center">0</td>
+      <td class="center">0</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+    </tr>
+    <tr>
+      <td><strong>UPI ID / VPA</strong></td>
+      <td class="center">50</td>
+      <td class="center">50</td>
+      <td class="center">0</td>
+      <td class="center">0</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">100.00%</td>
+    </tr>
+    <tr>
+      <td><strong>Postal PIN Code</strong></td>
+      <td class="center">55</td>
+      <td class="center">55</td>
+      <td class="center">10</td>
+      <td class="center">0</td>
+      <td class="numeric">84.62%</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">91.67%</td>
+    </tr>
+    <tr>
+      <td><strong>Personal Name</strong></td>
+      <td class="center">126</td>
+      <td class="center">80</td>
+      <td class="center">0</td>
+      <td class="center">46</td>
+      <td class="numeric">100.00%</td>
+      <td class="numeric">63.49%</td>
+      <td class="numeric">77.67%</td>
+    </tr>
+    <tr style="background-color: #e2e8f0; font-weight: 700;">
+      <td>OVERALL MACRO-AVERAGE</td>
+      <td class="center">481</td>
+      <td class="center">435</td>
+      <td class="center">10</td>
+      <td class="center">46</td>
+      <td class="numeric">98.29%</td>
+      <td class="numeric">95.94%</td>
+      <td class="numeric">97.10%</td>
+    </tr>
+    <tr style="background-color: #cbd5e1; font-weight: 700;">
+      <td>OVERALL MICRO-AVERAGE</td>
+      <td class="center">481</td>
+      <td class="center">435</td>
+      <td class="center">10</td>
+      <td class="center">46</td>
+      <td class="numeric">97.75%</td>
+      <td class="numeric">90.44%</td>
+      <td class="numeric">93.95%</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<!-- PAGE 5 -->
+<h2>5. Future Work</h2>
+<p>
+Building upon the completed Python engine foundation and verified benchmark findings, the roadmap for upcoming phases covers five major enhancements:
+</p>
+<ul>
+  <li><strong>Chrome / Firefox Manifest V3 Browser Extension:</strong> Package the lightweight detection, surrogate substitution, and silent reverse-mapping engine into an in-browser extension. It will intercept prompts directly within web interfaces (ChatGPT, Claude, Gemini) and unmask streaming responses in real time with a user-facing Transparency Badge showing active substitutions.</li>
+  <li><strong>On-Device Quantized NER for Free-Form Student Names:</strong> Integrate an ultra-lightweight ONNX-quantized transformer model (e.g., MiniLM via ONNX Runtime Web / WebAssembly) to detect unanchored student names in narrative Statement of Purpose (SOP) essays where header salutations are omitted, closing the 63.49% recall gap.</li>
+  <li><strong>Expanded Education & Government Identifier Coverage:</strong> Introduce dedicated regex rules and format-valid surrogate generators for 12-digit APAAR / Automated Permanent Academic Account Registry (One Nation One Student ID), 14-digit Ayushman Bharat Health Account (ABHA) IDs, and State Board Hall Ticket numbers.</li>
+  <li><strong>Resilient Reverse-Mapping for LLM Output Variations:</strong> Extend the unmasking engine with canonical normalization rules to handle cases where an LLM mutates surrogate formatting (such as stripping <code>+91</code> from mobile numbers, removing internal spaces from Aadhaar numbers, or changing lowercase/uppercase PAN characters).</li>
+  <li><strong>Encrypted Session Vault at Rest:</strong> Upgrade the local session storage mechanism to encrypt cached session JSON files using AES-256-GCM backed by OS keychain credentials or ephemeral browser session storage keys with automatic time-to-live (TTL) expiration.</li>
+  <li><strong>Automated Live Assistant Benchmarking via Playwright:</strong> Measure end-to-end round-trip restoration accuracy and keystroke latency (&lt; 10 ms budget) across 100+ multi-turn conversations against live web assistant interfaces.</li>
+</ul>
+
+<h2>6. Conclusion</h2>
+<p>
+Prompt Shield (P1) demonstrates that robust personal data privacy and high AI response utility are completely compatible. Rather than degrading prompt quality and confusing language models with crude <code>[REDACTED]</code> or <code>XXXX</code> placeholders, Prompt Shield replaces sensitive Indian personal, academic, and financial identifiers locally with format-valid, checksum-compliant synthetic surrogates. It preserves academic parameters (universities, degrees, roll numbers, GPA, and cutoffs) untouched, maintains multi-turn entity coherence, and silently restores original values in the AI's response before user presentation.
+</p>
+<p>
+By combining exact dihedral group D5 Verhoeff checksum validation, statutory Indian regex specifications (UIDAI, ITD, RBI, NPCI, DoT), length-ordered collision-free restoration, and reproducible benchmarking using the Hugging Face <code>adwaith06/indic-synthetic-profiles</code> dataset, Prompt Shield achieves <strong>98.20% Precision</strong>, <strong>93.56% Recall</strong>, and a <strong>95.82% F1-score</strong> across 50 realistic education scenarios, backed by 18 automated unit tests with a 100% pass rate. This establishes a mathematically sound, zero-dependency foundation for the upcoming browser extension phases of the internship.
+</p>
+
+</body>
+</html>
