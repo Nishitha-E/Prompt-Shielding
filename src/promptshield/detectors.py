@@ -14,13 +14,13 @@ class PIIDetector:
     AADHAAR_PATTERN = re.compile(r"\b[2-9]\d{3}[\s-]?[0-9]{4}[\s-]?[0-9]{4}\b")
     PAN_PATTERN = re.compile(r"\b[A-Z]{5}[0-9]{4}[A-Z]\b")
     UPI_PATTERN = re.compile(
-        r"\b[a-zA-Z0-9._-]+@(okhdfcbank|okaxis|oksbi|icici|ybl|paytm|upi|axl|ibl|sbi)\b",
+        r"\b[a-zA-Z0-9._-]+@(okhdfcbank|okaxis|oksbi|okicici|icici|ybl|paytm|upi|axl|ibl|sbi|apl|fbl|jupiteraxis)\b",
         re.IGNORECASE,
     )
-    MOBILE_PATTERN = re.compile(r"\b(?:\+91[\s-]?)?[6-9]\d{9}\b")
+    MOBILE_PATTERN = re.compile(r"(?:\+91[\s-]?)?[6-9](?:[\s-]?\d){9}\b")
     IFSC_PATTERN = re.compile(r"\b[A-Z]{4}0[A-Z0-9]{6}\b")
     EMAIL_PATTERN = re.compile(
-        r"\b[a-zA-Z0-9._%+-]+@(?!okhdfcbank|okaxis|oksbi|icici|ybl|paytm|upi|axl|ibl)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b",
+        r"\b[a-zA-Z0-9._%+-]+@(?!okhdfcbank|okaxis|oksbi|okicici|icici|ybl|paytm|upi|axl|ibl|sbi|apl|fbl|jupiteraxis)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b",
         re.IGNORECASE,
     )
     BANK_ACCOUNT_PATTERN = re.compile(
