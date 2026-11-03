@@ -74,7 +74,7 @@ I implemented the core redaction and restoration engine:
 
 ---
 
-## 4. Current Work in Progress & Next Steps (To Be Completed for 29th Review)
+## 4. Current Work in Progress & Next Steps 
 
 With the core engine (Parts A, B, and C) working, I am now completing the final user-facing and evaluation stages:
 
